@@ -1,0 +1,48 @@
+#  Byte-order mark, UTF-8
+*.orig
+*.rej
+*~
+.*.swp
+.DS_Store
+Thumbs.db
+
+#  IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+#  Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+pip-wheel-metadata/
+
+# 虚拟环境
+venv/
+env/
+.venv/
+.env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# 大文件（PDF、模型权重等，按需决定是否提交）
+# *.pdf
+# *.pt
+# *.pth
+# *.bin
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+
+# 日志
+*.log
+logs/

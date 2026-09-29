@@ -1,0 +1,40 @@
+# CODEOWNERS - 自动分配 PR Reviewer
+#
+# 将 your-org 替换为你的 GitHub 组织名
+# 将 team 名称替换为你们实际的团队名称
+
+# 仓库级配置
+*.md @your-org/maintainers
+CODEOWNERS @your-org/maintainers
+CONTRIBUTING.md @your-org/maintainers
+README.md @your-org/maintainers
+
+# 路线图
+roadmaps/ @your-org/maintainers
+
+# A. 感知与认知
+cards/01-perception/ @your-org/perception-group
+cards/09-knowledge-reasoning/ @your-org/perception-group
+cards/15-consciousness-emotion/ @your-org/perception-group
+
+# B. 学习与模型
+cards/02-autonomous-learning/ @your-org/learning-group
+cards/03-embodied-llm/ @your-org/learning-group
+cards/04-world-model/ @your-org/learning-group
+cards/14-rl-adaptive-control/ @your-org/learning-group
+
+# C. 行动与交互
+cards/05-manipulation/ @your-org/action-group
+cards/06-navigation/ @your-org/action-group
+cards/13-dialogue-interaction/ @your-org/action-group
+
+# D. 系统与生态
+cards/07-human-robot-collab/ @your-org/systems-group
+cards/08-swarm-intelligence/ @your-org/systems-group
+cards/10-simulation-platform/ @your-org/systems-group
+cards/11-sim-to-real/ @your-org/systems-group
+cards/12-safety/ @your-org/systems-group
+
+# 模板和脚本
+templates/ @your-org/maintainers
+scripts/ @your-org/maintainers
