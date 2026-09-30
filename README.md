@@ -69,9 +69,9 @@
 
 ### 5. 具身大模型 (03-embodied-llm)
 
-| 论文 | 会议/年份 | 速览卡 | 重点卡片 |
-|------|----------|--------|---------|
-| Attention Is All You Need | NeurIPS 2017 | [➡️ 进入](cards/03-embodied-llm/attention-is-all-you-need/) | ③ 创新拆解 · ⑥ 知识沉淀 |
+| 论文 | 会议/年份 | 原文 | 速览卡 | 重点卡片 |
+|------|----------|------|--------|---------|
+| Attention Is All You Need | NeurIPS 2017 | [📄 arXiv](https://arxiv.org/abs/1706.03762) | [➡️ 进入](cards/03-embodied-llm/attention-is-all-you-need/) | ③ 创新拆解 · ⑥ 知识沉淀 |
 
 _其他方向待补充_
 

@@ -1,5 +1,7 @@
 # Attention Is All You Need
 
+> 📄 [论文原文 (arXiv)](https://arxiv.org/abs/1706.03762) · 💻 [官方代码](https://github.com/tensorflow/tensor2tensor)
+>
 > Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin, **NeurIPS 2017**
 > 领域标签: #LLM #Transformer #基础模型
 > 首次笔记: @demo | 最后更新: 2024-09-30

@@ -94,18 +94,26 @@ def main():
             tags = ' '.join(f'#{t.strip()}' for t in args.tags.split(','))
             content = content.replace('#标签1 #标签2 #标签3', tags)
 
-        # 替换论文链接
+        # 替换论文链接（资源链接表 + 标题下方）
         if args.paper_url:
             content = content.replace(
                 '[arXiv](https://arxiv.org/abs/xxxx.xxxxx)',
                 f'[论文链接]({args.paper_url})'
             )
+            content = content.replace(
+                '[论文原文](https://arxiv.org/abs/xxxx.xxxxx)',
+                f'[论文原文]({args.paper_url})'
+            )
 
-        # 替换代码链接
+        # 替换代码链接（资源链接表 + 标题下方）
         if args.code_url:
             content = content.replace(
                 '[GitHub](https://github.com/xxx)',
                 f'[GitHub]({args.code_url})'
+            )
+            content = content.replace(
+                '[官方代码](https://github.com/xxx)',
+                f'[官方代码]({args.code_url})'
             )
 
         readme_path.write_text(content, encoding='utf-8')

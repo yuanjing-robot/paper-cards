@@ -1,5 +1,7 @@
 # [论文标题]
 
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx)
+>
 > 作者列表, **会议/期刊** 年份
 > 领域标签: #标签1 #标签2 #标签3
 > 首次笔记: @github-id | 最后更新: YYYY-MM-DD
