@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 一键创建论文卡片文件夹
 
@@ -54,8 +54,8 @@ def update_subfield_readme(subfield_readme: Path, title: str, conference: str,
     else:
         paper_md += "- | "
     paper_md += f"[📝 精读]({folder_name}/) | "
-    paper_md += f"[🌐 翻译]({folder_name}/07-translation.md) | "
-    paper_md += f"[💭 理解]({folder_name}/08-understanding.md) |"
+    paper_md += f"[🌐 翻译]({folder_name}/translation.md) | "
+    paper_md += f"[💭 理解]({folder_name}/understanding.md) |"
 
     # 如果有 "_待补充_" 的占位行，替换掉
     if '_待补充_' in content:
@@ -198,16 +198,24 @@ def main():
                               args.paper_url, folder_name):
         print(f'✅ 已更新子方向索引：{subfield_readme}')
 
-    # 更新 07-translation.md 的标题和链接
-    translation_path = target_dir / '07-translation.md'
+    # 更新 reading-notes.md 的标题和链接
+    notes_path = target_dir / 'reading-notes.md'
+    if notes_path.exists() and args.paper_url:
+        content = notes_path.read_text(encoding='utf-8')
+        content = content.replace('[论文标题]', args.title)
+        content = content.replace('https://arxiv.org/abs/xxxx.xxxxx', args.paper_url)
+        notes_path.write_text(content, encoding='utf-8')
+
+    # 更新 translation.md 的标题和链接
+    translation_path = target_dir / 'translation.md'
     if translation_path.exists() and args.paper_url:
         content = translation_path.read_text(encoding='utf-8')
         content = content.replace('[论文标题]', args.title)
         content = content.replace('https://arxiv.org/abs/xxxx.xxxxx', args.paper_url)
         translation_path.write_text(content, encoding='utf-8')
 
-    # 更新 08-understanding.md 的标题和链接
-    understanding_path = target_dir / '08-understanding.md'
+    # 更新 understanding.md 的标题和链接
+    understanding_path = target_dir / 'understanding.md'
     if understanding_path.exists() and args.paper_url:
         content = understanding_path.read_text(encoding='utf-8')
         content = content.replace('[论文标题]', args.title)
@@ -220,10 +228,10 @@ def main():
     print()
     print('📝 下一步：')
     print(f'   1. cd {target_dir.relative_to(repo_root)}')
-    print('   2. 先填 README.md（速览卡 + 关键数据）')
-    print('   3. 填写精读笔记（按需选择视角）')
-    print('   4. 补充 07-translation.md（翻译）')
-    print('   5. 补充 08-understanding.md（个人理解）')
+    print('   2. 填 README.md（速览卡 + 关键数据）')
+    print('   3. 填 reading-notes.md（精读笔记，6 个视角合在一起）')
+    print('   4. 补充 translation.md（翻译）')
+    print('   5. 补充 understanding.md（个人理解）')
     print('   6. 提 PR')
     print()
     print('🔗 子方向索引已自动更新，刷新即可看到新论文')

@@ -1,4 +1,4 @@
-# 🤖 具身智能论文整理
+﻿# 🤖 具身智能论文整理
 
 > 基于 CEAI 2025 "具身智能十五大重点方向"，系统整理具身智能领域核心论文
 > 每篇论文 = 精读笔记 + 翻译 + 个人理解，多维度深度拆解
@@ -137,7 +137,7 @@
 
 | 论文 | 会议/年份 | 原文 | 精读 | 翻译 | 个人理解 |
 |------|----------|------|------|------|---------|
-| [Attention Is All You Need](cards/03-embodied-llm/vla-models/attention-is-all-you-need/) | NeurIPS 2017 | [📄 原文](https://arxiv.org/abs/1706.03762) | [📝 精读](cards/03-embodied-llm/vla-models/attention-is-all-you-need/) | [🌐 翻译](cards/03-embodied-llm/vla-models/attention-is-all-you-need/07-translation.md) | [💭 理解](cards/03-embodied-llm/vla-models/attention-is-all-you-need/08-understanding.md) |
+| [Attention Is All You Need](cards/03-embodied-llm/vla-models/attention-is-all-you-need/) | NeurIPS 2017 | [📄 原文](https://arxiv.org/abs/1706.03762) | [📝 精读](cards/03-embodied-llm/vla-models/attention-is-all-you-need/) | [🌐 翻译](cards/03-embodied-llm/vla-models/attention-is-all-you-need/translation.md) | [💭 理解](cards/03-embodied-llm/vla-models/attention-is-all-you-need/understanding.md) |
 
 ##### 多模态大模型
 
@@ -449,12 +449,12 @@
 
 ## 🎴 每篇论文包含什么
 
-| 内容 | 文件 | 说明 |
+| 模块 | 文件 | 说明 |
 |------|------|------|
-| 速览卡 | README.md | 论文基本信息 + 关键数据 + 各模块索引 |
-| 精读笔记 | 01-06 六维卡片 | 6 个不同视角的深度拆解 |
-| 论文翻译 | 07-translation.md | 论文核心章节中文翻译 |
-| 个人理解 | 08-understanding.md | 个人阅读后的理解与思考 |
+| 速览卡 | README.md | 论文基本信息 + 关键数据 + 导航 |
+| 精读笔记 | reading-notes.md | 6 个视角合在一起（精简版） |
+| 论文翻译 | translation.md | 核心章节中文翻译 |
+| 个人理解 | understanding.md | 个人阅读理解与思考 |
 
 ---
 
@@ -486,11 +486,15 @@ paper-cards/
 │   │   ├── visual-perception/   # 子方向：视觉感知
 │   │   │   ├── README.md
 │   │   │   └── paper-title/     # 单篇论文
+│   │   │       ├── README.md    # 速览卡
+│   │   │       ├── reading-notes.md  # 精读笔记（6视角合一）
+│   │   │       ├── translation.md # 论文翻译
+│   │   │       └── understanding.md # 个人理解
 │   │   └── ...
 │   └── ...（共15个大方向）
 │
 ├── templates/                   # 📋 模板文件
-│   └── paper-card-template/     # 论文卡片模板（8个文件）
+│   └── paper-card-template/     # 论文卡片模板（4个文件）
 │
 └── scripts/                     # 🔧 辅助脚本
     └── add-paper.py             # 一键创建论文卡片

@@ -1,6 +1,6 @@
-# [论文标题]
+﻿# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 🌐 [中文翻译](07-translation.md) · 💭 [个人理解](08-understanding.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md) · 💭 [个人理解](understanding.md)
 >
 > 作者列表, **会议/期刊** 年份
 > 领域标签: #标签1 #标签2 #标签3
@@ -28,18 +28,11 @@ _用一句话说清这篇论文做了什么、核心价值是什么_
 
 ## 📑 内容导航
 
-| 模块 | 内容 | 状态 | 维护者 |
-|------|------|------|--------|
-| 🏗️ ① 落地复用 | [Input / Operation / Cost / Gain](01-reuse.md) | ⏳ 待开始 | - |
-| 🔍 ② 批判挑错 | [Omission / Flaw / Precondition / DefectResult](02-critique.md) | ⏳ 待开始 | - |
-| 💡 ③ 创新拆解 | [Inherit / Modify / Break / Margin](03-innovation.md) | ⏳ 待开始 | - |
-| 🧪 ④ 学术假设 | [Hypothesis / Design / Constraint / Conclusion](04-hypothesis.md) | ⏳ 待开始 | - |
-| ⚔️ ⑤ 对标 SOTA | [Difference / Advantage / Disadvantage / Tradeoff](05-sota-compare.md) | ⏳ 待开始 | - |
-| 📚 ⑥ 知识沉淀 | [Knowledge / Law / Experience / Lesson](06-knowledge.md) | ⏳ 待开始 | - |
-| 🌐 ⑦ 论文翻译 | [核心章节中文翻译](07-translation.md) | ⏳ 待开始 | - |
-| 💭 ⑧ 个人理解 | [个人阅读理解与思考](08-understanding.md) | ⏳ 待开始 | - |
-
-> **状态说明**：✅ 已完成 · ⏳ 进行中 · ❌ 未开始
+| 模块 | 说明 | 文件 |
+|------|------|------|
+| 📝 精读笔记 | 6 个视角合在一起（落地复用 / 批判挑错 / 创新拆解 / 学术假设 / 对标 SOTA / 知识沉淀） | [reading-notes.md](reading-notes.md) |
+| 🌐 论文翻译 | 核心章节中文翻译 | [translation.md](translation.md) |
+| 💭 个人理解 | 个人阅读理解与思考 | [understanding.md](understanding.md) |
 
 ---
 
@@ -61,8 +54,6 @@ _有什么疑问、想法、补充，都可以写在这里_
 ---
 
 > 💡 **快速使用指南**
-> - 想看中文版？直接看 ⑦ 论文翻译
-> - 想知道能不能用到项目里？看 ① 落地复用
-> - 想找创新灵感？看 ② 批判挑错 + ③ 创新拆解
-> - 想看别人读后的收获？看 ⑧ 个人理解
-> - 想带走真东西？看 ⑥ 知识沉淀
+> - 想看中文版？看「论文翻译」
+> - 想快速了解论文核心？看「精读笔记」
+> - 想看别人读后的收获？看「个人理解」
