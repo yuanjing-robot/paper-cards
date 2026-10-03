@@ -8,5 +8,5 @@
 
 | 论文 | 会议/年份 | 原文 | 精读 | 翻译 | 个人理解 |
 |------|----------|------|------|------|---------|
-| [Attention Is All You Need](attention-is-all-you-need/) | NeurIPS 2017 | [arXiv](https://arxiv.org/abs/1706.03762) | ✅ | - | - |
+| [Attention Is All You Need](attention-is-all-you-need/) | NeurIPS 2017 | [📄 原文](https://arxiv.org/abs/1706.03762) | [📝 精读](attention-is-all-you-need/) | [🌐 翻译](attention-is-all-you-need/07-translation.md) | [💭 理解](attention-is-all-you-need/08-understanding.md) |
 | _待补充_ | - | - | - | - | - |

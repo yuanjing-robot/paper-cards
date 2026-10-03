@@ -50,10 +50,10 @@ def update_subfield_readme(subfield_readme: Path, title: str, conference: str,
     # 或者直接在表格最后一行之前插入
     paper_md = f"| {title} | {conference or '-'} | "
     if paper_url:
-        paper_md += f"[📄 arXiv]({paper_url}) | "
+        paper_md += f"[📄 原文]({paper_url}) | "
     else:
         paper_md += "- | "
-    paper_md += f"[📝 笔记]({folder_name}/) | "
+    paper_md += f"[📝 精读]({folder_name}/) | "
     paper_md += f"[🌐 翻译]({folder_name}/07-translation.md) | "
     paper_md += f"[💭 理解]({folder_name}/08-understanding.md) |"
 
