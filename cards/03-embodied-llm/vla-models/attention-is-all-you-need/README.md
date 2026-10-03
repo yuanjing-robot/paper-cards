@@ -30,7 +30,7 @@ Transformer 用纯自注意力机制取代了 RNN/CNN，实现了并行计算 + 
 | 模块 | 说明 | 文件 |
 |------|------|------|
 | 📝 精读笔记 | 6 个视角合在一起（落地复用 / 批判挑错 / 创新拆解 / 学术假设 / 对标 SOTA / 知识沉淀） | [reading-notes.md](reading-notes.md) |
-| 🌐 论文翻译 | 核心章节中文翻译 | [translation.md](translation.md) |
+| 🌐 论文翻译 | 全文中文翻译 | [translation.md](translation.md) |
 | 💭 个人理解 | 个人阅读理解与思考 | [understanding.md](understanding.md) |
 
 ---

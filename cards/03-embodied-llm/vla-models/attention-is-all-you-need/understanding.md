@@ -1,4 +1,4 @@
-# ⑧ 个人理解
+# 个人理解
 
 > 📄 对应论文：[Attention Is All You Need](https://arxiv.org/abs/1706.03762)
 > 作者：@demo

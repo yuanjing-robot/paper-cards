@@ -1,4 +1,4 @@
-# ⑧ 个人理解
+# 个人理解
 
 > 📄 对应论文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 作者：@github-id
