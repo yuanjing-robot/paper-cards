@@ -229,7 +229,7 @@ def main():
     print('📝 下一步：')
     print(f'   1. cd {target_dir.relative_to(repo_root)}')
     print('   2. 填 README.md（速览卡 + 关键数据）')
-    print('   3. 填 reading-notes.md（精读笔记，6 个视角合在一起）')
+    print('   3. 填 reading-notes.md（精读笔记，六维视角）')
     print('   4. 补充 translation.md（翻译）')
     print('   5. 补充 understanding.md（个人理解）')
     print('   6. 提 PR')

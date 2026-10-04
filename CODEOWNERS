@@ -1,16 +1,10 @@
 # CODEOWNERS - 自动分配 PR Reviewer
-#
-# 将 yuanjing-robot 替换为你的 GitHub 组织名
-# 将 team 名称替换为你们实际的团队名称
 
 # 仓库级配置
 *.md @yuanjing-robot/maintainers
 CODEOWNERS @yuanjing-robot/maintainers
 CONTRIBUTING.md @yuanjing-robot/maintainers
 README.md @yuanjing-robot/maintainers
-
-# 路线图
-roadmaps/ @yuanjing-robot/maintainers
 
 # A. 感知与认知
 cards/01-perception/ @yuanjing-robot/perception-group

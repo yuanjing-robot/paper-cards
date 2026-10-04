@@ -6,7 +6,7 @@
 
 ## 📂 子方向
 
-### [VLA模型](vla-models/)
+### [VLA 模型](vla-models/)
 
 > Vision-Language-Action 端到端具身模型
 

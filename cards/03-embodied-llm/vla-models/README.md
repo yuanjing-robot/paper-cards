@@ -1,4 +1,4 @@
-﻿# VLA模型
+﻿# VLA 模型
 
 > Vision-Language-Action 端到端具身模型
 

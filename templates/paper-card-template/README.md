@@ -30,7 +30,7 @@ _用一句话说清这篇论文做了什么、核心价值是什么_
 
 | 模块 | 说明 | 文件 |
 |------|------|------|
-| 📝 精读笔记 | 6 个视角合在一起（落地复用 / 批判挑错 / 创新拆解 / 学术假设 / 对标 SOTA / 知识沉淀） | [reading-notes.md](reading-notes.md) |
+| 📝 精读笔记 | 六维视角（落地复用 / 批判挑错 / 创新拆解 / 学术假设 / 对标 SOTA / 知识沉淀） | [reading-notes.md](reading-notes.md) |
 | 🌐 论文翻译 | 全文中文翻译 | [translation.md](translation.md) |
 | 💭 个人理解 | 个人阅读理解与思考 | [understanding.md](understanding.md) |
 
