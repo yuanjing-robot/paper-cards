@@ -1,4 +1,4 @@
-﻿# 具身大模型（03）
+# 具身大模型（03）
 
 > 研究大语言模型与多模态感知结合，赋能具身智能体的理解与决策。
 
@@ -12,7 +12,7 @@
 
 | 论文 | 会议/年份 | 原文 | 精读 | 翻译 | 个人理解 |
 |------|----------|------|------|------|---------|
-| [Attention Is All You Need](vla-models/attention-is-all-you-need/) | NeurIPS 2017 | [📄 原文](https://arxiv.org/abs/1706.03762) | [📝 精读](vla-models/attention-is-all-you-need/) | [🌐 翻译](vla-models/attention-is-all-you-need/translation.md) | [💭 理解](vla-models/attention-is-all-you-need/understanding.md) |
+| [Attention Is All You Need](vla-models/attention-is-all-you-need/) | NeurIPS 2017 | [📄 原文](https://arxiv.org/abs/1706.03762) | [📝 精读](vla-models/attention-is-all-you-need/) | [🌐 翻译](vla-models/attention-is-all-you-need/translation.md) | [💭 理解](vla-models/attention-is-all-you-need/reading-notes.md) |
 
 ### [多模态大模型](multimodal-llm/)
 

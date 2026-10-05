@@ -1,7 +1,7 @@
-﻿# 🤖 具身智能论文整理
+# 🤖 具身智能与大模型论文整理
 
-> 基于 CEAI 2025 "具身智能十五大重点方向"，系统整理具身智能领域核心论文
-> 每篇论文 = 精读笔记 + 翻译 + 个人理解，多维度深度拆解
+> 基于 CEAI 2025 "具身智能十五大重点方向"，系统整理具身智能领域核心论文；另设「大模型基础」方向收录 LLM 经典论文
+> 每篇论文 = 速览卡 + 精读笔记（含个人理解）+ 翻译，多维度深度拆解
 
 ---
 
@@ -16,9 +16,21 @@
 | 模块 | 文件 | 说明 |
 |------|------|------|
 | 速览卡 | README.md | 论文基本信息 + 关键数据 + 导航 |
-| 精读笔记 | reading-notes.md | 六维视角 |
-| 论文翻译 | translation.md | 全文中文翻译 |
-| 个人理解 | understanding.md | 个人阅读理解与思考 |
+| 精读笔记 | reading-notes.md | 精读 + 个人理解（角度按论文特点灵活取舍） |
+| 论文翻译 | translation.md | 全文中文翻译（可选，可分章节补充） |
+
+---
+
+### 🤖 大模型基础 (LLM Fundamentals)
+
+收录不限于具身场景的大模型经典论文，详细索引见 [cards/00-llm](cards/00-llm/README.md)。
+
+| 子方向 | 论文 |
+|--------|------|
+| [预训练语言模型](cards/00-llm/pretrain-lm/) | [BERT](cards/00-llm/pretrain-lm/bert/) · [GPT-3](cards/00-llm/pretrain-lm/gpt-3/) · [LLaMA](cards/00-llm/pretrain-lm/llama/) |
+| [对齐与 RLHF](cards/00-llm/alignment/) | [InstructGPT](cards/00-llm/alignment/instructgpt/) |
+| [推理增强](cards/00-llm/reasoning/) | [Chain-of-Thought](cards/00-llm/reasoning/chain-of-thought/) |
+| [检索增强生成](cards/00-llm/retrieval-augmented/) | [RAG](cards/00-llm/retrieval-augmented/rag/) |
 
 ---
 
@@ -148,7 +160,7 @@
 
 | 论文 | 会议/年份 | 原文 | 精读 | 翻译 | 个人理解 |
 |------|----------|------|------|------|---------|
-| [Attention Is All You Need](cards/03-embodied-llm/vla-models/attention-is-all-you-need/) | NeurIPS 2017 | [📄 原文](https://arxiv.org/abs/1706.03762) | [📝 精读](cards/03-embodied-llm/vla-models/attention-is-all-you-need/) | [🌐 翻译](cards/03-embodied-llm/vla-models/attention-is-all-you-need/translation.md) | [💭 理解](cards/03-embodied-llm/vla-models/attention-is-all-you-need/understanding.md) |
+| [Attention Is All You Need](cards/03-embodied-llm/vla-models/attention-is-all-you-need/) | NeurIPS 2017 | [📄 原文](https://arxiv.org/abs/1706.03762) | [📝 精读](cards/03-embodied-llm/vla-models/attention-is-all-you-need/) | [🌐 翻译](cards/03-embodied-llm/vla-models/attention-is-all-you-need/translation.md) | [💭 理解](cards/03-embodied-llm/vla-models/attention-is-all-you-need/reading-notes.md) |
 
 ##### 多模态大模型
 
@@ -465,8 +477,8 @@
 快速上手：
 1. 复制 `templates/paper-card-template/` 到对应子方向目录
 2. 重命名为论文短标题（如 `rt-2`）
-3. 填写 **README.md**（速览卡）+ 精读笔记
-4. 补充 **翻译** 和 **个人理解**
+3. 填写 **README.md**（速览卡）+ **reading-notes.md**（精读 + 个人理解）
+4. 可选补充 **翻译**
 5. 提 PR，等待 review
 
 ---
@@ -481,20 +493,20 @@ paper-cards/
 ├── LICENSE
 │
 ├── cards/                       # 📚 论文整理（核心）
+│   ├── 00-llm/                  # 大方向：大模型基础（不限于具身场景）
 │   ├── 01-perception/           # 大方向：多模态具身感知
 │   │   ├── README.md            # 方向总览
 │   │   ├── visual-perception/   # 子方向：视觉感知
 │   │   │   ├── README.md
 │   │   │   └── paper-title/     # 单篇论文
 │   │   │       ├── README.md    # 速览卡
-│   │   │       ├── reading-notes.md  # 精读笔记（六维视角）
-│   │   │       ├── translation.md # 论文翻译
-│   │   │       └── understanding.md # 个人理解
+│   │   │       ├── reading-notes.md  # 精读笔记（含个人理解）
+│   │   │       └── translation.md # 论文翻译（可选）
 │   │   └── ...
-│   └── ...（共15个大方向）
+│   └── ...（00 大模型基础 + 15 个具身大方向）
 │
 ├── templates/                   # 📋 模板文件
-│   └── paper-card-template/     # 论文卡片模板（4个文件）
+│   └── paper-card-template/     # 论文卡片模板（3个文件）
 │
 └── scripts/                     # 🔧 辅助脚本
     └── add-paper.py             # 一键创建论文卡片

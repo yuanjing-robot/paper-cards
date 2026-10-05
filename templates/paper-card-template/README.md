@@ -1,6 +1,6 @@
-﻿# [论文标题]
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md) · 💭 [个人理解](understanding.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
 > 作者列表, **会议/期刊** 年份
 > 领域标签: #标签1 #标签2 #标签3
@@ -30,9 +30,8 @@ _用一句话说清这篇论文做了什么、核心价值是什么_
 
 | 模块 | 说明 | 文件 |
 |------|------|------|
-| 📝 精读笔记 | 六维视角（落地复用 / 批判挑错 / 创新拆解 / 学术假设 / 对标 SOTA / 知识沉淀） | [reading-notes.md](reading-notes.md) |
+| 📝 精读笔记 | 精读 + 个人理解（角度按论文特点灵活取舍） | [reading-notes.md](reading-notes.md) |
 | 🌐 论文翻译 | 全文中文翻译 | [translation.md](translation.md) |
-| 💭 个人理解 | 个人阅读理解与思考 | [understanding.md](understanding.md) |
 
 ---
 
@@ -56,4 +55,4 @@ _有什么疑问、想法、补充，都可以写在这里_
 > 💡 **快速使用指南**
 > - 想看中文版？看「论文翻译」
 > - 想快速了解论文核心？看「精读笔记」
-> - 想看别人读后的收获？看「个人理解」
+> - 想看读后的思考与收获？看「精读笔记」的个人收获部分

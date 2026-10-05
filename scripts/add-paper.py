@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 一键创建论文卡片文件夹
 
@@ -48,14 +48,14 @@ def update_subfield_readme(subfield_readme: Path, title: str, conference: str,
 
     # 找到论文列表表格，在 "_待补充_" 那一行之前插入新论文
     # 或者直接在表格最后一行之前插入
-    paper_md = f"| {title} | {conference or '-'} | "
+    paper_md = f"| [{title}]({folder_name}/) | {conference or '-'} | "
     if paper_url:
         paper_md += f"[📄 原文]({paper_url}) | "
     else:
         paper_md += "- | "
     paper_md += f"[📝 精读]({folder_name}/) | "
     paper_md += f"[🌐 翻译]({folder_name}/translation.md) | "
-    paper_md += f"[💭 理解]({folder_name}/understanding.md) |"
+    paper_md += f"[💭 理解]({folder_name}/reading-notes.md) |"
 
     # 如果有 "_待补充_" 的占位行，替换掉
     if '_待补充_' in content:
@@ -198,29 +198,27 @@ def main():
                               args.paper_url, folder_name):
         print(f'✅ 已更新子方向索引：{subfield_readme}')
 
-    # 更新 reading-notes.md 的标题和链接
+    # 更新 reading-notes.md 的标题和链接（先替换链接形式，避免丢失方括号）
     notes_path = target_dir / 'reading-notes.md'
     if notes_path.exists() and args.paper_url:
         content = notes_path.read_text(encoding='utf-8')
+        content = content.replace(
+            '[论文标题](https://arxiv.org/abs/xxxx.xxxxx)',
+            f'[{args.title}]({args.paper_url})')
         content = content.replace('[论文标题]', args.title)
         content = content.replace('https://arxiv.org/abs/xxxx.xxxxx', args.paper_url)
         notes_path.write_text(content, encoding='utf-8')
 
-    # 更新 translation.md 的标题和链接
+    # 更新 translation.md 的标题和链接（同上）
     translation_path = target_dir / 'translation.md'
     if translation_path.exists() and args.paper_url:
         content = translation_path.read_text(encoding='utf-8')
+        content = content.replace(
+            '[论文标题](https://arxiv.org/abs/xxxx.xxxxx)',
+            f'[{args.title}]({args.paper_url})')
         content = content.replace('[论文标题]', args.title)
         content = content.replace('https://arxiv.org/abs/xxxx.xxxxx', args.paper_url)
         translation_path.write_text(content, encoding='utf-8')
-
-    # 更新 understanding.md 的标题和链接
-    understanding_path = target_dir / 'understanding.md'
-    if understanding_path.exists() and args.paper_url:
-        content = understanding_path.read_text(encoding='utf-8')
-        content = content.replace('[论文标题]', args.title)
-        content = content.replace('https://arxiv.org/abs/xxxx.xxxxx', args.paper_url)
-        understanding_path.write_text(content, encoding='utf-8')
 
     print()
     print('🎉 论文卡片创建成功！')
@@ -229,10 +227,9 @@ def main():
     print('📝 下一步：')
     print(f'   1. cd {target_dir.relative_to(repo_root)}')
     print('   2. 填 README.md（速览卡 + 关键数据）')
-    print('   3. 填 reading-notes.md（精读笔记，六维视角）')
-    print('   4. 补充 translation.md（翻译）')
-    print('   5. 补充 understanding.md（个人理解）')
-    print('   6. 提 PR')
+    print('   3. 填 reading-notes.md（精读 + 个人理解，角度灵活取舍）')
+    print('   4. 补充 translation.md（翻译，可选）')
+    print('   5. 提 PR')
     print()
     print('🔗 子方向索引已自动更新，刷新即可看到新论文')
 

@@ -1,6 +1,6 @@
-﻿# Attention Is All You Need
+# Attention Is All You Need
 
-> 📄 [论文原文](https://arxiv.org/abs/1706.03762) · 💻 [官方代码](https://github.com/tensorflow/tensor2tensor) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md) · 💭 [个人理解](understanding.md)
+> 📄 [论文原文](https://arxiv.org/abs/1706.03762) · 💻 [官方代码](https://github.com/tensorflow/tensor2tensor) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
 > Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin, **NeurIPS 2017**
 > 领域标签: #LLM #Transformer #基础模型 #VLA
@@ -30,9 +30,8 @@ Transformer 用纯自注意力机制取代了 RNN/CNN，实现了并行计算 + 
 
 | 模块 | 说明 | 文件 |
 |------|------|------|
-| 📝 精读笔记 | 六维视角（落地复用 / 批判挑错 / 创新拆解 / 学术假设 / 对标 SOTA / 知识沉淀） | [reading-notes.md](reading-notes.md) |
+| 📝 精读笔记 | 精读 + 个人理解（角度灵活取舍） | [reading-notes.md](reading-notes.md) |
 | 🌐 论文翻译 | 全文中文翻译 | [translation.md](translation.md) |
-| 💭 个人理解 | 个人阅读理解与思考 | [understanding.md](understanding.md) |
 
 ---
 
@@ -58,4 +57,4 @@ Transformer 用纯自注意力机制取代了 RNN/CNN，实现了并行计算 + 
 > 💡 **快速使用指南**
 > - 想看中文版？看「论文翻译」
 > - 想快速了解核心？看「精读笔记」
-> - 想看别人读后的收获？看「个人理解」
+> - 想看读后的思考与收获？看「精读笔记」的个人收获部分
