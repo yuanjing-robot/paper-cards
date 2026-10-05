@@ -44,4 +44,4 @@
 
 - [The Annotated Transformer](https://nlp.seas.harvard.edu/annotated-transformer/)：逐行代码复现
 - BERT / GPT-3 卡片：[../00-llm/pretrain-lm/](../../../00-llm/pretrain-lm/)（encoder 与 decoder 两条路线的分化）
-- InstructGPT 卡片：[../../../00-llm/alignment/instructgpt/](../../../00-llm/alignment/instructgpt/)（"为什么今天的 AI 长这样"的后续章节）
+- InstructGPT（Ouyang et al., 2022）：[arXiv](https://arxiv.org/abs/2203.02155)（"为什么今天的 AI 长这样"的后续章节）

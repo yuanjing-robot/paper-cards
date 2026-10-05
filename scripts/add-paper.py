@@ -53,9 +53,8 @@ def update_subfield_readme(subfield_readme: Path, title: str, conference: str,
         paper_md += f"[📄 原文]({paper_url}) | "
     else:
         paper_md += "- | "
-    paper_md += f"[📝 精读]({folder_name}/) | "
-    paper_md += f"[🌐 翻译]({folder_name}/translation.md) | "
-    paper_md += f"[💭 理解]({folder_name}/reading-notes.md) |"
+    paper_md += f"[📝 精读笔记]({folder_name}/reading-notes.md) | "
+    paper_md += f"[🌐 翻译]({folder_name}/translation.md) |"
 
     # 如果有 "_待补充_" 的占位行，替换掉
     if '_待补充_' in content:

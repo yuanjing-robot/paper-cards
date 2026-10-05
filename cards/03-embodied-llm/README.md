@@ -10,33 +10,33 @@
 
 > Vision-Language-Action 端到端具身模型
 
-| 论文 | 会议/年份 | 原文 | 精读 | 翻译 | 个人理解 |
-|------|----------|------|------|------|---------|
-| [Attention Is All You Need](vla-models/attention-is-all-you-need/) | NeurIPS 2017 | [📄 原文](https://arxiv.org/abs/1706.03762) | [📝 精读](vla-models/attention-is-all-you-need/) | [🌐 翻译](vla-models/attention-is-all-you-need/translation.md) | [💭 理解](vla-models/attention-is-all-you-need/reading-notes.md) |
+| 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
+|------|----------|------|---------|------|
+| [Attention Is All You Need](vla-models/attention-is-all-you-need/) | NeurIPS 2017 | [📄 原文](https://arxiv.org/abs/1706.03762) | [📝 精读笔记](vla-models/attention-is-all-you-need/reading-notes.md) | [🌐 翻译](vla-models/attention-is-all-you-need/translation.md) |
 
 ### [多模态大模型](multimodal-llm/)
 
 > 融合视觉、语言等多模态的大模型
 
-| 论文 | 会议/年份 | 原文 | 精读 | 翻译 | 个人理解 |
-|------|----------|------|------|------|---------|
-| _待补充_ | - | - | - | - | - |
+| 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
+|------|----------|------|---------|------|
+| _待补充_ | - | - | - | - |
 
 ### [指令微调](instruction-tuning/)
 
 > 基于指令数据微调提升任务遵循能力
 
-| 论文 | 会议/年份 | 原文 | 精读 | 翻译 | 个人理解 |
-|------|----------|------|------|------|---------|
-| _待补充_ | - | - | - | - | - |
+| 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
+|------|----------|------|---------|------|
+| _待补充_ | - | - | - | - |
 
 ### [工具学习](tool-learning/)
 
 > 智能体学习使用外部工具扩展能力
 
-| 论文 | 会议/年份 | 原文 | 精读 | 翻译 | 个人理解 |
-|------|----------|------|------|------|---------|
-| _待补充_ | - | - | - | - | - |
+| 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
+|------|----------|------|---------|------|
+| _待补充_ | - | - | - | - |
 
 ---
 
