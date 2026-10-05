@@ -1,38 +1,8 @@
 # 具身大模型（03）
 
-> 研究大语言模型与多模态感知结合，赋能具身智能体的理解与决策。
+> 大模型驱动的具身智能：VLA、多模态大模型与工具学习
 
----
-
-## 📂 子方向
-
-### [VLA 模型](vla-models/)
-
-> Vision-Language-Action 端到端具身模型
-
-| 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
-|------|----------|------|---------|------|
-| [Attention Is All You Need](vla-models/attention-is-all-you-need/) | NeurIPS 2017 | [📄 原文](https://arxiv.org/abs/1706.03762) | [📝 精读笔记](vla-models/attention-is-all-you-need/reading-notes.md) | [🌐 翻译](vla-models/attention-is-all-you-need/translation.md) |
-
-### [多模态大模型](multimodal-llm/)
-
-> 融合视觉、语言等多模态的大模型
-
-| 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
-|------|----------|------|---------|------|
-| _待补充_ | - | - | - | - |
-
-### [指令微调](instruction-tuning/)
-
-> 基于指令数据微调提升任务遵循能力
-
-| 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
-|------|----------|------|---------|------|
-| _待补充_ | - | - | - | - |
-
-### [工具学习](tool-learning/)
-
-> 智能体学习使用外部工具扩展能力
+## 📚 论文列表
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
@@ -40,6 +10,12 @@
 
 ---
 
-## 📝 贡献指南
+## 📝 说明
 
-本方向的论文请放入对应子方向目录下。如有新的子方向建议，欢迎提 Issue 讨论。
+- 论文卡片直接放在本目录下（`cards/03-embodied-llm/论文短标题/`），推荐用脚本创建：
+
+```bash
+python scripts/add-paper.py --title "论文标题" --field 03-embodied-llm --paper-url "https://arxiv.org/abs/xxxx.xxxxx"
+```
+
+- 如需按子方向组织，可与维护者讨论后自行创建子目录（脚本加 `--subfield 子方向名` 即可，目录不存在会自动创建）

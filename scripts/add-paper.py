@@ -6,7 +6,6 @@
     python scripts/add-paper.py \
       --title "Attention Is All You Need" \
       --field 03-embodied-llm \
-      --subfield vla-models \
       --author "Vaswani et al." \
       --conference "NeurIPS 2017" \
       --paper-url "https://arxiv.org/abs/1706.03762" \
@@ -15,7 +14,7 @@
 参数:
     --title         论文标题（必填）
     --field         大方向目录名，如 03-embodied-llm（必填）
-    --subfield      子方向目录名，如 vla-models（必填）
+    --subfield      子方向目录名（可选；不填则论文直接放在大方向目录下，填了且目录不存在会自动创建）
     --author        作者列表（可选）
     --conference    会议/期刊 + 年份（可选）
     --paper-url     论文链接（可选）
@@ -59,7 +58,7 @@ def update_subfield_readme(subfield_readme: Path, title: str, conference: str,
     # 如果有 "_待补充_" 的占位行，替换掉
     if '_待补充_' in content:
         content = content.replace(
-            "| _待补充_ | - | - | - | - | - |",
+            "| _待补充_ | - | - | - | - |",
             paper_md
         )
     else:
@@ -102,8 +101,8 @@ def main():
     parser.add_argument('--title', required=True, help='论文标题')
     parser.add_argument('--field', required=True,
                         help='大方向目录名，如 03-embodied-llm')
-    parser.add_argument('--subfield', required=True,
-                        help='子方向目录名，如 vla-models')
+    parser.add_argument('--subfield', default='',
+                        help='子方向目录名（可选；不填则论文直接放在大方向目录下）')
     parser.add_argument('--author', default='', help='作者列表')
     parser.add_argument('--conference', default='', help='会议/期刊 + 年份')
     parser.add_argument('--paper-url', default='', help='论文链接')
@@ -115,19 +114,33 @@ def main():
     # 仓库根目录（脚本在 scripts/ 下，往上一层就是根目录）
     repo_root = Path(__file__).parent.parent
     template_dir = repo_root / 'templates' / 'paper-card-template'
-    output_dir = repo_root / args.output_dir / args.field / args.subfield
+    field_dir = repo_root / args.output_dir / args.field
 
-    # 检查子方向目录是否存在
-    if not output_dir.exists():
-        print(f'❌ 子方向目录不存在：{output_dir}')
-        print(f'   请先确认 --field 和 --subfield 是否正确')
+    # 检查大方向目录是否存在
+    if not field_dir.exists():
+        print(f'❌ 大方向目录不存在：{field_dir}')
         print(f'   可用的大方向：')
-        field_dir = repo_root / args.output_dir / args.field
-        if field_dir.exists():
-            for d in sorted(field_dir.iterdir()):
+        cards_dir = repo_root / args.output_dir
+        if cards_dir.exists():
+            for d in sorted(cards_dir.iterdir()):
                 if d.is_dir() and not d.name.startswith('.'):
                     print(f'     - {d.name}/')
         return
+
+    # 子方向可选：不填则论文直接放在大方向目录下；填了且不存在则自动创建
+    output_dir = field_dir
+    if args.subfield:
+        output_dir = field_dir / args.subfield
+        if not output_dir.exists():
+            output_dir.mkdir(parents=True)
+            (output_dir / 'README.md').write_text(
+                f"# {args.subfield}\n\n> 子方向说明（待补充）\n\n"
+                "## 📚 论文列表\n\n"
+                "| 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |\n"
+                "|------|----------|------|---------|------|\n"
+                "| _待补充_ | - | - | - | - |\n",
+                encoding='utf-8')
+            print(f'✅ 子方向目录不存在，已自动创建：{output_dir}')
 
     if not template_dir.exists():
         print(f'❌ 模板文件夹不存在：{template_dir}')
@@ -191,11 +204,11 @@ def main():
         readme_path.write_text(content, encoding='utf-8')
         print(f'✅ 已更新 README.md')
 
-    # 自动更新子方向的 README（把新论文加到列表里）
-    subfield_readme = output_dir / 'README.md'
-    if update_subfield_readme(subfield_readme, args.title, args.conference,
+    # 自动更新所在目录的 README（把新论文加到索引里）
+    index_readme = output_dir / 'README.md'
+    if update_subfield_readme(index_readme, args.title, args.conference,
                               args.paper_url, folder_name):
-        print(f'✅ 已更新子方向索引：{subfield_readme}')
+        print(f'✅ 已更新论文索引：{index_readme}')
 
     # 更新 reading-notes.md 的标题和链接（先替换链接形式，避免丢失方括号）
     notes_path = target_dir / 'reading-notes.md'
@@ -230,7 +243,7 @@ def main():
     print('   4. 补充 translation.md（翻译，可选）')
     print('   5. 提 PR')
     print()
-    print('🔗 子方向索引已自动更新，刷新即可看到新论文')
+    print('🔗 论文索引已自动更新，刷新即可看到新论文')
 
 
 if __name__ == '__main__':

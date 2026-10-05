@@ -17,8 +17,8 @@
 
 ## 我是新人，从哪开始？
 
-1. **看首页总览**：打开仓库首页 README，找到你感兴趣的大方向和子方向
-2. **看范例卡片**：参考 [Attention Is All You Need](cards/03-embodied-llm/vla-models/attention-is-all-you-need/) 的完整卡片
+1. **看首页总览**：打开仓库首页 README，找到你感兴趣的大方向
+2. **看范例卡片**：参考 [Attention Is All You Need](cards/03-embodied-llm/attention-is-all-you-need/) 的完整卡片
 3. **选一篇论文**：找一篇你感兴趣、且还没人认领的论文
 4. **认领任务**：在 Issue 中搜索或新建一个 "paper: xxx" 的 Issue，评论 "我来做" 认领
 
@@ -49,28 +49,29 @@ git checkout -b card/论文短标题
 python scripts/add-paper.py \
   --title "RT-2: Vision-Language-Action Models" \
   --field 03-embodied-llm \
-  --subfield vla-models \
   --author "Brohan et al." \
   --conference "CoRL 2023" \
   --paper-url "https://arxiv.org/abs/2307.15818"
 ```
 
+论文默认直接放在大方向目录下。如果想按子方向组织（如 `vla-models`），加 `--subfield vla-models` 即可，子方向目录不存在时脚本会自动创建。
+
 脚本会自动：
 - 创建论文卡片文件夹（3 个文件）
 - 填好 README 里的基本信息
-- 更新子方向 README 的论文索引表
+- 更新所在目录 README 的论文索引表
 
 **方式 B：手动复制**
 
 ```bash
 # Windows PowerShell
-Copy-Item -Recurse templates/paper-card-template cards/大方向/子方向/论文短标题
+Copy-Item -Recurse templates/paper-card-template cards/大方向/论文短标题
 
 # Mac/Linux
-cp -r templates/paper-card-template cards/大方向/子方向/论文短标题
+cp -r templates/paper-card-template cards/大方向/论文短标题
 ```
 
-> ⚠️ 注意把 `大方向` 和 `子方向` 替换为实际目录名，比如 `cards/03-embodied-llm/vla-models/rt-2`
+> ⚠️ 注意把 `大方向` 替换为实际目录名，比如 `cards/03-embodied-llm/rt-2`；如需子方向再加一层，如 `cards/03-embodied-llm/vla-models/rt-2`
 
 ### 第三步：填写卡片
 
