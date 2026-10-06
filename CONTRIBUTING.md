@@ -18,7 +18,7 @@
 ## 我是新人，从哪开始？
 
 1. **看首页总览**：打开仓库首页 README，找到你感兴趣的大方向
-2. **看范例卡片**：参考 [Attention Is All You Need](cards/03-embodied-llm/attention-is-all-you-need/) 的完整卡片
+2. **看范例卡片**：打开 `cards/` 下任意方向的论文卡片，参考其结构和内容
 3. **选一篇论文**：找一篇你感兴趣、且还没人认领的论文
 4. **认领任务**：在 Issue 中搜索或新建一个 "paper: xxx" 的 Issue，评论 "我来做" 认领
 
@@ -109,7 +109,7 @@ git push origin card/论文短标题
 
 1. 直接在对应文件上修改
 2. 提交 PR，标题用 `update: <论文标题> - <什么修改>`
-3. 比如：`update: attention-is-all-you-need - 补充翻译`
+3. 比如：`update: 论文短标题 - 补充说明`
 
 **鼓励的行为**：
 - 补充翻译（translation.md）
@@ -125,7 +125,7 @@ git push origin card/论文短标题
 
 | 项目 | 规范 | 示例 |
 |------|------|------|
-| 论文文件夹名 | 全小写，空格用 `-` 连接 | `attention-is-all-you-need` |
+| 论文文件夹名 | 全小写，空格用 `-` 连接 | `paper-title-example` |
 | 分支名 | `card/论文短标题` 或 `update/说明` | `card/rt-2` |
 | Commit 信息 | `feat:` 新增 · `update:` 更新 · `fix:` 修复 · `docs:` 文档 | `feat: add card for RT-2` |
 | PR 标题 | 同 commit 规范 | `feat: add paper card for RT-2` |

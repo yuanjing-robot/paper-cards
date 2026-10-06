@@ -239,7 +239,7 @@ def main():
     print('📝 下一步：')
     print(f'   1. cd {target_dir.relative_to(repo_root)}')
     print('   2. 填 README.md（速览卡 + 关键数据）')
-    print('   3. 填 reading-notes.md（精读 + 个人理解，角度灵活取舍）')
+    print('   3. 填 reading-notes.md')
     print('   4. 补充 translation.md（翻译，可选）')
     print('   5. 提 PR')
     print()
