@@ -11,7 +11,7 @@
 在完成的卡片前打 `✓`：
 
 - [ ] `README.md` — 速览卡
-- [ ] `reading-notes.md` — 精读笔记（含个人理解）
+- [ ] `reading-notes.md` — 深度阅读（含个人理解）
 - [ ] `translation.md` — 论文翻译
 
 ### 卡片质量自查

@@ -1,6 +1,6 @@
 # RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control
 
-> 📄 [论文原文](https://arxiv.org/abs/2307.15818) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/2307.15818) · 📝 [深度阅读](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
 > Anthony Brohan et al., **CoRL 2023**
 > 领域标签: #VLA #视觉语言动作 #规模化
@@ -30,7 +30,7 @@
 
 | 模块 | 说明 | 文件 |
 |------|------|------|
-| 📝 精读笔记 | 精读 + 个人理解（角度按论文特点灵活取舍） | [reading-notes.md](reading-notes.md) |
+| 📝 深度阅读 | 精读 + 个人理解（角度按论文特点灵活取舍） | [reading-notes.md](reading-notes.md) |
 | 🌐 论文翻译 | 全文中文翻译 | [translation.md](translation.md) |
 
 ---
@@ -54,5 +54,5 @@ _有什么疑问、想法、补充，都可以写在这里_
 
 > 💡 **快速使用指南**
 > - 想看中文版？看「论文翻译」
-> - 想快速了解论文核心？看「精读笔记」
-> - 想看读后的思考与收获？看「精读笔记」的个人收获部分
+> - 想快速了解论文核心？看「深度阅读」
+> - 想看读后的思考与收获？看「深度阅读」的个人收获部分

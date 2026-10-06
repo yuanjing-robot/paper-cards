@@ -52,7 +52,7 @@ def update_subfield_readme(subfield_readme: Path, title: str, conference: str,
         paper_md += f"[📄 原文]({paper_url}) | "
     else:
         paper_md += "- | "
-    paper_md += f"[📝 精读笔记]({folder_name}/reading-notes.md) | "
+    paper_md += f"[📝 深度阅读]({folder_name}/reading-notes.md) | "
     paper_md += f"[🌐 翻译]({folder_name}/translation.md) |"
 
     # 如果有 "_待补充_" 的占位行，替换掉
@@ -136,7 +136,7 @@ def main():
             (output_dir / 'README.md').write_text(
                 f"# {args.subfield}\n\n> 子方向说明（待补充）\n\n"
                 "## 📚 论文列表\n\n"
-                "| 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |\n"
+                "| 论文 | 会议/年份 | 原文 | 深度阅读 | 翻译 |\n"
                 "|------|----------|------|---------|------|\n"
                 "| _待补充_ | - | - | - | - |\n",
                 encoding='utf-8')

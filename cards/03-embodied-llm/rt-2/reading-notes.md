@@ -1,4 +1,4 @@
-# 精读笔记：RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control
+# 深度阅读：RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control
 
 > 📄 对应论文：[RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control](https://arxiv.org/abs/2307.15818)
 > 整理者：@github-id
@@ -6,7 +6,7 @@
 
 ---
 
-> 💡 精读笔记与个人理解合并为一份。以下角度**按论文特点取舍**，不要求全部填写；建议至少写「核心方法」和「个人收获」。
+> 💡 深度阅读与个人理解合并为一份。以下角度**按论文特点取舍**，不要求全部填写；建议至少写「核心方法」和「个人收获」。
 
 ## 1. 问题与动机
 
