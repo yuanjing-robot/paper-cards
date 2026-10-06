@@ -6,7 +6,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| _待补充_ | - | - | - | - |
+| [Translating Embeddings for Modeling Multi-relational Data](transe/) | NeurIPS 2013 | [📄 原文](https://arxiv.org/abs/1301.3785) | [📝 精读笔记](transe/reading-notes.md) | [🌐 翻译](transe/translation.md) |
+| [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](chain-of-thought/) | NeurIPS 2022 | [📄 原文](https://arxiv.org/abs/2201.11903) | [📝 精读笔记](chain-of-thought/reading-notes.md) | [🌐 翻译](chain-of-thought/translation.md) |
+| [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](tree-of-thoughts/) | NeurIPS 2023 | [📄 原文](https://arxiv.org/abs/2305.10601) | [📝 精读笔记](tree-of-thoughts/reading-notes.md) | [🌐 翻译](tree-of-thoughts/translation.md) |
 
 ---
 

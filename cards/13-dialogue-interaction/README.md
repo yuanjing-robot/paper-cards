@@ -6,7 +6,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| _待补充_ | - | - | - | - |
+| [Inner Monologue: Embodied Reasoning through Planning with Language Models](inner-monologue/) | CoRL 2022 | [📄 原文](https://arxiv.org/abs/2207.05608) | [📝 精读笔记](inner-monologue/reading-notes.md) | [🌐 翻译](inner-monologue/translation.md) |
+| [LLM-Planner: Grounded Planning for Embodied Agents with Large Language Models](llm-planner/) | NeurIPS 2023 | [📄 原文](https://arxiv.org/abs/2312.10435) | [📝 精读笔记](llm-planner/reading-notes.md) | [🌐 翻译](llm-planner/translation.md) |
+| [TidyBot: Personalized Robot Assistance with Large Language Models](tidybot/) | IROS 2023 | [📄 原文](https://arxiv.org/abs/2305.18712) | [📝 精读笔记](tidybot/reading-notes.md) | [🌐 翻译](tidybot/translation.md) |
 
 ---
 

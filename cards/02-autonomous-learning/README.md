@@ -6,7 +6,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| _待补充_ | - | - | - | - |
+| [MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge Base](minedojo/) | NeurIPS 2022 | [📄 原文](https://arxiv.org/abs/2206.08853) | [📝 精读笔记](minedojo/reading-notes.md) | [🌐 翻译](minedojo/translation.md) |
+| [Voyager: An Open-Ended Embodied Agent with Large Language Models](voyager/) | TMLR 2023 | [📄 原文](https://arxiv.org/abs/2305.16291) | [📝 精读笔记](voyager/reading-notes.md) | [🌐 翻译](voyager/translation.md) |
+| [Open X-Embodiment: Robotic Learning Datasets and RT-X Models](open-x-embodiment/) | ICRA 2024 | [📄 原文](https://arxiv.org/abs/2310.08864) | [📝 精读笔记](open-x-embodiment/reading-notes.md) | [🌐 翻译](open-x-embodiment/translation.md) |
 
 ---
 

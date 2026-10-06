@@ -6,7 +6,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| _待补充_ | - | - | - | - |
+| [Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments](maddpg/) | NeurIPS 2017 | [📄 原文](https://arxiv.org/abs/1706.02275) | [📝 精读笔记](maddpg/reading-notes.md) | [🌐 翻译](maddpg/translation.md) |
+| [QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning](qmix/) | ICML 2018 | [📄 原文](https://arxiv.org/abs/1803.11485) | [📝 精读笔记](qmix/reading-notes.md) | [🌐 翻译](qmix/translation.md) |
+| [The Surprising Effectiveness of PPO in Cooperative Multi-Agent Games](mappo/) | NeurIPS 2022 (D&C) | [📄 原文](https://arxiv.org/abs/2103.01955) | [📝 精读笔记](mappo/reading-notes.md) | [🌐 翻译](mappo/translation.md) |
 
 ---
 
