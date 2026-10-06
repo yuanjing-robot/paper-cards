@@ -19,8 +19,7 @@
 
 1. **看首页总览**：打开仓库首页 README，找到你感兴趣的大方向
 2. **看卡片模板**：参考 [templates/paper-card-template](templates/paper-card-template/) 的 3 个文件，了解卡片结构与填写规范
-3. **选一篇论文**：找一篇你感兴趣、且还没人认领的论文
-4. **认领任务**：在 [Issues](https://github.com/yuanjing-robot/paper-cards/issues) 中搜索或新建一个 "paper: xxx" 的 Issue，评论 "我来做" 认领
+3. **选一篇论文**：找一篇你感兴趣、且还没人做过卡片的论文
 
 ---
 

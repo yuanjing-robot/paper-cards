@@ -26,10 +26,6 @@
 
 （有什么想特别让 reviewer 看的，或者拿不准的地方）
 
-### 相关 Issue
-
-Closes #xxx（如果有关联的 issue）
-
 ---
 
 > 💡 **Reviewer 指南**：
