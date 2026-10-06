@@ -1,6 +1,6 @@
 # [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [深度阅读](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [代码](https://github.com/xxx) · 📝 [深度阅读](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
 > 作者列表, **会议/期刊** 年份
 > 领域标签: #标签1 #标签2 #标签3
@@ -13,7 +13,7 @@
 | 类型 | 链接 |
 |------|------|
 | 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
-| 官方代码 | [GitHub](https://github.com/xxx) |
+| 代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |

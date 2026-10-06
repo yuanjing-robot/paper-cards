@@ -18,7 +18,7 @@
     --author        作者列表（可选）
     --conference    会议/期刊 + 年份（可选）
     --paper-url     论文链接（可选）
-    --code-url      官方代码链接（可选）
+    --code-url      代码链接（官方或成员自实现，可选）
     --tags          标签，用逗号分隔（可选）
     --output-dir    输出目录，默认 cards/（可选）
 """
@@ -110,7 +110,7 @@ def main():
     parser.add_argument('--author', default='', help='作者列表')
     parser.add_argument('--conference', default='', help='会议/期刊 + 年份')
     parser.add_argument('--paper-url', default='', help='论文链接')
-    parser.add_argument('--code-url', default='', help='官方代码链接')
+    parser.add_argument('--code-url', default='', help='代码链接（官方或成员自实现）')
     parser.add_argument('--tags', default='', help='标签，用逗号分隔')
     parser.add_argument('--output-dir', default='cards', help='输出目录，默认 cards/')
     args = parser.parse_args()
@@ -201,8 +201,8 @@ def main():
                 f'[GitHub]({args.code_url})'
             )
             content = content.replace(
-                '[官方代码](https://github.com/xxx)',
-                f'[官方代码]({args.code_url})'
+                '[代码](https://github.com/xxx)',
+                f'[代码]({args.code_url})'
             )
 
         readme_path.write_text(content, encoding='utf-8')
