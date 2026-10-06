@@ -1,10 +1,10 @@
-# Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/2304.13705) · 💻 [官方代码](https://github.com/tonyzhaozh/aloha) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Tony Zhao, Vikash Kumar, Sergey Levine, Chelsea Finn, **RSS 2023**
-> 领域标签: #遥操作 #双手操作 #模仿学习
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/2304.13705) |
-| 官方代码 | [GitHub](https://github.com/tonyzhaozh/aloha) |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-用约 2 万美元的低成本双手遥操作硬件 + ACT Transformer 策略，让机器人学会插电池、拧瓶盖等精细双手任务，掀起低成本遥操作数据采集风潮。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | ACT 数千万级 | CVAE Transformer |
-| 训练数据 | 50 条演示/任务 | 遥操作采集 |
-| 核心指标 | 精细任务 80-90% 成功率 | 如装电池/拧瓶盖 |
-| 训练成本 | 硬件约 $20k | 单卡训练 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

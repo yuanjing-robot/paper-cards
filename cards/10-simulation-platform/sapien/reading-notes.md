@@ -1,6 +1,6 @@
-# 精读笔记：SAPIEN: A SimulAted Part-based Interactive ENvironment
+# 精读笔记：[论文标题]
 
-> 📄 对应论文：[SAPIEN: A SimulAted Part-based Interactive ENvironment](https://arxiv.org/abs/2003.08515)
+> 📄 对应论文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 整理者：@github-id
 > 最后更新：YYYY-MM-DD
 

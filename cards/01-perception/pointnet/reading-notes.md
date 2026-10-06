@@ -1,6 +1,6 @@
-# 精读笔记：PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation
+# 精读笔记：[论文标题]
 
-> 📄 对应论文：[PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation](https://arxiv.org/abs/1612.00593)
+> 📄 对应论文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 整理者：@github-id
 > 最后更新：YYYY-MM-DD
 

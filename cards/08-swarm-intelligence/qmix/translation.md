@@ -1,6 +1,6 @@
 # 论文翻译
 
-> 📄 对应论文原文：[QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning](https://arxiv.org/abs/1803.11485)
+> 📄 对应论文原文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 翻译者：@github-id
 > 最后更新：YYYY-MM-DD
 

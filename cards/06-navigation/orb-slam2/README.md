@@ -1,10 +1,10 @@
-# ORB-SLAM2: an Open-Source SLAM System for Monocular, Stereo and RGB-D Cameras
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/1610.06475) · 💻 [官方代码](https://github.com/raulmur/ORB_SLAM2) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Raul Mur-Artal, Juan D. Tardos, **IEEE T-RO 2017**
-> 领域标签: #SLAM #定位建图 #经典系统
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/1610.06475) |
-| 官方代码 | [GitHub](https://github.com/raulmur/ORB_SLAM2) |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-基于 ORB 特征的完整 SLAM 系统，支持单目/双目/RGB-D，带回环检测与重定位，是机器人定位建图绕不开的经典工程系统。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | - | 传统特征法无网络 |
-| 训练数据 | 无需训练 | 实时运行 |
-| 核心指标 | KITTI / EuRoC 当年 SOTA | CPU 实时运行 |
-| 训练成本 | - | 无训练 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

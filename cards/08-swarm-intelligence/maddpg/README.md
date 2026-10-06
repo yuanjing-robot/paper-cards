@@ -1,10 +1,10 @@
-# Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/1706.02275) · 💻 [官方代码](https://github.com/openai/maddpg) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Ryan Lowe, Yi Wu, Aviv Tamar, Jean Harb, Pieter Abbeel, Igor Mordatch, **NeurIPS 2017**
-> 领域标签: #多智能体 #强化学习 #博弈
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/1706.02275) |
-| 官方代码 | [GitHub](https://github.com/openai/maddpg) |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-把 DDPG 扩展到多智能体：中心化 critic + 分散执行，能学到合作/竞争混合博弈中的策略，是多智能体 RL 的标准基线。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | Actor-Critic MLP | 较小 |
-| 训练数据 | MPE 多智能体环境 | 在线交互 |
-| 核心指标 | 合作/竞争任务优于 DDPG | 论文报告 |
-| 训练成本 | 单卡可复现 | 环境轻量 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

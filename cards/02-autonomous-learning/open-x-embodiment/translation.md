@@ -1,6 +1,6 @@
 # 论文翻译
 
-> 📄 对应论文原文：[Open X-Embodiment: Robotic Learning Datasets and RT-X Models](https://arxiv.org/abs/2310.08864)
+> 📄 对应论文原文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 翻译者：@github-id
 > 最后更新：YYYY-MM-DD
 

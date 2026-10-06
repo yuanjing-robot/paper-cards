@@ -1,6 +1,6 @@
-# 精读笔记：ViNT: A Foundation Model for Visual Navigation
+# 精读笔记：[论文标题]
 
-> 📄 对应论文：[ViNT: A Foundation Model for Visual Navigation](https://arxiv.org/abs/2306.14846)
+> 📄 对应论文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 整理者：@github-id
 > 最后更新：YYYY-MM-DD
 

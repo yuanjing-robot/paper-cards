@@ -6,9 +6,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [Human-level control through deep reinforcement learning](dqn/) | Nature 2015 | [📄 原文](https://arxiv.org/abs/1312.5602) | [📝 精读笔记](dqn/reading-notes.md) | [🌐 翻译](dqn/translation.md) |
-| [Proximal Policy Optimization Algorithms](ppo/) | arXiv 2017 | [📄 原文](https://arxiv.org/abs/1707.06347) | [📝 精读笔记](ppo/reading-notes.md) | [🌐 翻译](ppo/translation.md) |
-| [Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor](sac/) | ICML 2018 | [📄 原文](https://arxiv.org/abs/1801.01290) | [📝 精读笔记](sac/reading-notes.md) | [🌐 翻译](sac/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 

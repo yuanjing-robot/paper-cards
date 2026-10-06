@@ -1,10 +1,10 @@
-# Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/1801.01290) · 💻 [官方代码](https://github.com/haarnoja/sac) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Tuomas Haarnoja, Aurick Zhou, Pieter Abbeel, Sergey Levine, **ICML 2018**
-> 领域标签: #最大熵 #离线策略 #连续控制
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/1801.01290) |
-| 官方代码 | [GitHub](https://github.com/haarnoja/sac) |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-最大化期望回报 + 策略熵的离线策略算法，样本效率高、超参鲁棒，是机器人连续控制最常用的 RL 算法之一。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | 双 Q + 策略网络 | 自动温度调节 |
-| 训练数据 | MuJoCo 连续控制 | 在线交互 |
-| 核心指标 | 样本效率 SOTA（当年） | 多次随机种子稳定 |
-| 训练成本 | 单卡可复现 | 论文报告 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

@@ -1,10 +1,10 @@
-# Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/2201.11903) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Jason Wei, Xuezhi Wang, Dale Schuurmans et al., **NeurIPS 2022**
-> 领域标签: #思维链 #推理 #提示工程
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/2201.11903) |
-| 官方代码 | - |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-在提示中加入中间推理步骤示例，即可激发大模型的多步推理能力，让数学/逻辑任务的准确率大幅跃升，是 LLM 推理研究的起点。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | 540B (PaLM) 验证 | 模型规模需够大 |
-| 训练数据 | 9 个基准任务提示 | 无需微调 |
-| 核心指标 | GSM8K 17.9% → 58.1% | PaLM 540B |
-| 训练成本 | - | 纯提示方法 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

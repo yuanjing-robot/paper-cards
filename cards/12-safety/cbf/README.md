@@ -1,10 +1,10 @@
-# Control Barrier Functions: Theory and Applications
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/1903.11199) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Aaron Ames, Samuel Coogan, Magnus Egerstedt et al., **ECC 2019**
-> 领域标签: #控制屏障函数 #安全滤波 #控制理论
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/1903.11199) |
-| 官方代码 | - |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-系统综述控制屏障函数(CBF)理论与应用：用不等式约束 + QP 求解器在线滤波任意控制器，保证系统状态不进入危险集合。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | - | 控制理论方法 |
-| 训练数据 | - | 无需学习 |
-| 核心指标 | - | CBF-QP 安全滤波框架 |
-| 训练成本 | - | 无训练 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

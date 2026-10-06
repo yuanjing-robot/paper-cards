@@ -1,6 +1,6 @@
 # 论文翻译
 
-> 📄 对应论文原文：[Dex-Net 2.0: Deep Learning to Plan Robust Grasps with Synthetic Point Clouds and Analytic Metrics](https://arxiv.org/abs/1703.09312)
+> 📄 对应论文原文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 翻译者：@github-id
 > 最后更新：YYYY-MM-DD
 

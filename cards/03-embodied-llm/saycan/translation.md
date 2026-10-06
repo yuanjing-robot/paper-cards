@@ -1,6 +1,6 @@
 # 论文翻译
 
-> 📄 对应论文原文：[Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](https://arxiv.org/abs/2204.01691)
+> 📄 对应论文原文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 翻译者：@github-id
 > 最后更新：YYYY-MM-DD
 

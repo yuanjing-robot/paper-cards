@@ -1,6 +1,6 @@
-# 精读笔记：MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge Base
+# 精读笔记：[论文标题]
 
-> 📄 对应论文：[MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge Base](https://arxiv.org/abs/2206.08853)
+> 📄 对应论文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 整理者：@github-id
 > 最后更新：YYYY-MM-DD
 

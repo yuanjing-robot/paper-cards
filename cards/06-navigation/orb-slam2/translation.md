@@ -1,6 +1,6 @@
 # 论文翻译
 
-> 📄 对应论文原文：[ORB-SLAM2: an Open-Source SLAM System for Monocular, Stereo and RGB-D Cameras](https://arxiv.org/abs/1610.06475)
+> 📄 对应论文原文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 翻译者：@github-id
 > 最后更新：YYYY-MM-DD
 

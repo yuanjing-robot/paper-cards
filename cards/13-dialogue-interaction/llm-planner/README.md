@@ -1,10 +1,10 @@
-# LLM-Planner: Grounded Planning for Embodied Agents with Large Language Models
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/2312.10435) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Chan Hee Song, Jianan Wu, Clayton Washington, Brian Sadler, Wei-Lun Chao, Yu Su, **NeurIPS 2023**
-> 领域标签: #LLM规划 #具身导航 #接地
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/2312.10435) |
-| 官方代码 | - |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-给 LLM 注入场景的物体列表等接地信息，仅用少量样本就能在具身指令跟随任务（ALFRED）上做 grounded 规划。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | 依赖 GPT-3/4 等 | 不训练或轻量微调 |
-| 训练数据 | ALFRED 指令任务 | 场景物体清单 |
-| 核心指标 | ALFRED few-shot 大幅提升 | 可融入动态场景信息 |
-| 训练成本 | API/单卡 | 论文报告 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

@@ -1,10 +1,10 @@
-# World Models
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/1803.10122) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> David Ha, Jürgen Schmidhuber, **NeurIPS 2018**
-> 领域标签: #世界模型 #生成模型 #强化学习
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/1803.10122) |
-| 官方代码 | - |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-用 VAE + MDN-RNN 在智能体"梦境"中训练控制器，开创了"在世界模型内部学习策略"的范式，是世界模型方向的开山之作。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | 小型 VAE + MDN-RNN | 单卡时代作品 |
-| 训练数据 | VizDoom / CarRacing 像素 | 在线交互 |
-| 核心指标 | VizDoom 高难度生存 | 在梦境中学会躲避 |
-| 训练成本 | - | 单 GPU 可复现 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

@@ -1,10 +1,10 @@
-# Habitat: A Platform for Embodied AI Research
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/1904.01201) · 💻 [官方代码](https://github.com/facebookresearch/habitat-lab) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Manolis Savva, Abhishek Kadian, Oleksandr Maksymets et al., **ICCV 2019**
-> 领域标签: #仿真器 #具身导航 #高效渲染
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/1904.01201) |
-| 官方代码 | [GitHub](https://github.com/facebookresearch/habitat-lab) |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-面向室内导航的具身智能平台，渲染与感知速度比此前方案快一个数量级（1 万+ FPS），成为 PointNav/ObjectNav 的标准评测平台。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | - | 仿真平台 |
-| 训练数据 | Matterport3D / Gibson 扫描 | 72k+ 场景实例 |
-| 核心指标 | 渲染 10,000+ FPS | 多进程批量渲染 |
-| 训练成本 | - | 平台免费开源 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

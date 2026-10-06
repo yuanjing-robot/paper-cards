@@ -1,10 +1,10 @@
-# Visual Language Maps for Robot Navigation
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/2210.05714) · 💻 [官方代码](https://github.com/cvr-rgc/vlmaps) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Chenguang Huang, Oier Mees, Andy Zeng, Wolfram Burgard, **ICRA 2023**
-> 领域标签: #开放词汇 #导航 #视觉语言
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/2210.05714) |
-| 官方代码 | [GitHub](https://github.com/cvr-rgc/vlmaps) |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-把 LSeg 视觉语言特征融合进 3D 重建地图，生成"能用自然语言查询"的空间地图，让机器人按语言指令定位物体与导航。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | 依赖 LSeg | 不额外训练导航网络 |
-| 训练数据 | HM3D / MP3D 扫描 | 在线建图 |
-| 核心指标 | 语言目标导航 SOTA | 多数据集提升明显 |
-| 训练成本 | - | 微调为主 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

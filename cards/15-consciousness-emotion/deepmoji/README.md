@@ -1,10 +1,10 @@
-# Using millions of emoji occurrences to learn pre-trained representations for detecting sentiment, emotion and sarcasm
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/1508.06615) · 💻 [官方代码](https://github.com/bfelbo/DeepMoji) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Bjarke Felbo, Alan Mislove, Anders Søgaard, Iyad Rahwan, Sander Schwartz, **ACL 2017**
-> 领域标签: #情感计算 #预训练 #迁移学习
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/1508.06615) |
-| 官方代码 | [GitHub](https://github.com/bfelbo/DeepMoji) |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-用 12 亿条带 emoji 的推文预训练情感表示，再迁移到情感/讽刺等下游任务，是情感计算方向大规模自监督预训练的代表。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | BiLSTM 约 4.5M | 两层 + 注意力 |
-| 训练数据 | 12 亿条推文 | emoji 自监督 |
-| 核心指标 | 多个情感基准 SOTA（当年） | 含讽刺检测 |
-| 训练成本 | - | 论文报告 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

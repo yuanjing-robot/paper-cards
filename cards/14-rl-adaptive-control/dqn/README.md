@@ -1,10 +1,10 @@
-# Human-level control through deep reinforcement learning
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/1312.5602) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Volodymyr Mnih et al., **Nature 2015**
-> 领域标签: #深度强化学习 #Atari #经验回放
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/1312.5602) |
-| 官方代码 | - |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-用 CNN + 经验回放 + 目标网络直接从像素学 Atari 游戏策略，在多款游戏上达到人类水平，开启深度强化学习时代。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | CNN 约 1.7M | DDQN 版本稍大 |
-| 训练数据 | Atari 57 游戏 | 像素 + 得分 |
-| 核心指标 | 多款游戏达人类水平 | Nature 论文设定 |
-| 训练成本 | 数天单卡 | 现代复现 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

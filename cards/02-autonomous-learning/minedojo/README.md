@@ -1,10 +1,10 @@
-# MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge Base
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/2206.08853) · 💻 [官方代码](https://github.com/MineDojo/MineDojo) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Linxi Fan, Guanzhi Wang, Yunfan Jiang et al., **NeurIPS 2022**
-> 领域标签: #开放世界 #自主学习 #互联网数据
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/2206.08853) |
-| 官方代码 | [GitHub](https://github.com/MineDojo/MineDojo) |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-在 Minecraft 中构建开放-ended 具身智能基准 + MineCLIP 检索模型，探索用互联网级数据训练会自主完成开放任务的智能体，获 NeurIPS 2022 最佳论文。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | MineCLIP 约 118M | 视频-文本对齐模型 |
-| 训练数据 | 73 万 YouTube 教程视频 | + Wiki 页面与 Reddit 讨论 |
-| 核心指标 | 16 项任务基准 | 涵盖创造/生存/食物等 |
-| 训练成本 | - | 论文报告 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

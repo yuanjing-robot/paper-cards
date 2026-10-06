@@ -6,9 +6,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [Concrete Problems in AI Safety](concrete-problems/) | arXiv 2016 | [📄 原文](https://arxiv.org/abs/1606.06565) | [📝 精读笔记](concrete-problems/reading-notes.md) | [🌐 翻译](concrete-problems/translation.md) |
-| [Constrained Policy Optimization](cpo/) | ICML 2017 | [📄 原文](https://arxiv.org/abs/1705.10528) | [📝 精读笔记](cpo/reading-notes.md) | [🌐 翻译](cpo/translation.md) |
-| [Control Barrier Functions: Theory and Applications](cbf/) | ECC 2019 | [📄 原文](https://arxiv.org/abs/1903.11199) | [📝 精读笔记](cbf/reading-notes.md) | [🌐 翻译](cbf/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 

@@ -1,10 +1,10 @@
-# Diffusion Policy: Visuomotor Policy Learning via Action Diffusion
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/2303.04137) · 💻 [官方代码](https://github.com/real-stanford/diffusion_policy) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Cheng Chi, Siyuan Feng, Yilun Du et al., **RSS 2023**
-> 领域标签: #模仿学习 #扩散模型 #操作
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/2303.04137) |
-| 官方代码 | [GitHub](https://github.com/real-stanford/diffusion_policy) |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-把机器人策略表示成动作序列上的扩散模型，能表达多峰动作分布并稳定闭环控制，在大量仿真与真实任务上大幅超越此前基线。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | CNN/Transformer 变体 | 约数百 M |
-| 训练数据 | 50 条演示/任务 | 行为克隆设定 |
-| 核心指标 | 15 个仿真任务平均 +46.9% | 真实任务也全面领先 |
-| 训练成本 | 单机多卡可复现 | 论文报告 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

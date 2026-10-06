@@ -1,6 +1,6 @@
-# 精读笔记：Learning Transferable Visual Models From Natural Language Supervision
+# 精读笔记：[论文标题]
 
-> 📄 对应论文：[Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020)
+> 📄 对应论文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 整理者：@github-id
 > 最后更新：YYYY-MM-DD
 

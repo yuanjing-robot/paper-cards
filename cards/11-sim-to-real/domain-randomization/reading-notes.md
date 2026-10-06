@@ -1,6 +1,6 @@
-# 精读笔记：Domain Randomization for Transferring Deep Neural Networks from Simulation to the Real World
+# 精读笔记：[论文标题]
 
-> 📄 对应论文：[Domain Randomization for Transferring Deep Neural Networks from Simulation to the Real World](https://arxiv.org/abs/1703.06907)
+> 📄 对应论文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 整理者：@github-id
 > 最后更新：YYYY-MM-DD
 

@@ -1,10 +1,10 @@
-# Voyager: An Open-Ended Embodied Agent with Large Language Models
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/2305.16291) · 💻 [官方代码](https://github.com/MineDojo/Voyager) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Guanzhi Wang, Yuqi Xie, Yunfan Jiang et al., **TMLR 2023**
-> 领域标签: #LLM智能体 #终身学习 #技能库
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/2305.16291) |
-| 官方代码 | [GitHub](https://github.com/MineDojo/Voyager) |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-用 LLM 做自动课程、可执行代码技能库和迭代提示机制，在 Minecraft 中实现不重置、持续自我进化的开放式终身学习智能体。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | 依赖 GPT-4 | 不做参数训练 |
-| 训练数据 | Minecraft 交互环境 | 在线探索 |
-| 核心指标 | 独特物品数约为基线 3.3× | 探索距离也显著更远 |
-| 训练成本 | GPT-4 API 调用 | 无需梯度训练 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

@@ -6,9 +6,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [Habitat: A Platform for Embodied AI Research](habitat/) | ICCV 2019 | [📄 原文](https://arxiv.org/abs/1904.01201) | [📝 精读笔记](habitat/reading-notes.md) | [🌐 翻译](habitat/translation.md) |
-| [SAPIEN: A SimulAted Part-based Interactive ENvironment](sapien/) | CVPR 2020 | [📄 原文](https://arxiv.org/abs/2003.08515) | [📝 精读笔记](sapien/reading-notes.md) | [🌐 翻译](sapien/translation.md) |
-| [Isaac Gym: High Performance GPU-Based Physics Simulation For Robot Learning](isaac-gym/) | arXiv 2021 (NVIDIA) | [📄 原文](https://arxiv.org/abs/2108.10470) | [📝 精读笔记](isaac-gym/reading-notes.md) | [🌐 翻译](isaac-gym/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 

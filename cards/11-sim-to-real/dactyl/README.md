@@ -1,10 +1,10 @@
-# Learning Dexterous In-Hand Manipulation
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/1808.00177) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> OpenAI: Marcin Andrychowicz et al., **IJRR 2019**
-> 领域标签: #灵巧手 #域随机化 #规模训练
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/1808.00177) |
-| 官方代码 | - |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-结合大规模域随机化与 LSTM 策略，让仿真训练的人影机械手在真实硬件上完成手内物体重定向，是 Sim-to-Real 规模化路线的标志工作。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | LSTM 策略 | 数百维动作空间 |
-| 训练数据 | 约 100 年模拟经验 | 大规模并行仿真 |
-| 核心指标 | 真实手重定向连续成功 | 多种物体泛化 |
-| 训练成本 | 大规模 CPU/GPU 集群 | 论文报告 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

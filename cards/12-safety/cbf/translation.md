@@ -1,6 +1,6 @@
 # 论文翻译
 
-> 📄 对应论文原文：[Control Barrier Functions: Theory and Applications](https://arxiv.org/abs/1903.11199)
+> 📄 对应论文原文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 翻译者：@github-id
 > 最后更新：YYYY-MM-DD
 

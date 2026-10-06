@@ -1,10 +1,10 @@
-# Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/1911.08265) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Julian Schrittwieser et al., **Nature 2019**
-> 领域标签: #世界模型 #规划 #强化学习
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/1911.08265) |
-| 官方代码 | - |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-不依赖已知规则，从零学习动力学模型并在其隐空间中做 MCTS 规划，同时拿下 Atari 与围棋象棋，是"学习+规划"结合的里程碑。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | 约 20-40M 级 | 多任务版本 |
-| 训练数据 | Atari 57 / 棋类自博弈 | 在线交互 |
-| 核心指标 | Atari 57 超人类 | 围棋棋力超 AlphaZero |
-| 训练成本 | TPU 集群 | 论文报告 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

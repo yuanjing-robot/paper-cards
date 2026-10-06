@@ -6,9 +6,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](saycan/) | CoRL 2022 | [📄 原文](https://arxiv.org/abs/2204.01691) | [📝 精读笔记](saycan/reading-notes.md) | [🌐 翻译](saycan/translation.md) |
-| [PaLM-E: An Embodied Multimodal Language Model](palm-e/) | ICML 2023 | [📄 原文](https://arxiv.org/abs/2303.03378) | [📝 精读笔记](palm-e/reading-notes.md) | [🌐 翻译](palm-e/translation.md) |
-| [RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control](rt-2/) | CoRL 2023 | [📄 原文](https://arxiv.org/abs/2307.15818) | [📝 精读笔记](rt-2/reading-notes.md) | [🌐 翻译](rt-2/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 

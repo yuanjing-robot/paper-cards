@@ -1,6 +1,6 @@
-# 精读笔记：Control Barrier Functions: Theory and Applications
+# 精读笔记：[论文标题]
 
-> 📄 对应论文：[Control Barrier Functions: Theory and Applications](https://arxiv.org/abs/1903.11199)
+> 📄 对应论文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 整理者：@github-id
 > 最后更新：YYYY-MM-DD
 

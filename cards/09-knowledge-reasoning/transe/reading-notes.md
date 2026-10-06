@@ -1,6 +1,6 @@
-# 精读笔记：Translating Embeddings for Modeling Multi-relational Data
+# 精读笔记：[论文标题]
 
-> 📄 对应论文：[Translating Embeddings for Modeling Multi-relational Data](https://arxiv.org/abs/1301.3785)
+> 📄 对应论文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 整理者：@github-id
 > 最后更新：YYYY-MM-DD
 

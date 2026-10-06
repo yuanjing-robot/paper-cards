@@ -1,10 +1,10 @@
-# SAPIEN: A SimulAted Part-based Interactive ENvironment
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/2003.08515) · 💻 [官方代码](https://github.com/haosulab/SAPIEN) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Fanbo Xiang, Yuzhe Qin, Kaichun Mo et al., **CVPR 2020**
-> 领域标签: #仿真器 #关节物体 #操作
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/2003.08515) |
-| 官方代码 | [GitHub](https://github.com/haosulab/SAPIEN) |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-基于 PartNet-Mobility 的部件级关节物体仿真环境，支持物理正确的开抽屉/转门等交互，是机器人操作（尤其灵巧手）常用平台。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | - | 仿真平台 |
-| 训练数据 | PartNet-Mobility 2,346 关节物体 | 部件级标注 |
-| 核心指标 | RViz 级并行视觉训练 | GPU 渲染管线 |
-| 训练成本 | - | 平台开源 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

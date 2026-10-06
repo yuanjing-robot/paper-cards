@@ -1,6 +1,6 @@
 # 论文翻译
 
-> 📄 对应论文原文：[Cooperative Inverse Reinforcement Learning](https://arxiv.org/abs/1606.03137)
+> 📄 对应论文原文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 翻译者：@github-id
 > 最后更新：YYYY-MM-DD
 

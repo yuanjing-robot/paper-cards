@@ -1,6 +1,6 @@
-# 精读笔记：The Consciousness Prior
+# 精读笔记：[论文标题]
 
-> 📄 对应论文：[The Consciousness Prior](https://arxiv.org/abs/1709.08568)
+> 📄 对应论文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 整理者：@github-id
 > 最后更新：YYYY-MM-DD
 

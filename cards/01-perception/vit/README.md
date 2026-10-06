@@ -1,10 +1,10 @@
-# An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/2010.11929) · 💻 [官方代码](https://github.com/google-research/vision_transformer) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Alexey Dosovitskiy et al., **ICLR 2021**
-> 领域标签: #视觉 #Transformer #预训练
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/2010.11929) |
-| 官方代码 | [GitHub](https://github.com/google-research/vision_transformer) |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-把图像切成 16×16 patch 直接喂给标准 Transformer，证明大规模预训练下纯 ViT 可以完全取代 CNN，是具身视觉骨干的通用选择。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | 86M (Base) / 632M (Huge) | ViT-B/16 与 ViT-H/14 |
-| 训练数据 | ImageNet-1k / ImageNet-21k | 最大约 3 亿张图 |
-| 核心指标 | ImageNet 88.55% top-1 | ViT-H/14，21k 预训练 |
-| 训练成本 | TPUv3 × 8 ~ ×32 | 论文报告区间 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

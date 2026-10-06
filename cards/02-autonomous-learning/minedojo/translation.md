@@ -1,6 +1,6 @@
 # 论文翻译
 
-> 📄 对应论文原文：[MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge Base](https://arxiv.org/abs/2206.08853)
+> 📄 对应论文原文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 翻译者：@github-id
 > 最后更新：YYYY-MM-DD
 

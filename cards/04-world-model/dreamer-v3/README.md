@@ -1,10 +1,10 @@
-# Mastering Diverse Domains through World Models
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/2301.04104) · 💻 [官方代码](https://github.com/danijar/dreamerv3) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Danijar Hafner, Jurgis Pasukonis, Jimmy Ba, Timothy Lillicrap, **arXiv 2023**
-> 领域标签: #世界模型 #强化学习 #通用智能
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/2301.04104) |
-| 官方代码 | [GitHub](https://github.com/danijar/dreamerv3) |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-用固定超参数的 RSSM 世界模型横跨 150+ 任务，首个从零在 Minecraft 中采集到钻石的算法，展示世界模型路线的通用性。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | 约 200M 固定 | 全任务同一超参 |
-| 训练数据 | CS:GO / Minecraft / DMC 等 | 在线交互 |
-| 核心指标 | Minecraft 首个采集钻石 | 从零开始无人类数据 |
-| 训练成本 | 单卡 A100 级 | 论文报告 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

@@ -1,10 +1,10 @@
-# Do As I Can, Not As I Say: Grounding Language in Robotic Affordances
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/2204.01691) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Michael Ahn et al., **CoRL 2022**
-> 领域标签: #LLM #任务规划 #价值对齐
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/2204.01691) |
-| 官方代码 | - |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-用机器人技能的可行性(affordance)值函数对 LLM 输出的候选步骤做重排序，让大模型的语言知识落地为机器人可执行的真实规划。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | PaLM 540B 评分 | + 值函数小模型 |
-| 训练数据 | 机器人 affordance 数据 | 101 项真实任务 |
-| 核心指标 | 规划成功率 84% | 真实机器人执行 74% |
-| 训练成本 | - | 值函数训练为主 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

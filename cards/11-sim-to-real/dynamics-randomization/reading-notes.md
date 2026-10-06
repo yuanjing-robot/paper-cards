@@ -1,6 +1,6 @@
-# 精读笔记：Sim-to-Real Transfer of Robotic Control with Dynamics Randomization
+# 精读笔记：[论文标题]
 
-> 📄 对应论文：[Sim-to-Real Transfer of Robotic Control with Dynamics Randomization](https://arxiv.org/abs/1710.06537)
+> 📄 对应论文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 整理者：@github-id
 > 最后更新：YYYY-MM-DD
 

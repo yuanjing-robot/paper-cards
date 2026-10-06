@@ -1,6 +1,6 @@
 # 论文翻译
 
-> 📄 对应论文原文：[Visual Language Maps for Robot Navigation](https://arxiv.org/abs/2210.05714)
+> 📄 对应论文原文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 翻译者：@github-id
 > 最后更新：YYYY-MM-DD
 

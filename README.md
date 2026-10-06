@@ -17,9 +17,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](cards/00-llm/bert/) | NAACL 2019 | [📄 原文](https://arxiv.org/abs/1810.04805) | [📝 精读笔记](cards/00-llm/bert/reading-notes.md) | [🌐 翻译](cards/00-llm/bert/translation.md) |
-| [Language Models are Few-Shot Learners (GPT-3)](cards/00-llm/gpt-3/) | NeurIPS 2020 | [📄 原文](https://arxiv.org/abs/2005.14165) | [📝 精读笔记](cards/00-llm/gpt-3/reading-notes.md) | [🌐 翻译](cards/00-llm/gpt-3/translation.md) |
-| [LLaMA: Open and Efficient Foundation Language Models](cards/00-llm/llama/) | arXiv 2023 | [📄 原文](https://arxiv.org/abs/2302.13971) | [📝 精读笔记](cards/00-llm/llama/reading-notes.md) | [🌐 翻译](cards/00-llm/llama/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 
@@ -29,9 +29,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation](cards/01-perception/pointnet/) | CVPR 2017 | [📄 原文](https://arxiv.org/abs/1612.00593) | [📝 精读笔记](cards/01-perception/pointnet/reading-notes.md) | [🌐 翻译](cards/01-perception/pointnet/translation.md) |
-| [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](cards/01-perception/vit/) | ICLR 2021 | [📄 原文](https://arxiv.org/abs/2010.11929) | [📝 精读笔记](cards/01-perception/vit/reading-notes.md) | [🌐 翻译](cards/01-perception/vit/translation.md) |
-| [Learning Transferable Visual Models From Natural Language Supervision (CLIP)](cards/01-perception/clip/) | ICML 2021 | [📄 原文](https://arxiv.org/abs/2103.00020) | [📝 精读笔记](cards/01-perception/clip/reading-notes.md) | [🌐 翻译](cards/01-perception/clip/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 
@@ -41,9 +41,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge Base](cards/02-autonomous-learning/minedojo/) | NeurIPS 2022 | [📄 原文](https://arxiv.org/abs/2206.08853) | [📝 精读笔记](cards/02-autonomous-learning/minedojo/reading-notes.md) | [🌐 翻译](cards/02-autonomous-learning/minedojo/translation.md) |
-| [Voyager: An Open-Ended Embodied Agent with Large Language Models](cards/02-autonomous-learning/voyager/) | TMLR 2023 | [📄 原文](https://arxiv.org/abs/2305.16291) | [📝 精读笔记](cards/02-autonomous-learning/voyager/reading-notes.md) | [🌐 翻译](cards/02-autonomous-learning/voyager/translation.md) |
-| [Open X-Embodiment: Robotic Learning Datasets and RT-X Models](cards/02-autonomous-learning/open-x-embodiment/) | ICRA 2024 | [📄 原文](https://arxiv.org/abs/2310.08864) | [📝 精读笔记](cards/02-autonomous-learning/open-x-embodiment/reading-notes.md) | [🌐 翻译](cards/02-autonomous-learning/open-x-embodiment/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 
@@ -53,9 +53,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances (SayCan)](cards/03-embodied-llm/saycan/) | CoRL 2022 | [📄 原文](https://arxiv.org/abs/2204.01691) | [📝 精读笔记](cards/03-embodied-llm/saycan/reading-notes.md) | [🌐 翻译](cards/03-embodied-llm/saycan/translation.md) |
-| [PaLM-E: An Embodied Multimodal Language Model](cards/03-embodied-llm/palm-e/) | ICML 2023 | [📄 原文](https://arxiv.org/abs/2303.03378) | [📝 精读笔记](cards/03-embodied-llm/palm-e/reading-notes.md) | [🌐 翻译](cards/03-embodied-llm/palm-e/translation.md) |
-| [RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control](cards/03-embodied-llm/rt-2/) | CoRL 2023 | [📄 原文](https://arxiv.org/abs/2307.15818) | [📝 精读笔记](cards/03-embodied-llm/rt-2/reading-notes.md) | [🌐 翻译](cards/03-embodied-llm/rt-2/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 
@@ -65,9 +65,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [World Models](cards/04-world-model/world-models/) | NeurIPS 2018 | [📄 原文](https://arxiv.org/abs/1803.10122) | [📝 精读笔记](cards/04-world-model/world-models/reading-notes.md) | [🌐 翻译](cards/04-world-model/world-models/translation.md) |
-| [Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model (MuZero)](cards/04-world-model/muzero/) | Nature 2019 | [📄 原文](https://arxiv.org/abs/1911.08265) | [📝 精读笔记](cards/04-world-model/muzero/reading-notes.md) | [🌐 翻译](cards/04-world-model/muzero/translation.md) |
-| [Mastering Diverse Domains through World Models (DreamerV3)](cards/04-world-model/dreamer-v3/) | arXiv 2023 | [📄 原文](https://arxiv.org/abs/2301.04104) | [📝 精读笔记](cards/04-world-model/dreamer-v3/reading-notes.md) | [🌐 翻译](cards/04-world-model/dreamer-v3/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 
@@ -77,9 +77,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [Dex-Net 2.0: Deep Learning to Plan Robust Grasps with Synthetic Point Clouds and Analytic Metrics](cards/05-manipulation/dexnet-2/) | RSS 2017 | [📄 原文](https://arxiv.org/abs/1703.09312) | [📝 精读笔记](cards/05-manipulation/dexnet-2/reading-notes.md) | [🌐 翻译](cards/05-manipulation/dexnet-2/translation.md) |
-| [QT-Opt: Scalable Deep Reinforcement Learning for Vision-Based Robotic Manipulation](cards/05-manipulation/qt-opt/) | CoRL 2018 | [📄 原文](https://arxiv.org/abs/1806.10293) | [📝 精读笔记](cards/05-manipulation/qt-opt/reading-notes.md) | [🌐 翻译](cards/05-manipulation/qt-opt/translation.md) |
-| [Diffusion Policy: Visuomotor Policy Learning via Action Diffusion](cards/05-manipulation/diffusion-policy/) | RSS 2023 | [📄 原文](https://arxiv.org/abs/2303.04137) | [📝 精读笔记](cards/05-manipulation/diffusion-policy/reading-notes.md) | [🌐 翻译](cards/05-manipulation/diffusion-policy/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 
@@ -89,9 +89,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [ORB-SLAM2: an Open-Source SLAM System for Monocular, Stereo and RGB-D Cameras](cards/06-navigation/orb-slam2/) | IEEE T-RO 2017 | [📄 原文](https://arxiv.org/abs/1610.06475) | [📝 精读笔记](cards/06-navigation/orb-slam2/reading-notes.md) | [🌐 翻译](cards/06-navigation/orb-slam2/translation.md) |
-| [Visual Language Maps for Robot Navigation (VLMaps)](cards/06-navigation/vlmaps/) | ICRA 2023 | [📄 原文](https://arxiv.org/abs/2210.05714) | [📝 精读笔记](cards/06-navigation/vlmaps/reading-notes.md) | [🌐 翻译](cards/06-navigation/vlmaps/translation.md) |
-| [ViNT: A Foundation Model for Visual Navigation](cards/06-navigation/vint/) | CoRL 2023 | [📄 原文](https://arxiv.org/abs/2306.14846) | [📝 精读笔记](cards/06-navigation/vint/reading-notes.md) | [🌐 翻译](cards/06-navigation/vint/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 
@@ -101,9 +101,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [Cooperative Inverse Reinforcement Learning (CIRL)](cards/07-human-robot-collab/cirl/) | NeurIPS 2016 | [📄 原文](https://arxiv.org/abs/1606.03137) | [📝 精读笔记](cards/07-human-robot-collab/cirl/reading-notes.md) | [🌐 翻译](cards/07-human-robot-collab/cirl/translation.md) |
-| [Shared Autonomy via Deep Reinforcement Learning](cards/07-human-robot-collab/shared-autonomy-drl/) | RSS 2018 | [📄 原文](https://arxiv.org/abs/1803.07169) | [📝 精读笔记](cards/07-human-robot-collab/shared-autonomy-drl/reading-notes.md) | [🌐 翻译](cards/07-human-robot-collab/shared-autonomy-drl/translation.md) |
-| [Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware (ALOHA)](cards/07-human-robot-collab/aloha/) | RSS 2023 | [📄 原文](https://arxiv.org/abs/2304.13705) | [📝 精读笔记](cards/07-human-robot-collab/aloha/reading-notes.md) | [🌐 翻译](cards/07-human-robot-collab/aloha/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 
@@ -113,9 +113,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments (MADDPG)](cards/08-swarm-intelligence/maddpg/) | NeurIPS 2017 | [📄 原文](https://arxiv.org/abs/1706.02275) | [📝 精读笔记](cards/08-swarm-intelligence/maddpg/reading-notes.md) | [🌐 翻译](cards/08-swarm-intelligence/maddpg/translation.md) |
-| [QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent RL](cards/08-swarm-intelligence/qmix/) | ICML 2018 | [📄 原文](https://arxiv.org/abs/1803.11485) | [📝 精读笔记](cards/08-swarm-intelligence/qmix/reading-notes.md) | [🌐 翻译](cards/08-swarm-intelligence/qmix/translation.md) |
-| [The Surprising Effectiveness of PPO in Cooperative Multi-Agent Games (MAPPO)](cards/08-swarm-intelligence/mappo/) | NeurIPS 2022 | [📄 原文](https://arxiv.org/abs/2103.01955) | [📝 精读笔记](cards/08-swarm-intelligence/mappo/reading-notes.md) | [🌐 翻译](cards/08-swarm-intelligence/mappo/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 
@@ -125,9 +125,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [Translating Embeddings for Modeling Multi-relational Data (TransE)](cards/09-knowledge-reasoning/transe/) | NeurIPS 2013 | [📄 原文](https://arxiv.org/abs/1301.3785) | [📝 精读笔记](cards/09-knowledge-reasoning/transe/reading-notes.md) | [🌐 翻译](cards/09-knowledge-reasoning/transe/translation.md) |
-| [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](cards/09-knowledge-reasoning/chain-of-thought/) | NeurIPS 2022 | [📄 原文](https://arxiv.org/abs/2201.11903) | [📝 精读笔记](cards/09-knowledge-reasoning/chain-of-thought/reading-notes.md) | [🌐 翻译](cards/09-knowledge-reasoning/chain-of-thought/translation.md) |
-| [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](cards/09-knowledge-reasoning/tree-of-thoughts/) | NeurIPS 2023 | [📄 原文](https://arxiv.org/abs/2305.10601) | [📝 精读笔记](cards/09-knowledge-reasoning/tree-of-thoughts/reading-notes.md) | [🌐 翻译](cards/09-knowledge-reasoning/tree-of-thoughts/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 
@@ -137,9 +137,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [Habitat: A Platform for Embodied AI Research](cards/10-simulation-platform/habitat/) | ICCV 2019 | [📄 原文](https://arxiv.org/abs/1904.01201) | [📝 精读笔记](cards/10-simulation-platform/habitat/reading-notes.md) | [🌐 翻译](cards/10-simulation-platform/habitat/translation.md) |
-| [SAPIEN: A SimulAted Part-based Interactive ENvironment](cards/10-simulation-platform/sapien/) | CVPR 2020 | [📄 原文](https://arxiv.org/abs/2003.08515) | [📝 精读笔记](cards/10-simulation-platform/sapien/reading-notes.md) | [🌐 翻译](cards/10-simulation-platform/sapien/translation.md) |
-| [Isaac Gym: High Performance GPU-Based Physics Simulation For Robot Learning](cards/10-simulation-platform/isaac-gym/) | arXiv 2021 | [📄 原文](https://arxiv.org/abs/2108.10470) | [📝 精读笔记](cards/10-simulation-platform/isaac-gym/reading-notes.md) | [🌐 翻译](cards/10-simulation-platform/isaac-gym/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 
@@ -149,9 +149,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [Domain Randomization for Transferring Deep Neural Networks from Simulation to the Real World](cards/11-sim-to-real/domain-randomization/) | IROS 2017 | [📄 原文](https://arxiv.org/abs/1703.06907) | [📝 精读笔记](cards/11-sim-to-real/domain-randomization/reading-notes.md) | [🌐 翻译](cards/11-sim-to-real/domain-randomization/translation.md) |
-| [Sim-to-Real Transfer of Robotic Control with Dynamics Randomization](cards/11-sim-to-real/dynamics-randomization/) | ICRA 2018 | [📄 原文](https://arxiv.org/abs/1710.06537) | [📝 精读笔记](cards/11-sim-to-real/dynamics-randomization/reading-notes.md) | [🌐 翻译](cards/11-sim-to-real/dynamics-randomization/translation.md) |
-| [Learning Dexterous In-Hand Manipulation (Dactyl)](cards/11-sim-to-real/dactyl/) | IJRR 2019 | [📄 原文](https://arxiv.org/abs/1808.00177) | [📝 精读笔记](cards/11-sim-to-real/dactyl/reading-notes.md) | [🌐 翻译](cards/11-sim-to-real/dactyl/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 
@@ -161,9 +161,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [Concrete Problems in AI Safety](cards/12-safety/concrete-problems/) | arXiv 2016 | [📄 原文](https://arxiv.org/abs/1606.06565) | [📝 精读笔记](cards/12-safety/concrete-problems/reading-notes.md) | [🌐 翻译](cards/12-safety/concrete-problems/translation.md) |
-| [Constrained Policy Optimization (CPO)](cards/12-safety/cpo/) | ICML 2017 | [📄 原文](https://arxiv.org/abs/1705.10528) | [📝 精读笔记](cards/12-safety/cpo/reading-notes.md) | [🌐 翻译](cards/12-safety/cpo/translation.md) |
-| [Control Barrier Functions: Theory and Applications](cards/12-safety/cbf/) | ECC 2019 | [📄 原文](https://arxiv.org/abs/1903.11199) | [📝 精读笔记](cards/12-safety/cbf/reading-notes.md) | [🌐 翻译](cards/12-safety/cbf/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 
@@ -173,9 +173,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [Inner Monologue: Embodied Reasoning through Planning with Language Models](cards/13-dialogue-interaction/inner-monologue/) | CoRL 2022 | [📄 原文](https://arxiv.org/abs/2207.05608) | [📝 精读笔记](cards/13-dialogue-interaction/inner-monologue/reading-notes.md) | [🌐 翻译](cards/13-dialogue-interaction/inner-monologue/translation.md) |
-| [LLM-Planner: Grounded Planning for Embodied Agents with Large Language Models](cards/13-dialogue-interaction/llm-planner/) | NeurIPS 2023 | [📄 原文](https://arxiv.org/abs/2312.10435) | [📝 精读笔记](cards/13-dialogue-interaction/llm-planner/reading-notes.md) | [🌐 翻译](cards/13-dialogue-interaction/llm-planner/translation.md) |
-| [TidyBot: Personalized Robot Assistance with Large Language Models](cards/13-dialogue-interaction/tidybot/) | IROS 2023 | [📄 原文](https://arxiv.org/abs/2305.18712) | [📝 精读笔记](cards/13-dialogue-interaction/tidybot/reading-notes.md) | [🌐 翻译](cards/13-dialogue-interaction/tidybot/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 
@@ -185,9 +185,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [Human-level control through deep reinforcement learning (DQN)](cards/14-rl-adaptive-control/dqn/) | Nature 2015 | [📄 原文](https://arxiv.org/abs/1312.5602) | [📝 精读笔记](cards/14-rl-adaptive-control/dqn/reading-notes.md) | [🌐 翻译](cards/14-rl-adaptive-control/dqn/translation.md) |
-| [Proximal Policy Optimization Algorithms (PPO)](cards/14-rl-adaptive-control/ppo/) | arXiv 2017 | [📄 原文](https://arxiv.org/abs/1707.06347) | [📝 精读笔记](cards/14-rl-adaptive-control/ppo/reading-notes.md) | [🌐 翻译](cards/14-rl-adaptive-control/ppo/translation.md) |
-| [Soft Actor-Critic: Off-Policy Maximum Entropy Deep RL (SAC)](cards/14-rl-adaptive-control/sac/) | ICML 2018 | [📄 原文](https://arxiv.org/abs/1801.01290) | [📝 精读笔记](cards/14-rl-adaptive-control/sac/reading-notes.md) | [🌐 翻译](cards/14-rl-adaptive-control/sac/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 
@@ -197,9 +197,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [Using millions of emoji occurrences to learn pre-trained representations for detecting sentiment, emotion and sarcasm (DeepMoji)](cards/15-consciousness-emotion/deepmoji/) | ACL 2017 | [📄 原文](https://arxiv.org/abs/1508.06615) | [📝 精读笔记](cards/15-consciousness-emotion/deepmoji/reading-notes.md) | [🌐 翻译](cards/15-consciousness-emotion/deepmoji/translation.md) |
-| [The Consciousness Prior](cards/15-consciousness-emotion/consciousness-prior/) | arXiv 2017 | [📄 原文](https://arxiv.org/abs/1709.08568) | [📝 精读笔记](cards/15-consciousness-emotion/consciousness-prior/reading-notes.md) | [🌐 翻译](cards/15-consciousness-emotion/consciousness-prior/translation.md) |
-| [Machine Theory of Mind](cards/15-consciousness-emotion/machine-theory-of-mind/) | ICML 2018 | [📄 原文](https://arxiv.org/abs/1802.07740) | [📝 精读笔记](cards/15-consciousness-emotion/machine-theory-of-mind/reading-notes.md) | [🌐 翻译](cards/15-consciousness-emotion/machine-theory-of-mind/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 

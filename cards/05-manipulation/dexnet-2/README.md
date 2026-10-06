@@ -1,10 +1,10 @@
-# Dex-Net 2.0: Deep Learning to Plan Robust Grasps with Synthetic Point Clouds and Analytic Metrics
+# [论文标题]
 
-> 📄 [论文原文](https://arxiv.org/abs/1703.09312) · 💻 [官方代码](https://github.com/BerkeleyAutomation/gqcnn) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
+> 📄 [论文原文](https://arxiv.org/abs/xxxx.xxxxx) · 💻 [官方代码](https://github.com/xxx) · 📝 [精读笔记](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
-> Jeffrey Mahler et al., **RSS 2017**
-> 领域标签: #抓取 #合成数据 #深度学习
-> 首次笔记: @zeng417 | 最后更新: 2026-10-06
+> 作者列表, **会议/期刊** 年份
+> 领域标签: #标签1 #标签2 #标签3
+> 首次笔记: @github-id | 最后更新: YYYY-MM-DD
 
 ---
 
@@ -12,8 +12,8 @@
 
 | 类型 | 链接 |
 |------|------|
-| 论文原文 | [arXiv](https://arxiv.org/abs/1703.09312) |
-| 官方代码 | [GitHub](https://github.com/BerkeleyAutomation/gqcnn) |
+| 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
+| 官方代码 | [GitHub](https://github.com/xxx) |
 | 复现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -22,7 +22,7 @@
 
 ## 🎯 一句话概括
 
-用 670 万条合成深度图 + 解析式鲁棒性指标训练 GQ-CNN 抓取质量网络，把抓取规划做成"看一眼打分"，是数据驱动抓取的代表作。
+_用一句话说清这篇论文做了什么、核心价值是什么_
 
 ---
 
@@ -39,10 +39,10 @@
 
 | 指标 | 数值 | 备注 |
 |------|------|------|
-| 参数量 | GQ-CNN 较小 | 深度图输入 |
-| 训练数据 | 6.7M 合成深度图 | + 5k 真实抓取验证 |
-| 核心指标 | 抓取成功率 93% | 抗扰抓取设定 |
-| 训练成本 | - | 合成数据生成为主 |
+| 参数量 | - | 基础模型大小 |
+| 训练数据 | - | 预训练数据量 |
+| 核心指标 | - | 在 xxx 上达到 xx |
+| 训练成本 | - | GPU 时 / 美元 |
 
 ---
 

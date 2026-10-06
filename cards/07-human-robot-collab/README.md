@@ -6,9 +6,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [Cooperative Inverse Reinforcement Learning](cirl/) | NeurIPS 2016 | [📄 原文](https://arxiv.org/abs/1606.03137) | [📝 精读笔记](cirl/reading-notes.md) | [🌐 翻译](cirl/translation.md) |
-| [Shared Autonomy via Deep Reinforcement Learning](shared-autonomy-drl/) | RSS 2018 | [📄 原文](https://arxiv.org/abs/1803.07169) | [📝 精读笔记](shared-autonomy-drl/reading-notes.md) | [🌐 翻译](shared-autonomy-drl/translation.md) |
-| [Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware](aloha/) | RSS 2023 | [📄 原文](https://arxiv.org/abs/2304.13705) | [📝 精读笔记](aloha/reading-notes.md) | [🌐 翻译](aloha/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 

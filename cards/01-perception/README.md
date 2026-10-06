@@ -12,9 +12,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation](pointnet/) | CVPR 2017 | [📄 原文](https://arxiv.org/abs/1612.00593) | [📝 精读笔记](pointnet/reading-notes.md) | [🌐 翻译](pointnet/translation.md) |
-| [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](vit/) | ICLR 2021 | [📄 原文](https://arxiv.org/abs/2010.11929) | [📝 精读笔记](vit/reading-notes.md) | [🌐 翻译](vit/translation.md) |
-| [Learning Transferable Visual Models From Natural Language Supervision](clip/) | ICML 2021 | [📄 原文](https://arxiv.org/abs/2103.00020) | [📝 精读笔记](clip/reading-notes.md) | [🌐 翻译](clip/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ### [触觉感知](tactile-perception/)
 
@@ -22,9 +22,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation](pointnet/) | CVPR 2017 | [📄 原文](https://arxiv.org/abs/1612.00593) | [📝 精读笔记](pointnet/reading-notes.md) | [🌐 翻译](pointnet/translation.md) |
-| [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](vit/) | ICLR 2021 | [📄 原文](https://arxiv.org/abs/2010.11929) | [📝 精读笔记](vit/reading-notes.md) | [🌐 翻译](vit/translation.md) |
-| [Learning Transferable Visual Models From Natural Language Supervision](clip/) | ICML 2021 | [📄 原文](https://arxiv.org/abs/2103.00020) | [📝 精读笔记](clip/reading-notes.md) | [🌐 翻译](clip/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ### [听觉感知](auditory-perception/)
 
@@ -32,9 +32,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation](pointnet/) | CVPR 2017 | [📄 原文](https://arxiv.org/abs/1612.00593) | [📝 精读笔记](pointnet/reading-notes.md) | [🌐 翻译](pointnet/translation.md) |
-| [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](vit/) | ICLR 2021 | [📄 原文](https://arxiv.org/abs/2010.11929) | [📝 精读笔记](vit/reading-notes.md) | [🌐 翻译](vit/translation.md) |
-| [Learning Transferable Visual Models From Natural Language Supervision](clip/) | ICML 2021 | [📄 原文](https://arxiv.org/abs/2103.00020) | [📝 精读笔记](clip/reading-notes.md) | [🌐 翻译](clip/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ### [多模态融合](multimodal-fusion/)
 
@@ -42,9 +42,9 @@
 
 | 论文 | 会议/年份 | 原文 | 精读笔记 | 翻译 |
 |------|----------|------|---------|------|
-| [PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation](pointnet/) | CVPR 2017 | [📄 原文](https://arxiv.org/abs/1612.00593) | [📝 精读笔记](pointnet/reading-notes.md) | [🌐 翻译](pointnet/translation.md) |
-| [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](vit/) | ICLR 2021 | [📄 原文](https://arxiv.org/abs/2010.11929) | [📝 精读笔记](vit/reading-notes.md) | [🌐 翻译](vit/translation.md) |
-| [Learning Transferable Visual Models From Natural Language Supervision](clip/) | ICML 2021 | [📄 原文](https://arxiv.org/abs/2103.00020) | [📝 精读笔记](clip/reading-notes.md) | [🌐 翻译](clip/translation.md) |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
+| _待补充_ | - | - | - | - |
 
 ---
 

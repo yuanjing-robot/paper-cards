@@ -1,6 +1,6 @@
-# 精读笔记：QT-Opt: Scalable Deep Reinforcement Learning for Vision-Based Robotic Manipulation
+# 精读笔记：[论文标题]
 
-> 📄 对应论文：[QT-Opt: Scalable Deep Reinforcement Learning for Vision-Based Robotic Manipulation](https://arxiv.org/abs/1806.10293)
+> 📄 对应论文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 整理者：@github-id
 > 最后更新：YYYY-MM-DD
 

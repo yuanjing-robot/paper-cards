@@ -1,6 +1,6 @@
-# 精读笔记：An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale
+# 精读笔记：[论文标题]
 
-> 📄 对应论文：[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)
+> 📄 对应论文：[论文标题](https://arxiv.org/abs/xxxx.xxxxx)
 > 整理者：@github-id
 > 最后更新：YYYY-MM-DD
 
