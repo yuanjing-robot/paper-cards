@@ -38,7 +38,7 @@ def slugify(title: str) -> str:
 
 
 def update_subfield_readme(subfield_readme: Path, title: str, conference: str,
-                           paper_url: str, folder_name: str):
+                           paper_url: str, folder_name: str, code_url: str):
     """自动更新子方向 README，把新论文加到论文列表里"""
     if not subfield_readme.exists():
         return False
@@ -53,12 +53,16 @@ def update_subfield_readme(subfield_readme: Path, title: str, conference: str,
     else:
         paper_md += "- | "
     paper_md += f"[📝 深度阅读]({folder_name}/reading-notes.md) | "
-    paper_md += f"[🌐 翻译]({folder_name}/translation.md) |"
+    paper_md += f"[🌐 翻译]({folder_name}/translation.md) | "
+    if code_url:
+        paper_md += f"[💻 代码]({code_url}) |"
+    else:
+        paper_md += "- |"
 
     # 如果有 "_待补充_" 的占位行，替换掉
     if '_待补充_' in content:
         content = content.replace(
-            "| _待补充_ | - | - | - | - |",
+            "| _待补充_ | - | - | - | - | - |",
             paper_md
         )
     else:
@@ -136,9 +140,9 @@ def main():
             (output_dir / 'README.md').write_text(
                 f"# {args.subfield}\n\n> 子方向说明（待补充）\n\n"
                 "## 📚 论文列表\n\n"
-                "| 论文 | 会议/年份 | 原文 | 深度阅读 | 翻译 |\n"
-                "|------|----------|------|---------|------|\n"
-                "| _待补充_ | - | - | - | - |\n",
+                "| 论文 | 会议/年份 | 原文 | 深度阅读 | 翻译 | 代码 |\n"
+                "|------|----------|------|---------|------|------|\n"
+                "| _待补充_ | - | - | - | - | - |\n",
                 encoding='utf-8')
             print(f'✅ 子方向目录不存在，已自动创建：{output_dir}')
 
@@ -207,7 +211,7 @@ def main():
     # 自动更新所在目录的 README（把新论文加到索引里）
     index_readme = output_dir / 'README.md'
     if update_subfield_readme(index_readme, args.title, args.conference,
-                              args.paper_url, folder_name):
+                              args.paper_url, folder_name, args.code_url):
         print(f'✅ 已更新论文索引：{index_readme}')
 
     # 更新 reading-notes.md 的标题和链接（先替换链接形式，避免丢失方括号）
