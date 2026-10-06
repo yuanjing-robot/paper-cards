@@ -6,6 +6,9 @@ CODEOWNERS @yuanjing-robot/maintainers
 CONTRIBUTING.md @yuanjing-robot/maintainers
 README.md @yuanjing-robot/maintainers
 
+# 大模型基础
+cards/00-llm/ @yuanjing-robot/maintainers
+
 # A. 感知与认知
 cards/01-perception/ @yuanjing-robot/perception-group
 cards/09-knowledge-reasoning/ @yuanjing-robot/perception-group

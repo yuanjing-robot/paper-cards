@@ -14,7 +14,7 @@
 |------|------|
 | 论文原文 | [arXiv](https://arxiv.org/abs/xxxx.xxxxx) |
 | 代码 | [GitHub](https://github.com/xxx) |
-| 复现代码 | _待补充_ |
+| 成员实现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
 

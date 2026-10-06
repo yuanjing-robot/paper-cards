@@ -59,11 +59,11 @@ def update_subfield_readme(subfield_readme: Path, title: str, conference: str,
     else:
         paper_md += "- |"
 
-    # 如果有 "_待补充_" 的占位行，替换掉
+    # 如果有 "_待补充_" 的占位行，替换掉其中一行（只替换一行，保留其余占位）
     if '_待补充_' in content:
         content = content.replace(
             "| _待补充_ | - | - | - | - | - |",
-            paper_md
+            paper_md, 1
         )
     else:
         # 在表格最后插入（找 "---" 分隔线后的第一行表格内容的位置）
@@ -216,24 +216,26 @@ def main():
 
     # 更新 reading-notes.md 的标题和链接（先替换链接形式，避免丢失方括号）
     notes_path = target_dir / 'reading-notes.md'
-    if notes_path.exists() and args.paper_url:
+    if notes_path.exists():
         content = notes_path.read_text(encoding='utf-8')
         content = content.replace(
             '[论文标题](https://arxiv.org/abs/xxxx.xxxxx)',
-            f'[{args.title}]({args.paper_url})')
+            f'[{args.title}]({args.paper_url})' if args.paper_url else args.title)
         content = content.replace('[论文标题]', args.title)
-        content = content.replace('https://arxiv.org/abs/xxxx.xxxxx', args.paper_url)
+        if args.paper_url:
+            content = content.replace('https://arxiv.org/abs/xxxx.xxxxx', args.paper_url)
         notes_path.write_text(content, encoding='utf-8')
 
     # 更新 translation.md 的标题和链接（同上）
     translation_path = target_dir / 'translation.md'
-    if translation_path.exists() and args.paper_url:
+    if translation_path.exists():
         content = translation_path.read_text(encoding='utf-8')
         content = content.replace(
             '[论文标题](https://arxiv.org/abs/xxxx.xxxxx)',
-            f'[{args.title}]({args.paper_url})')
+            f'[{args.title}]({args.paper_url})' if args.paper_url else args.title)
         content = content.replace('[论文标题]', args.title)
-        content = content.replace('https://arxiv.org/abs/xxxx.xxxxx', args.paper_url)
+        if args.paper_url:
+            content = content.replace('https://arxiv.org/abs/xxxx.xxxxx', args.paper_url)
         translation_path.write_text(content, encoding='utf-8')
 
     print()
@@ -246,8 +248,6 @@ def main():
     print('   3. 填 reading-notes.md')
     print('   4. 补充 translation.md（翻译，可选）')
     print('   5. 提 PR')
-    print()
-    print('🔗 论文索引已自动更新，刷新即可看到新论文')
 
 
 if __name__ == '__main__':
