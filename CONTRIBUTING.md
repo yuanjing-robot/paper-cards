@@ -18,9 +18,9 @@
 ## 我是新人，从哪开始？
 
 1. **看首页总览**：打开仓库首页 README，找到你感兴趣的大方向
-2. **看范例卡片**：打开 `cards/` 下任意方向的论文卡片，参考其结构和内容
+2. **看卡片模板**：参考 [templates/paper-card-template](templates/paper-card-template/) 的 3 个文件，了解卡片结构与填写规范
 3. **选一篇论文**：找一篇你感兴趣、且还没人认领的论文
-4. **认领任务**：在 Issue 中搜索或新建一个 "paper: xxx" 的 Issue，评论 "我来做" 认领
+4. **认领任务**：在 [Issues](https://github.com/yuanjing-robot/paper-cards/issues) 中搜索或新建一个 "paper: xxx" 的 Issue，评论 "我来做" 认领
 
 ---
 
@@ -157,11 +157,12 @@ git push origin card/论文短标题
 
 | 修改内容 | 自动分配给 |
 |---------|-----------|
-| A. 感知与认知方向（01-03） | `@yuanjing-robot/perception-group` |
-| B. 学习与模型方向（04-07） | `@yuanjing-robot/learning-group` |
-| C. 行动与交互方向（08-10） | `@yuanjing-robot/action-group` |
-| D. 系统与生态方向（11-15） | `@yuanjing-robot/systems-group` |
-| 模板/仓库配置 | `@yuanjing-robot/maintainers` |
+| 00 大模型基础 | `@yuanjing-robot/maintainers` |
+| A. 感知与认知（01 / 09 / 15） | `@yuanjing-robot/perception-group` |
+| B. 学习与模型（02 / 03 / 04 / 14） | `@yuanjing-robot/learning-group` |
+| C. 行动与交互（05 / 06 / 13） | `@yuanjing-robot/action-group` |
+| D. 系统与生态（07 / 08 / 10 / 11 / 12） | `@yuanjing-robot/systems-group` |
+| 模板 / 脚本 / 仓库配置 | `@yuanjing-robot/maintainers` |
 
 ### Review 看什么？
 
