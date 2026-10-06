@@ -20,4 +20,4 @@
 python scripts/add-paper.py --title "论文标题" --field 09-knowledge-reasoning --paper-url "https://arxiv.org/abs/xxxx.xxxxx"
 ```
 
-- 如需按子方向组织，可与维护者讨论后自行创建子目录（脚本加 `--subfield 子方向名` 即可，目录不存在会自动创建）
+- 如需按子方向组织，加 `--subfield 子方向名` 即可（目录不存在会自动创建）

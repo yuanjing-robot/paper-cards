@@ -30,73 +30,74 @@ from pathlib import Path
 
 
 def slugify(title: str) -> str:
-    """将论文标题转为文件夹名：全小写，空格转 -，移除非字母数字字符"""
-    title = re.sub(r'[^a-zA-Z0-9\s-]', '', title)
+    """将论文标题转为文件夹名：全小写，空格转 -，仅保留字母、数字与中文等文字字符"""
+    title = re.sub(r'[^\w\s-]', '', title)
     title = re.sub(r'\s+', '-', title.strip().lower())
     title = re.sub(r'-+', '-', title)
     return title.strip('-')
 
 
-def update_subfield_readme(subfield_readme: Path, title: str, conference: str,
-                           paper_url: str, folder_name: str, code_url: str):
-    """自动更新子方向 README，把新论文加到论文列表里"""
-    if not subfield_readme.exists():
-        return False
-
-    content = subfield_readme.read_text(encoding='utf-8')
-
-    # 找到论文列表表格，在 "_待补充_" 那一行之前插入新论文
-    # 或者直接在表格最后一行之前插入
-    paper_md = f"| [{title}]({folder_name}/) | {conference or '-'} | "
+def build_paper_row(title: str, conference: str, paper_url: str, code_url: str,
+                    path_prefix: str) -> str:
+    """构造一行论文索引表格（path_prefix 为论文目录链接前缀，需以 / 结尾）"""
+    paper_md = f"| [{title}]({path_prefix}) | {conference or '-'} | "
     if paper_url:
         paper_md += f"[📄 原文]({paper_url}) | "
     else:
         paper_md += "- | "
-    paper_md += f"[📝 深度阅读]({folder_name}/reading-notes.md) | "
-    paper_md += f"[🌐 翻译]({folder_name}/translation.md) | "
+    paper_md += f"[📝 深度阅读]({path_prefix}reading-notes.md) | "
+    paper_md += f"[🌐 翻译]({path_prefix}translation.md) | "
     if code_url:
         paper_md += f"[💻 代码]({code_url}) |"
     else:
         paper_md += "- |"
+    return paper_md
 
-    # 如果有 "_待补充_" 的占位行，替换掉其中一行（只替换一行，保留其余占位）
-    if '_待补充_' in content:
-        content = content.replace(
-            "| _待补充_ | - | - | - | - | - |",
-            paper_md, 1
-        )
-    else:
-        # 在表格最后插入（找 "---" 分隔线后的第一行表格内容的位置）
-        # 简单做法：在表格末尾的 "---" 之前加一行
-        # 找 "论文列表" 之后的表格
-        lines = content.split('\n')
-        in_table = False
-        header_found = False
-        insert_idx = -1
-        for i, line in enumerate(lines):
-            if '论文列表' in line:
-                in_table = True
-                continue
-            if in_table and line.startswith('| 论文 |'):
-                header_found = True
-                continue
-            if header_found and line.startswith('|---'):
-                continue
-            if header_found and line.startswith('|'):
-                # 找到了第一行数据，继续往后找最后一行数据
-                insert_idx = i + 1
-                # 继续找直到表格结束
-                j = i
-                while j < len(lines) and lines[j].startswith('|'):
-                    j += 1
-                insert_idx = j
-                break
 
-        if insert_idx > 0:
-            lines.insert(insert_idx, paper_md)
-            content = '\n'.join(lines)
+def update_index_readme(readme_path: Path, paper_md: str,
+                        anchor: str = '论文列表') -> bool:
+    """把一行论文索引写入 README 中 anchor 之后的那张表格。
 
-    subfield_readme.write_text(content, encoding='utf-8')
+    anchor 用于定位目标表格：方向 README 用「论文列表」；
+    根 README 用「](cards/方向目录)」定位到对应方向的表格。
+    优先替换表格内的 "_待补充_" 占位行；没有占位行时追加到表格末尾。
+    """
+    if not readme_path.exists():
+        return False
+
+    content = readme_path.read_text(encoding='utf-8')
+    anchor_pos = content.find(anchor)
+    if anchor_pos == -1:
+        return False
+
+    lines = content.split('\n')
+    start = content[:anchor_pos].count('\n')
+
+    # 定位 anchor 之后的第一张表格表头
+    header = -1
+    for i in range(start, len(lines)):
+        if lines[i].startswith('| 论文 |'):
+            header = i
+            break
+    if header == -1:
+        return False
+
+    # 表格结束位置（表头、分隔线和数据行都以 | 开头）
+    end = header
+    while end < len(lines) and lines[end].startswith('|'):
+        end += 1
+
+    # 仅在目标表格范围内替换占位行，避免误伤后续方向
+    placeholder = "| _待补充_ | - | - | - | - | - |"
+    for i in range(header, end):
+        if lines[i].strip() == placeholder:
+            lines[i] = paper_md
+            readme_path.write_text('\n'.join(lines), encoding='utf-8')
+            return True
+
+    # 没有占位行：追加到该表格末尾
+    lines.insert(end, paper_md)
+    readme_path.write_text('\n'.join(lines), encoding='utf-8')
     return True
 
 
@@ -152,6 +153,10 @@ def main():
 
     # 生成文件夹名
     folder_name = slugify(args.title)
+    if not folder_name:
+        print(f'❌ 无法从标题生成文件夹名：{args.title}')
+        print('   标题中需要包含字母、数字或中文字符，请检查后重试')
+        return
     target_dir = output_dir / folder_name
 
     if target_dir.exists():
@@ -187,7 +192,7 @@ def main():
         if args.paper_url:
             content = content.replace(
                 '[arXiv](https://arxiv.org/abs/xxxx.xxxxx)',
-                f'[论文链接]({args.paper_url})'
+                f'[arXiv]({args.paper_url})'
             )
             content = content.replace(
                 '[论文原文](https://arxiv.org/abs/xxxx.xxxxx)',
@@ -208,11 +213,20 @@ def main():
         readme_path.write_text(content, encoding='utf-8')
         print(f'✅ 已更新 README.md')
 
-    # 自动更新所在目录的 README（把新论文加到索引里）
+    # 自动更新所在方向目录的 README（把新论文加到索引里）
     index_readme = output_dir / 'README.md'
-    if update_subfield_readme(index_readme, args.title, args.conference,
-                              args.paper_url, folder_name, args.code_url):
-        print(f'✅ 已更新论文索引：{index_readme}')
+    if update_index_readme(index_readme, build_paper_row(
+            args.title, args.conference, args.paper_url, args.code_url,
+            f'{folder_name}/')):
+        print(f'✅ 已更新论文索引：{index_readme.relative_to(repo_root)}')
+
+    # 同步更新根 README 中对应方向的索引表
+    root_readme = repo_root / 'README.md'
+    paper_rel = target_dir.relative_to(repo_root).as_posix()
+    if update_index_readme(root_readme, build_paper_row(
+            args.title, args.conference, args.paper_url, args.code_url,
+            f'{paper_rel}/'), anchor=f'](cards/{args.field})'):
+        print(f'✅ 已更新根 README 索引：{root_readme.relative_to(repo_root)}')
 
     # 更新 reading-notes.md 的标题和链接（先替换链接形式，避免丢失方括号）
     notes_path = target_dir / 'reading-notes.md'
