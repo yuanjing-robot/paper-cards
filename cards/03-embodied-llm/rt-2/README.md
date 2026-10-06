@@ -30,7 +30,7 @@
 
 | 模块 | 说明 | 文件 |
 |------|------|------|
-| 📝 深度阅读 | 精读 + 个人理解（角度按论文特点灵活取舍） | [reading-notes.md](reading-notes.md) |
+| 📝 深度阅读 | 精读 + 个人理解 | [reading-notes.md](reading-notes.md) |
 | 🌐 论文翻译 | 全文中文翻译 | [translation.md](translation.md) |
 
 ---

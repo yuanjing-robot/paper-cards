@@ -80,7 +80,7 @@ cp -r templates/paper-card-template cards/大方向/论文短标题
 #### ✅ 必须填写的文件
 
 1. **`README.md`** — 速览卡（论文基本信息 + 关键数据 + 导航）
-2. **`reading-notes.md`** — 深度阅读（含个人理解，角度灵活取舍：问题动机 / 核心方法 / 关键结果 / 批判思考 / 个人收获 / 延伸阅读）
+2. **`reading-notes.md`** — 深度阅读
 
 #### ⭐ 推荐填写的文件
 
