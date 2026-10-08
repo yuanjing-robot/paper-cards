@@ -28,7 +28,7 @@
 
 | 论文 | 会议/年份 | 原文 | 深度阅读 | 翻译 | 代码 |
 |------|----------|------|---------|------|------|
-| _待补充_ | - | - | - | - | - |
+| [Language Models are Few-Shot Learners](cards/00-llm/language-models-are-few-shot-learners/) | NeurIPS 2020 | [📄 原文](https://arxiv.org/abs/2005.14165) | [📝 深度阅读](cards/00-llm/language-models-are-few-shot-learners/reading-notes.md) | [🌐 翻译](cards/00-llm/language-models-are-few-shot-learners/translation.md) | - |
 | _待补充_ | - | - | - | - | - |
 | _待补充_ | - | - | - | - | - |
 
