@@ -3,7 +3,7 @@
 > 📄 [论文原文](https://arxiv.org/abs/2005.14165) · 📝 [深度阅读](reading-notes.md) · 🌐 [中文翻译](translation.md)
 >
 > Brown et al. (OpenAI), **NeurIPS 2020**
-> 领域标签: #大模型 #预训练 #In-context Learning #少样本 #Scaling Law
+> 领域标签: #大模型 #预训练 #In-context-Learning #少样本 #Scaling-Law
 > 首次笔记: @zeng417 | 最后更新: 2026-10-08
 
 ---
@@ -13,7 +13,7 @@
 | 类型 | 链接 |
 |------|------|
 | 论文原文 | [arXiv:2005.14165](https://arxiv.org/abs/2005.14165) |
-| 代码 | - （论文未提供官方代码） |
+| 代码 | [openai/gpt-3](https://github.com/openai/gpt-3)（论文配套：生成样本 / 合成数据集 / 模型卡；模型权重未开源） |
 | 成员实现代码 | _待补充_ |
 | 项目主页 | _待补充_ |
 | 解读视频 | _待补充_ |
@@ -31,7 +31,7 @@
 | 模块 | 说明 | 文件 |
 |------|------|------|
 | 📝 深度阅读 | 精读 + 个人理解 | [reading-notes.md](reading-notes.md) |
-| 🌐 论文翻译 | 全文中文翻译 | [translation.md](translation.md) |
+| 🌐 论文翻译 | 正文全文 + 附录概述 | [translation.md](translation.md) |
 
 ---
 
@@ -52,10 +52,3 @@
 
 - 数据污染：因为训练语料来自 Common Crawl，测试/验证集内容可能被“看到”。作者开发了一套检测工具，对大部分数据集影响很小，但对少数数据集需打星号标注（详见论文第 4 节）。
 - 论文只评测 zero/one/few-shot，未做传统微调，因此 few-shot 与微调 SOTA 的对比需注意设定差异。
-
----
-
-> 💡 **快速使用指南**
-> - 想看中文版？看「论文翻译」
-> - 想快速了解论文核心？看「深度阅读」
-> - 想看读后的思考与收获？看「深度阅读」的个人收获部分

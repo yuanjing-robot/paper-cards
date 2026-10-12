@@ -6,8 +6,6 @@
 
 ---
 
-> 💡 深度阅读与个人理解合并为一份。以下角度**按论文特点取舍**，不要求全部填写；建议至少写「核心方法」和「个人收获」。
-
 ## 1. 问题与动机
 
 - 当时的主流范式是「预训练 + 下游任务微调」。它虽让架构变得任务无关，但**每个新任务仍需要成千上万条标注样本**做微调，这限制了方法的适用范围。
@@ -54,10 +52,3 @@
 - Scaling Laws for Neural Language Models (Kaplan et al., 2020)
 - GPT-3 官方博客 "Language Models are Few-Shot Learners"
 - InstructGPT: Training language models to follow instructions with human feedback
-
----
-
-> ✍️ **写作提示**
-> - 引用数据标明出处（论文表 X / 图 Y）
-> - 不编造信息，不确定的内容标注「待确认」
-> - 不要复述论文原文，用自己的话写

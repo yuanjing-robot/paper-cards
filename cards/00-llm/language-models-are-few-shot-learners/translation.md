@@ -222,7 +222,7 @@ NLI 需要推断前提与假设之间的蕴含/矛盾/中立关系。在专为�
 
 **3.9.2 单词打乱与操作任务 (Word Scrambling)**：要求模型还原被打乱字母顺序的词、或做字母/单词层面的重排。zero-shot 几乎不会（如 random insertion 8.26%），但 few-shot 提升明显（random insertion 67.2%、anagrams 39.7%、cycle letters 37.9%）。作者也借此画出“上下文学习曲线”（原文图 1.2/3.9），显示更大模型的曲线更陡，即更善于从上下文示例中学习。
 
-**3.9.3 SAT 类比 (SAT Analogies)**：用 SAT 的类比题（A:B 如同 C:?）评测。GPT-3 zero-shot 53.7%、few-shot **65.2%**，高于零样本且接近人的平均水平，但仍低于专门方法。
+**3.9.3 SAT 类比 (SAT Analogies)**：用 SAT 的类比题（A:B 如同 C:?）评测。GPT-3 zero-shot 53.7%、few-shot **65.2%**，高于零样本；论文报告该成绩超过了 SAT 考生的平均水平（约 57%）。
 
 **3.9.4 新闻文章生成 (News Article Generation)**：给定由人类撰写的标题与首句，让 GPT-3 续写真假难辨的短新闻。人类评审区分“GPT-3 生成”与“真人撰写”的准确率仅约 **52%**，接近随机猜测（详见附录 E），说明 few-shot 生成质量已相当高。
 
