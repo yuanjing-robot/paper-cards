@@ -23,8 +23,64 @@
 |------|------|------|
 | 论文文件夹名 | 全小写，空格用 `-` 连接，可含中文 | `paper-title-example` / `具身智能综述` |
 | 分支名 | `card/论文短标题` 或 `update/说明` | `card/rt-2` |
-| Commit 信息 | `feat:` 新增 · `update:` 更新 · `fix:` 修复 · `docs:` 文档 | `feat: add card for RT-2` |
-| PR 标题 | 同 commit 规范 | `feat: add paper card for RT-2` |
+| PR 标题 | 同 commit 信息规范 | `feat: add paper card for RT-2` |
+
+#### 基础格式
+
+```
+<type>: <描述内容>
+```
+
+如果关联 Issue / Bug 单，末尾带上编号：
+
+```
+<type>: <描述内容>(#编号)
+```
+
+#### type 类型
+
+| type | 含义 | 示例 |
+|------|------|------|
+| `feat` | 新增功能 / 新卡片 | `feat: add paper card for RT-2` |
+| `fix` | 修复 bug，建议带上编号 + 问题简述 | `fix: 修复索引表链接失效问题(#12)` |
+| `docs` | 文档 / 卡片内容修改、补充 | `docs: 补充 GPT-3 卡片延伸阅读` |
+| `style` | 格式调整（空格、缩进、标题层级），不改内容 | `style: 统一卡片 Markdown 标题层级` |
+| `refactor` | 重构，既没新增功能也没修 bug | `refactor: 拆分索引表字段，提升可读性` |
+| `perf` | 性能 / 体验优化 | `perf: 精简卡片模板，减少冗余字段` |
+| `test` | 新增或修改测试 | `test: 新增 add-paper.py 冒烟测试` |
+| `chore` | 构建 / 依赖 / 工具改动 | `chore: 更新 add-paper.py 依赖声明` |
+| `revert` | 回滚到上一版本 | `revert: 回滚索引表结构改动` |
+
+#### 实操准则
+
+1. 标题简洁，一句话说清改动，不要写「更新代码」「修复 bug」这类模糊描述
+2. 类型用英文，描述可用中文，项目内保持一致
+3. `fix` 优先关联 Issue 编号，把 bug 现象写清楚
+4. 一次 commit 只做一件事，多个改动拆成多次提交
+
+#### 正反示例
+
+❌ 错误做法：
+
+```bash
+git commit -m '改代码'
+git commit -m '修复一个bug'
+git commit -m '更新卡片'
+git commit -m '改索引 + 补翻译 + 修链接'
+```
+
+✅ 规范做法：
+
+```bash
+git commit -m 'feat: add paper card for RT-2'
+git commit -m 'fix: 修复索引表链接失效问题(#12)'
+git commit -m 'docs: 补充贡献流程到 CONTRIBUTING'
+git commit -m 'refactor: 拆分卡片模板字段，提升可读性'
+git commit -m 'test: 新增 add-paper.py 冒烟测试'
+git commit -m 'chore: 更新 add-paper.py 依赖与版本号'
+git commit -m 'docs: 补充 GPT-3 卡片延伸阅读'
+```
+
 
 ### 写作规范
 
@@ -138,8 +194,8 @@ git push origin card/论文短标题
 发现某篇论文的卡片可以补充？或者发现了错误？
 
 1. 直接在对应文件上修改
-2. 提交 PR，标题用 `update: <论文标题> - <什么修改>`
-3. 比如：`update: 论文短标题 - 补充说明`
+2. 提交 PR，标题按改动类型选 `docs:`（补充/完善内容）或 `fix:`（修正错误）：`docs: <论文标题> - <什么修改>`
+3. 比如：`docs: 论文短标题 - 补充延伸阅读`、`fix: 论文短标题 - 修正引用数据`
 
 **鼓励的行为**：
 - 补充翻译（translation.md）
