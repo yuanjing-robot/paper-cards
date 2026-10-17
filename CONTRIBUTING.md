@@ -185,7 +185,7 @@ git push origin card/论文短标题
 然后在 GitHub 上创建 Pull Request：
 - **标题**：`feat: add paper card for <论文标题>`
 - **描述**：简要说明你填了哪些文件、论文属于哪个方向
-- **Reviewer**：会自动分配给对应方向的 Team（通过 CODEOWNERS）
+- **Reviewer**：会自动分配给你（@zeng417，通过 CODEOWNERS）
 
 ---
 
@@ -209,16 +209,11 @@ git push origin card/论文短标题
 
 ### 谁来 review？
 
-根据你修改的内容，自动分配 reviewer（通过 CODEOWNERS 配置）：
+所有 PR 统一由维护者 review（通过 CODEOWNERS 配置，`* @zeng417`）：
 
 | 修改内容 | 自动分配给 |
 |---------|-----------|
-| 00 大模型基础 | `@yuanjing-robot/maintainers` |
-| A. 感知与认知（01 / 09 / 15） | `@yuanjing-robot/perception-group` |
-| B. 学习与模型（02 / 03 / 04 / 14） | `@yuanjing-robot/learning-group` |
-| C. 行动与交互（05 / 06 / 13） | `@yuanjing-robot/action-group` |
-| D. 系统与生态（07 / 08 / 10 / 11 / 12） | `@yuanjing-robot/systems-group` |
-| 模板 / 脚本 / 仓库配置 | `@yuanjing-robot/maintainers` |
+| 全部（所有文件） | `@zeng417` |
 
 ### Review 看什么？
 
@@ -229,7 +224,7 @@ git push origin card/论文短标题
 
 ### Review 通过标准
 
-- 至少 1 位对应方向的成员 approve
+- 维护者 @zeng417 approve
 - 所有评论都已回复 / 解决
 - CI 检查通过（如果有配置）
 
