@@ -64,7 +64,7 @@
 
 | 论文 | 会议/年份 | 原文 | 深度阅读 | 翻译 | 代码 |
 |------|----------|------|---------|------|------|
-| _待补充_ | - | - | - | - | - |
+| [RT-2](cards/03-embodied-llm/rt-2/) | CoRL 2023 | [📄 原文](https://arxiv.org/abs/2307.15818) | [📝 深度阅读](cards/03-embodied-llm/rt-2/reading-notes.md) | [🌐 翻译](cards/03-embodied-llm/rt-2/translation.md) | - |
 | _待补充_ | - | - | - | - | - |
 | _待补充_ | - | - | - | - | - |
 
