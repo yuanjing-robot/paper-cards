@@ -8,7 +8,7 @@
 
 ## 📝 翻译说明
 
-- 翻译范围：分节推进，已完成**术语表 + 摘要 + §1 引言 + §3 方法 + §4 引言至 §4.2**，其余按下方进度表追加
+- 翻译范围：分节推进，已完成**术语表 + 摘要 + §1 引言 + §3 方法 + §4 实验全节**，其余按下方进度表追加
 - 底本：arXiv:2307.15818**v1**（2023-07-28，26 页）。正文页码均指 PDF 物理页号
 - 翻译原则：直译为主，专业术语保留英文（见术语表）
 - 术语表中每条的「出现位置」和原文定义句都经过逐页 grep 核对，未定义的一律标注，不代为补定义
@@ -133,6 +133,32 @@ Figure 3 展示了泛化评测的示例，这些评测被划分为未见过的�
 
 ---
 
+### 4.3 泛化如何随参数规模与其他设计决策而变化？
+
+出于模型规模方面的灵活性，我们在这一比较中使用 RT-2-PaLI-X 模型（由于 PaLM-E 的性质，RT-2-PaLM-E 仅限于 PaLM 与 ViT 模型的某些规模）。具体而言，我们比较两种不同的模型规模，5B 与 55B，以及三种不同的训练流程：从零训练一个模型，不使用任何来自 VLM 预训练的权重；仅使用机器人动作数据微调一个预训练模型；以及联合微调（co-fine-tuning，即与微调共同训练），这是本工作所采用的主要方法，我们同时使用原始 VLM 训练数据与机器人数据进行 VLM 微调。由于我们主要关注这些模型的泛化方面，我们从这组实验中移除了已见任务评测。
+
+消融的结果见 Figure 6b 与 Appendix Table 6。首先，我们观察到，从零训练一个非常大的模型会导致非常差的性能，即使对 5B 模型也是如此。鉴于这一结果，我们决定跳过对从零训练的更大的 55B PaLI-X 模型的评测。其次，我们注意到，联合微调一个模型（无论其规模如何）会带来比仅用机器人数据微调它更好的泛化性能。我们把这一点归因于：在训练的微调部分保留原始数据，使模型不会忘记其在 VLM 训练期间学到的既有概念。最后，有些不出所料，我们注意到模型规模的增大带来了更好的泛化性能。
+
+### 4.4 RT-2 能否像视觉-语言模型那样表现出思维链推理的迹象？
+
+受 LLM 中思维链（CoT）提示方法（Wei et al., 2022）的启发，我们用 PaLM-E 对 RT-2 的一个变体仅微调了数百个梯度步，以提升其联合利用语言与动作的能力，希望这能引出更复杂的推理行为。我们对数据做增强，加入一个额外的 “Plan” 步骤：它先用自然语言描述机器人即将采取的动作的目的，随后是实际的动作 token，例如 “Instruction: I’m hungry. Plan: pick rxbar chocolate. Action: 1 128 124 136 121 158 111 255.”。这一数据增强方案充当 VQA 数据集（视觉推理）与操作数据集（生成动作）之间的桥梁。
+
+我们定性地观察到，带思维链推理的 RT-2 能够回答更复杂的命令，原因是它先获得了一个用自然语言规划其动作的位置。这是一个有前景的方向，提供了初步证据表明：把 LLM 或 VLM 用作规划器（Ahn et al., 2022; Driess et al., 2023）可以与低层策略结合在单个 VLA 模型中。带思维链推理的 RT-2 的 rollout 见 Figure 7 与 Appendix I。
+
+> Figure 7 | 带思维链推理的 RT-2 的 rollout，其中 RT-2 同时生成一个计划与一个动作。
+
+> Prompt: Given <img> Instruction: Bring me a drink.（给我拿一杯饮料） Prediction: Plan: pick 7up can. Action: 1 143 129 123 145 114 115 127
+>
+> Prompt: Given <img> Instruction: Move all the objects together.（把所有物体移到一起） Prediction: Plan: move green can near green rice chip bag. Action: 1 128 126 127 135 123 119 127
+>
+> Prompt: Given <img> Instruction: Pick the object that is different from all other objects（拿起与其他所有物体都不同的那个物体） Prediction: Plan: pick rxbar chocolate. Action: 1 128 129 125 131 125 128 127
+>
+> Prompt: Given <img> Instruction: Move the green objects together.（把绿色物体移到一起） Prediction: Plan: move green can near green rice chip bag. Action: 1 130 129 121 131 127 128 127
+>
+> Prompt: Given <img> I need to hammer a nail, what object from the scene might be useful?（我需要锤钉子，场景里哪个物体可能有用？） Prediction: Rocks. Action: 1 129 138 122 132 135 106 127
+
+---
+
 ## 📖 后续章节进度
 
 | 章节 | 原文位置 | 状态 |
@@ -141,7 +167,7 @@ Figure 3 展示了泛化评测的示例，这些评测被划分为未见过的�
 | 1 引言 (Introduction) | p.1–3 | ✅ 已译 |
 | 2 相关工作 (Related Work) | p.3 | 待译 |
 | 3 方法 (VLA Models，§3.1–3.3) | p.4–6 | ✅ 已译 |
-| 4 实验 (Experiments，§4.1–4.4) | p.6–11 | 🔶 已译 §4 引言 + §4.1 + §4.2，余 §4.3–4.4 |
+| 4 实验 (Experiments，§4.1–4.4) | p.6–11 | ✅ 已译 |
 | 5 局限 · 6 结论 | p.11 | 待译 |
 | 附录（重点 B / F / G / H） | p.19–24 | 待译，按要点摘译 |
 
