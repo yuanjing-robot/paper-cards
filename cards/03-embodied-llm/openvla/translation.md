@@ -12,7 +12,7 @@
 - 底本：arXiv:2406.09246**v3**（v1 2024-06-13 / v2 09-04 / v3 09-05，共 37 页）。下文页码均指 **PDF 物理页号**，行号指逐页 `pdftotext -layout` 的输出行，可用 `sed -n '7p' pages/p05.txt` 复现
 - 翻译原则：直译为主，专业术语保留英文
 - 术语表每条的「出现位置」与原文定义句都经过逐页 grep 核对；原文未定义的，标注「原文未下定义」而不代为补定义
-- 进度：**正文全译完成**——摘要 + §1 + §2 + §3 全节 + §4 + §5 全节 + §6（含 Figure 1–6 图注、Table 1–2 表注、脚注 1–5，PDF p1–11），剩附录要点概述（2026-10-31）；每批一条 `docs:` commit 追加
+- 进度：**全篇完成**——正文全译（摘要 + §1 + §2 + §3 全节 + §4 + §5 全节 + §6，含 Figure 1–6 图注、Table 1–2 表注、脚注 1–5，PDF p1–11）+ 附录 A–E 要点概述（p21–37）。正文每批一条 `docs:` commit 追加，附录一次入库（2026-10-31）
 - 原文自己用词不统一的地方，译文照各处原样保留、不替它统一：`970k` 三处分别译作片段（episodes）/ 演示（demonstrations）/ 轨迹（trajectories）；数据集名 `Open X-Embodiment` 与 `Open-X Embodiment` 并存；视觉编码器 `DINOv2` 与 `DinoV2` 并存
 
 | 英文 | 中文 | 备注 |
@@ -31,7 +31,7 @@
 | out-of-the-box | 开箱即用 | 全文 **9 处、三种排版**：加引号 3 处（§5.1 p7 L55、§5.2 p8 L55、p10 L61）；不加引号带连字符 3 处（p3 L28、§4 p7 L39–40 句首大写、§6 p11 L21）；不加引号也不带连字符 3 处（Figure 1 图注 p1 L40、§3.3 p5 L25–26、§5 开头 p7 L45）。**其中 p5 与 p7 两处被排版拆到两行**，整词 grep 抓不到。首次出现作「开箱即用（out of the box）」，后文统一中文 |
 | co-fine-tuning / co-training | 联合微调 / 联合训练 | **两个词在本文各只出现 1 次，且都不是描述 OpenVLA**：`co-fine-tuned`（p8 L44）说的是 RT-2-X；`co-training`（p11 L38）是 §6 列出的未做设计问题。RT-2 卡片里这个词是核心方法，两篇同名不同命，翻译时别顺手上岗成 OpenVLA 的做法 |
 | action chunking | 动作分块 | 仅作改进方向出现：§6 p11 L32（提高吞吐量的手段之一）；p9 L60/70 说明 OpenVLA 推理不用分块、只出单步相对位置控制。**别译成已实现特性** |
-| proprioceptive input | 本体感知状态输入（proprio 保留英文） | §6 p11 L26 明写当前不支持；p9 L64/69 交代对比用的 Diffusion Policy 完整版带图像 + proprio 两步历史、匹配版无 proprio |
+| proprioceptive（state / input / information） | 本体感知状态（输入）（proprio 保留英文） | 本文三种写法同根，**统一译作「本体感知」**：`proprioceptive state`（p9 L64，脚注 3）、`proprioceptive information`（p9 L69，脚注 3）、`proprioceptive inputs`（p11 L26，§6 明写当前不支持）。p9 L64/69 交代对比用的 Diffusion Policy 完整版带图像 + proprio 两步历史、匹配版无 proprio |
 | embodiment / cross-embodiment | 具身形态 / 跨具身形态 | `cross-embodiment` 正文**仅 1 次**（§6 p11 L21；另 1 次在参考文献 p17 L14，属被引论文标题，不算）。正文实际说法是 `robot embodiments`（§5.1 p7 L56、§5.2 p9 L34、p2 L45、§3.3 p5 L25） |
 | rollout | rollout（一次实机执行） | 机器人语境通行不译。分母随表变：Table 1 图注 p10 L9 是 33 rollouts、Fig 3 图注 p7 L34 是 170 rollouts、Table 2 图注 p10 L51 是 80 rollouts，不能跨表直接比数值 |
 
@@ -161,7 +161,7 @@ SigLIP、DinoV2 与 Llama 2 未公开其训练数据的细节，而这些数据�
 
 > Figure 5 | 适配到新的机器人设置。我们评测从零训练的 state-of-the-art Diffusion Policy 在七个 Franka Emika Panda 任务上的表现（每个任务 10–150 条演示），以及在同一数据上微调的通用机器人策略 Octo 与 OpenVLA。Diffusion Policy 在较窄的单指令任务上表现强劲，而 Octo 与 OpenVLA 在涉及多条指令与干扰物的多样微调任务上表现更好。总体而言，OpenVLA 在两个设置上取得最高的总体性能，表明它是下游任务策略学习的一个有效默认选择。平均成功率 ± StdErr 在每种方法 129 次 rollout 上计算（Franka-Tabletop 任务 99 次、Franka-DROID 任务 30 次）。详细结果见 Table 7。
 
-> 脚注 3：完整的 Diffusion Policy 使用两步（two-step）观测历史，同时包含图像与本体感受状态（proprioceptive state），并通过预测一个包含 T 个未来动作的分块、以开环（open-loop）方式执行前 X 个动作、再预测下一分块的方式执行滚动时域控制（receding horizon control）（对 15Hz 控制，我们像 DROID 先前工作 [11] 那样设 T = 16, X = 8；对 5Hz 控制，我们把分块大小减小到 T = 8, X = 3）。它也是 Section 5.2 中唯一预测绝对笛卡尔坐标（absolute Cartesian coordinates）来控制机器人的方法；所有其他方法都使用相对位置控制（relative position control）。Diffusion Policy (matched) 以单张图像为输入，没有本体感受信息，也没有观测历史，且在不使用动作分块的情况下预测单个相对位置控制动作。
+> 脚注 3：完整的 Diffusion Policy 使用两步（two-step）观测历史，同时包含图像与本体感知状态（proprioceptive state），并通过预测一个包含 T 个未来动作的分块、以开环（open-loop）方式执行前 X 个动作、再预测下一分块的方式执行滚动时域控制（receding horizon control）（对 15Hz 控制，我们像 DROID 先前工作 [11] 那样设 T = 16, X = 8；对 5Hz 控制，我们把分块大小减小到 T = 8, X = 3）。它也是 Section 5.2 中唯一预测绝对笛卡尔坐标（absolute Cartesian coordinates）来控制机器人的方法；所有其他方法都使用相对位置控制（relative position control）。Diffusion Policy (matched) 以单张图像为输入，没有本体感知信息，也没有观测历史，且在不使用动作分块的情况下预测单个相对位置控制动作。
 
 ### 5.3 参数高效微调
 
@@ -207,9 +207,15 @@ OpenVLA 作为 7B 参数模型，在推理时比 Octo 这类参数少于 100M �
 
 ---
 
-## 📎 附录 (Appendix)
+## 📎 附录要点概述
 
-_附录全文翻译（如有）_
+附录（p21–37，共五节 A–E）不做逐字翻译：主体是任务实景拼图（Figure 7–11）与结果全表（Table 3–12），逐字译不增加理解；卡片与深度阅读引用的数值都出自正文，此处不重复抄表。以下每条结论后的 `pNN L行` 指该句在逐页 `pdftotext -layout` 文本里的行位置，可就地复现。
+
+- **附录 A 数据混合（p21 L1–37）**：Table 3 的图注（p21 L33–34）只说一件事——OpenVLA 的 Open X-Embodiment 配比是 `following [5] with a few additions`，即沿用 Octo 的配比再少量增删。脚注 6（p21 L55–56）是正文没讲的训练细节：**DROID（配比 10.0%，p21 L32）因学习进展慢，在训练最后三分之一被移除**，权重重新分摊给其余数据集。
+- **附录 B 评测任务与逐任务结果（p21 L38–p32 L43）**：B.1.1 把 §5.1 的 17 个 WidowX 任务 × 10 次试验拆成五类——视觉 5 / 运动 2 / 物理 3 / 语义 4 / 语言接地 3（p21 L46–49）。B.1.2 是一条需要留心的口径：**RT-1-X 与 Octo 在这里的成功率低于它们自己原文报道的值**，作者归因于复现环境带来的分布偏移与任务更难（p25 L52–53），所以这两个基线不能直接跟原论文的数字混着引。B.2.1 = Google 机器人 12 个任务 × 每个 5 次 rollout = 共 60 次，前 5 个已见、后 7 个 OOD（p26 L61–63）。B.3.1 是自建的数据高效微调实验：7 个任务每个采 10–150 条演示，前 6 个属 Franka-Tabletop、第 7 个属 Franka-DROID（p29 L3–5）。B.3.2 的总结是“没有一个策略在所有任务上都最好”——Diffusion Policy 单指令强，OpenVLA 与 Octo 多指令强，但平均值仍 OpenVLA 最高（p32 L5–8）。
+- **附录 C RT-2-X 与 OpenVLA 的对比补充（p32 L44–p33 L7）**：作者解释 OpenVLA 在 BridgeData V2 上大幅超过 RT-2-X（Fig. 3）时，除了数据更多、双视觉编码器，还补了一条正文没写的原因：**对 Bridge 数据集更仔细的预处理**（p32 L48–50）。原始 BridgeData V2 含大量全零（no-op）动作，每条演示第一帧的标注动作就是全零，不做预处理直接训会让策略频繁输出全零、评测中卡死，因此他们过滤掉每条演示的第一帧转移（p32 L51–56）。同节还记下一个失败尝试：动态决定何时重新推理（dynamic querying）比一直取第二可能动作更差，作者猜是因为中途暂停重询改变了机器人动力学（p33 L1–4）。
+- **附录 D 追加实验与消融（p33 L8–p35 L50）**：D.1 只留 Bridge、去掉 OpenX，绝对成功率掉 30 个百分点；语言接地不受影响，但各泛化类目全面退步（p33 L36–40）。D.2 加不加 DinoV2 只差 5 个百分点，作者自己承认“不如那 30% 显著”，并说 DinoV2 的低层空间特征只在部分情况下帮助泛化（p34 L26–31）。D.3 冻结视觉编码器：两种做法都测过的评测里，微调 80.0% 对冻结 46.7%，且部分冻结实验因表现接近零、机器人行为不稳定而提前中止（p35 L6–9）；正文 §3.4 提到 VLM 文献倾向冻结，OpenVLA 实际把 7B 参数全调、含视觉主干（p34 L33–35）。D.4 把推理速度与策略表现拆开：用 blocking control（每步都等模型出结果）重跑那 8 个 Bridge 任务，8-bit 与 bfloat16、4-bit 相当，证实 Table 2 里 8-bit 最差是速度拖的（p35 L36–41）。**D.4 正文两处把量化实验交叉引成 “Section 5.3”（p34 L53、p35 L42–43），实际在 §5.4（p10 L36）；§5.3 是 LoRA，同页 p37 L13 引 §5.3 指 LoRA 才是对的。属原文笔误，此处如实记录、不替作者改正。**
+- **附录 E LIBERO 仿真实验（p36 L1–p37 末）**：E.1 交代与 §5.2 并列的仿真设置——4 个任务套件 × 每套 10 个任务 × 每任务 50 条人类遥操作演示（p36 L23–24）。为兼容需要高分辨率输入的方法，把原基准自带的 128×128px 演示重制成 256×256px，理由是直接放大画质不行（p36 L37–40）；LIBERO 在他们硬件上返回上下颠倒的图像，故第三视角图训练与测试一律旋转 180°（p36 L51–52）。对比方法为 Diffusion Policy（从头训）、Octo（微调）、OpenVLA（LoRA r=32 微调，p37 L11–13）；其中 Diffusion Policy 用的是 DROID 论文里的实现，动作生成以任务标签的 DistilBERT 语言嵌入为条件（脚注 8，p37 L53–54）。评测为每套件 500 次试验 × 3 个随机种子，即每个统计量 1500 次（p37 L16–18）。E.2 的结果（Table 12，图注 p37 L35–36）：OpenVLA 平均成功率与排名最高，**但领先幅度比 §5.2 的真机微调实验窄**，作者归因于预训练纯用真机数据、没有仿真数据（p37 L22–27）。
 
 ---
 
