@@ -52,7 +52,7 @@
 
 | 论文 | 会议/年份 | 原文 | 深度阅读 | 翻译 | 代码 |
 |------|----------|------|---------|------|------|
-| _待补充_ | - | - | - | - | - |
+| [Self-Improving Embodied Foundation Models](cards/02-autonomous-learning/self-improving-embodied-foundation-models/) | NeurIPS 2025 | [📄 原文](https://arxiv.org/abs/2509.15155) | [📝 深度阅读](cards/02-autonomous-learning/self-improving-embodied-foundation-models/reading-notes.md) | [🌐 翻译](cards/02-autonomous-learning/self-improving-embodied-foundation-models/translation.md) | - |
 | _待补充_ | - | - | - | - | - |
 | _待补充_ | - | - | - | - | - |
 
