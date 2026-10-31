@@ -12,7 +12,7 @@
 - 底本：arXiv:2406.09246**v3**（v1 2024-06-13 / v2 09-04 / v3 09-05，共 37 页）。下文页码均指 **PDF 物理页号**，行号指逐页 `pdftotext -layout` 的输出行，可用 `sed -n '7p' pages/p05.txt` 复现
 - 翻译原则：直译为主，专业术语保留英文
 - 术语表每条的「出现位置」与原文定义句都经过逐页 grep 核对；原文未定义的，标注「原文未下定义」而不代为补定义
-- 进度：**摘要 + §1 + §2 + §3 全节 + §4 + §5 开头与 §5.1 已译**（含 Figure 1–4 图注、脚注 1–2；剩 §5.2–§5.4、§6 结论与附录，2026-10-31）；后续每批一条 `docs:` commit 追加
+- 进度：**摘要 + §1 + §2 + §3 全节 + §4 + §5 开头、§5.1 与 §5.2 已译**（含 Figure 1–5 图注、脚注 1–3；剩 §5.3–§5.4、§6 结论与附录，2026-10-31）；后续每批一条 `docs:` commit 追加
 - 原文自己用词不统一的地方，译文照各处原样保留、不替它统一：`970k` 三处分别译作片段（episodes）/ 演示（demonstrations）/ 轨迹（trajectories）；数据集名 `Open X-Embodiment` 与 `Open-X Embodiment` 并存；视觉编码器 `DINOv2` 与 `DinoV2` 并存
 
 | 英文 | 中文 | 备注 |
@@ -146,6 +146,22 @@ SigLIP、DinoV2 与 Llama 2 未公开其训练数据的细节，而这些数据�
 值得注意的是，OpenVLA 在 Google robot 评测上与 RT-2-X 表现相当，并在 BridgeData V2 评测上显著超过 RT-2-X，尽管规模小一个数量级（7B vs. 55B 参数）。在定性上，我们发现 RT-2-X 与 OpenVLA 都表现出明显比其他受测模型更鲁棒的行为，例如在有干扰物时接近正确的物体、正确调整机器人末端执行器的朝向以与目标物体的朝向对齐，甚至能从抓握不稳等失误中恢复（定性 rollout 示例见 https://openvla.github.io）。RT-2-X 在语义泛化任务上取得更高性能，如 Fig. 3 所示，这在预料之中，因为它使用更大规模的互联网预训练数据，并与机器人动作数据和互联网预训练数据共同微调（co-fine-tuned），以更好地保留预训练知识，而不是像 OpenVLA 那样只在机器人数据上微调。然而，OpenVLA 在 BridgeData V2 与 Google robot 评测的所有其他任务类别上表现相当或更好。性能差异可归因于多个因素的综合：我们为 OpenVLA 整理了更大的训练数据集，含 970k 条轨迹（RT-2-X 为 350k）；我们对训练数据集做了更细致的清洗，例如过滤掉 Bridge 数据集中的全零动作（详细讨论见 Appendix C）；以及 OpenVLA 使用一个融合视觉编码器，把预训练语义特征与空间特征结合起来。这些组件的消融分析见 Appendix D。
 
 > Figure 4 | Google robot 评测结果。我们在 RT-1 与 RT-2 评测 [2, 7] 所用的移动操作机器人上，于分布内与分布外（OOD）任务上评测通用机器人策略。我们发现 OpenVLA 与 RT-2-X 性能相当，且总体上显著超过 RT-1-X 与 Octo。平均成功率 ± StdErr 在每种方法 60 次总 rollout 上计算。详细结果见 Table 6。
+
+### 5.2 面向新机器人设置的数据高效适配
+
+尽管先前工作主要聚焦于直接评测 VLA 的“out-of-the-box”表现 [1, 7, 16]，但把 VLA 模型有效微调到新任务与新机器人设置在很大程度上仍未被探索，而这对其广泛采用至关重要。本节中，我们研究 OpenVLA 被快速适配到新的真实世界机器人设置的能力。（模拟环境中的微调实验见 Appendix E。）
+
+**机器人平台与任务（Robot setups and tasks）。** 我们为 OpenVLA 模型测试一套简单的微调配方：对全部模型参数做完整微调，使用仅含 10–150 条目标任务演示的小数据集（见 Fig. 5；我们在 Section 5.3 探索参数高效微调方法）。我们在两个设置中测试 OpenVLA：Franka-Tabletop，一个固定的、安装在桌面上的 Franka Emika Panda 7-DoF 机械臂；以及 Franka-DROID，即来自近期发布的 DROID 数据集 [11] 的 Franka 机械臂设置，安装在一个可移动的站立桌台上。这两个设置分别使用 5Hz 与 15 Hz 的非阻塞控制器。我们选择 Franka 机械臂作为微调实验的目标具身形态，因为它们在机器人学习社区中被广泛使用，因而很可能是 OpenVLA 微调的“target”。我们在具有不同控制频率的设置上测试，以检验 OpenVLA 对多种使用场景的适用性。
+
+**对比（Comparisons）。** 我们与 Diffusion Policy [3] 对比，它是一种 state-of-the-art 的数据高效模仿学习方法，从零训练。我们还与 Diffusion Policy (matched) 对比，它是一个与 OpenVLA 的输入与输出规格相匹配的 Diffusion Policy 版本。³ 此外，我们评测在目标数据集上微调的 Octo [5]，因为它是当前支持微调的最佳通用策略（RT-2-X 的微调不受其推理 API 支持）。我们还在同一目标数据集上微调 OpenVLA，得到的策略记为 OpenVLA。最后，作为一项消融实验，我们与 OpenVLA (scratch) 对比：我们直接在目标机器人设置上微调其底层的基座 Prismatic VLM——而不是微调经 OpenX 预训练的 OpenVLA 模型——以评估大规模机器人预训练的收益。
+
+我们在 Fig. 5 中给出结果（逐任务分解见 Appendix 的 Table 7）。我们发现，两个版本的 Diffusion Policy 在较窄的单指令任务（如“Put Carrot in Bowl”与“Pour Corn into Pot”）上与通用策略 Octo 和 OpenVLA 相当或更优，但预训练的通用策略在涉及场景中多个物体、且需要语言条件能力的更多样微调任务上表现更好。对 Octo 与 OpenVLA 而言，OpenX 预训练使模型能更好地适配这些 language grounding 更重要的多样任务；OpenVLA (scratch) 更低的性能即为证据。
+
+总体而言，我们发现 OpenVLA 取得最高的平均性能。值得注意的是，大多数先前工作只在较窄的单指令任务或多样的多指令任务之一上取得强性能，导致成功率差异很大。OpenVLA 是唯一在所有受测任务上都达到至少 50% 成功率的方案，这表明它可以是模仿学习任务的强默认选项，尤其当这些任务涉及多样的语言指令集合时。对于较窄但灵巧度要求高的任务，Diffusion Policy 仍展现出更平滑、更精确的轨迹；引入动作分块（action chunking）与时间平滑（temporal smoothing）（如 Diffusion Policy 中所实现）可能帮助 OpenVLA 达到同等灵巧度，并可能是未来工作的一个有前景方向（当前局限的详细讨论见 Section 6）。
+
+> Figure 5 | 适配到新的机器人设置。我们评测从零训练的 state-of-the-art Diffusion Policy 在七个 Franka Emika Panda 任务上的表现（每个任务 10–150 条演示），以及在同一数据上微调的通用机器人策略 Octo 与 OpenVLA。Diffusion Policy 在较窄的单指令任务上表现强劲，而 Octo 与 OpenVLA 在涉及多条指令与干扰物的多样微调任务上表现更好。总体而言，OpenVLA 在两个设置上取得最高的总体性能，表明它是下游任务策略学习的一个有效默认选择。平均成功率 ± StdErr 在每种方法 129 次 rollout 上计算（Franka-Tabletop 任务 99 次、Franka-DROID 任务 30 次）。详细结果见 Table 7。
+
+> 脚注 3：完整的 Diffusion Policy 使用两步（two-step）观测历史，同时包含图像与本体感受状态（proprioceptive state），并通过预测一个包含 T 个未来动作的分块、以开环（open-loop）方式执行前 X 个动作、再预测下一分块的方式执行滚动时域控制（receding horizon control）（对 15Hz 控制，我们像 DROID 先前工作 [11] 那样设 T = 16, X = 8；对 5Hz 控制，我们把分块大小减小到 T = 8, X = 3）。它也是 Section 5.2 中唯一预测绝对笛卡尔坐标（absolute Cartesian coordinates）来控制机器人的方法；所有其他方法都使用相对位置控制（relative position control）。Diffusion Policy (matched) 以单张图像为输入，没有本体感受信息，也没有观测历史，且在不使用动作分块的情况下预测单个相对位置控制动作。
 
 ---
 
