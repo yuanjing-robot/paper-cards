@@ -42,7 +42,7 @@
 
 | 论文 | 会议/年份 | 原文 | 深度阅读 | 翻译 | 代码 |
 |------|----------|------|---------|------|------|
-| cosmos-reason1 | NeurIPS 2025 | [📄](https://arxiv.org/abs/2503.15558) | [📝 ](cosmos-reason1/reading-notes.md) | [🌐 ](cosmos-reason1/translation.md) | [💻](https://github.com/nvidia-cosmos/cosmos-reason1) |
+| [cosmos-reason1](cards/01-perception/cosmos-reason1) | NeurIPS 2025 | [📄原文](https://arxiv.org/abs/2503.15558) | [📝深度阅读 ](cosmos-reason1/reading-notes.md) | [🌐翻译 ](cosmos-reason1/translation.md) | [💻代码](https://github.com/nvidia-cosmos/cosmos-reason1) |
 | _待补充_ | - | - | - | - | - |
 | _待补充_ | - | - | - | - | - |
 
