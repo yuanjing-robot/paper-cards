@@ -9,7 +9,7 @@
 ## 📝 翻译说明
 
 - 依据版本：arXiv 2510.16732v3（2026-06-25）
-- 翻译范围：正文全文（§I–§VII）。表 I–VI 的逐行数据从略，仅保留表头说明与关键结论，需要逐行数值请查原文
+- 翻译范围：正文全文（§I–§VII）+ 表 I–VIII 全部数据（表头已译、数据保留原文）
 - 翻译原则：直译为主，专业术语首次出现保留英文；公式以文字准确释义；参考文献编号原样保留
 
 ### 术语表
@@ -134,9 +134,107 @@
 
 下列表格应用这一分类法对代表性工作进行归类。表 I 回顾机器人领域的方法，而表 II 聚焦自动驾驶。两者共同为后续各节的详细分析提供了路线图。
 
-> 表 I：机器人与通用领域代表性世界模型汇总（Dec/Seq/GLV 等缩写含义见速览卡；逐行数据见原文 Table I，此处从略。）
+## 表 I：机器人与通用领域代表性世界模型汇总
 
-> 表 II：自动驾驶领域代表性世界模型汇总（分类法缩写与特征说明见原文表注；逐行数据见原文 Table II，此处从略。）
+> 表注：分类（Taxonomy）缩写：Dec=决策耦合，Gen=通用，Seq=序列，Glo=全局，GLV=全局隐向量，TFS=词元特征序列，SLG=空间隐网格，DRR=分解式渲染表示。特征（Characteristics）为代表性骨干或核心技术路线（RSSM/IDM/CoT/Transformer 等保留原文缩写）。数据集平台共 10 列（DMC、Atari、RLBench、SSv2、OXE、Meta-world、Franka、RT-1、LIBERO、其他），✓ 表示使用；「总数」为使用的数据平台数量，<u>下划线</u>表示该方法新提出或汇总的数据集。模态共 6 列（RGB、动作、本体感觉、深度、语言、其他）；「真机」列 ✓ 表示在物理机器人上验证。
+
+| 方法 | 发表 | 分类 | 特征 | DMC | Atari | RLBench | SSv2 | OXE | Meta-world | Franka | RT-1 | LIBERO | 其他 | 总数 | RGB | 动作 | 本体感觉 | 深度 | 语言 | 其他 | 真机 |
+|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|
+| PlaNet[hafner2019learning] | ICML’19 | Dec/Seq/GLV | RSSM | ✓ |  |  |  |  |  |  |  |  |  | 1 | ✓ | ✓ |  |  |  |  |  |
+| Dreamer[hafner2020dream] | ICLR’20 | Dec/Seq/GLV | RSSM | ✓ | ✓ |  |  |  |  |  |  |  | ✓ | 3 | ✓ | ✓ |  |  |  |  |  |
+| GLAMOR[paster2021planning] | ICLR’21 | Dec/Seq/GLV | IDM | ✓ | ✓ |  |  |  |  |  |  |  |  | 2 | ✓ | ✓ |  |  |  |  |  |
+| DreamerV2[hafner2021mastering] | ICLR’21 | Dec/Seq/GLV | RSSM | ✓ | ✓ |  |  |  |  |  |  |  |  | 2 | ✓ | ✓ |  |  |  |  |  |
+| TransDreamer[chen2022transdreamer] | arXiv’22 | Dec/Seq/GLV | TSSM | ✓ | ✓ |  |  |  |  |  |  |  | ✓ | 4 | ✓ | ✓ |  |  |  |  |  |
+| Iso-Dream[pan2022iso] | NeurIPS’22 | Dec/Seq/GLV | IDM | ✓ |  |  |  |  |  |  |  |  | ✓ | 4 | ✓ | ✓ |  |  |  |  |  |
+| MWM[seo2023masked] | CoRL’22 | Dec/Seq/TFS | RSSM | ✓ |  | ✓ |  |  | ✓ |  |  |  |  | 3 | ✓ | ✓ |  |  |  |  |  |
+| Inner Monologue[huang2023inner] | CoRL’22 | Dec/Seq/TFS | CoT |  |  |  |  |  |  |  |  |  | ✓ | 3 | ✓ | ✓ |  |  | ✓ |  | ✓ |
+| DayDreamer[wu2023daydreamer] | CoRL’22 | Dec/Seq/GLV | RSSM |  |  |  |  |  |  |  |  |  | ✓ | 4 | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| TWM[robine2023transformerbased] | ICLR’23 | Dec/Seq/TFS | Transformer |  | ✓ |  |  |  |  |  |  |  |  | 1 | ✓ | ✓ |  |  |  |  |  |
+| IRIS[micheli2023transformers] | ICLR’23 | Dec/Seq/TFS | Transformer |  | ✓ |  |  |  |  |  |  |  |  | 1 | ✓ | ✓ |  |  |  |  |  |
+| WorldDreamer[wang2024worlddreamer] | arXiv’24 | Gen/Glo/TFS | Transformer |  |  |  |  |  |  |  |  |  | ✓ | <u>4</u> | ✓ | ✓ |  |  | ✓ |  |  |
+| Statler[yoneda2024statler] | ICRA’24 | Dec/Seq/TFS | LLM |  |  |  |  |  |  |  |  |  | ✓ | 2 | ✓ | ✓ |  | ✓ | ✓ |  | ✓ |
+| Pandora[xiang2024pandora] | arXiv’24 | Gen/Seq/TFS | Video Diffusion |  |  |  | ✓ |  |  |  |  |  | ✓ | <u>2</u> | ✓ |  |  |  | ✓ |  |  |
+| DWL[gu2024advancing] | RSS’24 | Dec/Seq/GLV | MLP |  |  |  |  |  |  |  |  |  | ✓ | 4 |  | ✓ | ✓ |  |  | ✓ | ✓ |
+| RoboDreamer[zhou2024robodreamer] | ICML’24 | Dec/Glo/TFS | IDM |  |  | ✓ |  |  |  |  | ✓ |  |  | 2 | ✓ | ✓ |  |  | ✓ | ✓ |  |
+| Genie[bruce2024genie] | ICML’24 | Gen/Seq/TFS | Transformer |  |  |  |  |  |  |  | ✓ |  | ✓ | <u>3</u> | ✓ | ✓ |  |  |  |  |  |
+| V-JEPA[bardes2024revisiting] | TMLR’24 | Gen/Glo/TFS | JEPA |  |  |  | ✓ |  |  |  |  |  | ✓ | <u>6</u> | ✓ |  |  |  |  |  |  |
+| PreLAR[zhang2024prelar] | ECCV’24 | Dec/Seq/GLV | RSSM |  |  | ✓ | ✓ |  | ✓ |  |  |  |  | 3 | ✓ | ✓ |  |  |  |  |  |
+| ManiGaussian[lu2024manigaussian] | ECCV’24 | Dec/Seq/DRR | 3DGS |  |  | ✓ |  |  |  |  |  |  |  | 1 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  |
+| ECoT[zawalski2025robotic] | CoRL’24 | Dec/Glo/TFS | CoT |  |  |  |  |  |  |  |  |  | ✓ | 3 | ✓ | ✓ |  |  | ✓ |  | ✓ |
+| VidMan[wen2024vidman] | NeurIPS’24 | Dec/Glo/TFS | IDM |  |  | ✓ |  | ✓ |  |  |  |  | ✓ | 4 | ✓ | ✓ | ✓ |  | ✓ |  |  |
+| iVideoGPT[wu2024ivideogpt] | NeurIPS’24 | Gen/Seq/TFS | Transformer |  |  |  | ✓ | ✓ | ✓ |  |  |  | ✓ | 6 | ✓ | ✓ |  |  |  |  |  |
+| EnerVerse[huang2025enerverse] | arXiv’25 | Dec/Seq/SLG | Video Diffusion |  |  |  |  |  |  |  | ✓ | ✓ | ✓ | <u>4</u> | ✓ | ✓ |  |  | ✓ |  | ✓ |
+| GLAM[he2025glam] | AAAI’25 | Dec/Seq/GLV | Mamba |  | ✓ |  |  |  |  |  |  |  |  | 1 | ✓ | ✓ |  |  |  |  |  |
+| NavCoT[lin2025navcot] | TPAMI’25 | Dec/Seq/TFS | CoT |  |  |  |  |  |  |  |  |  | ✓ | 4 | ✓ | ✓ |  |  | ✓ |  |  |
+| DreamerV3[hafner2025mastering] | Nature’25 | Dec/Seq/GLV | RSSM | ✓ | ✓ |  |  |  |  |  |  |  | ✓ | 8 | ✓ | ✓ | ✓ |  |  |  |  |
+| MineWorld[guo2025mineworld] | arXiv’25 | Dec/Seq/TFS | Transformer |  |  |  |  |  |  |  |  |  | ✓ | 1 | ✓ | ✓ |  |  |  |  |  |
+| DreMa[barcellona2025dream] | ICLR’25 | Dec/Seq/DRR | 3DGS |  |  | ✓ |  |  |  | ✓ |  |  |  | 2 | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
+| S2-SSM[petri2025learning] | arXiv’25 | Gen/Seq/TFS | Mamba |  |  |  |  |  |  |  |  |  | ✓ | 1 | ✓ |  |  |  |  | ✓ |  |
+| RLVR-World[wu2025rlvr] | arXiv’25 | Gen/Seq/TFS | RLVR |  |  |  |  |  |  | ✓ |  |  | ✓ | 3 | ✓ | ✓ |  |  | ✓ |  |  |
+| StateSpaceDiffuser[savov2025statespacediffuser] | arXiv’25 | Gen/Seq/TFS | Mamba |  |  |  |  |  |  |  |  |  | ✓ | 2 | ✓ | ✓ |  |  |  |  |  |
+| DeepVerse[chen2025deepverse] | arXiv’25 | Gen/Seq/TFS | DiT |  |  |  |  |  |  |  |  |  | ✓ | <u>1</u> | ✓ |  |  | ✓ | ✓ | ✓ |  |
+| ORV[yang2025orv] | arXiv’25 | Gen/Glo/SLG | DiT |  |  |  |  |  |  |  | ✓ |  | ✓ | 4 | ✓ | ✓ |  | ✓ | ✓ | ✓ |  |
+| V-JEPA 2[assran2025v] | arXiv’25 | Gen/Glo/TFS | JEPA |  |  |  | ✓ |  |  | ✓ |  |  | ✓ | <u>15</u> | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |
+| NWM[bar2025navigation] | CVPR’25 | Dec/Seq/TFS | DiT |  |  |  |  |  |  |  |  |  | ✓ | 6 | ✓ | ✓ |  |  |  |  |  |
+| WorldVLA[cen2025worldvla] | arXiv’25 | Dec/Seq/TFS | Transformer |  |  |  |  |  |  |  |  | ✓ |  | 1 | ✓ | ✓ |  |  | ✓ |  |  |
+| World4Omni[chen2025world4omni] | arXiv’25 | Gen/Seq/TFS | VLM |  |  | ✓ |  |  |  |  |  |  | ✓ | 2 | ✓ | ✓ |  |  | ✓ | ✓ | ✓ |
+| Dyn-O[wang2025dyn] | arXiv’25 | Dec/Seq/TFS | Mamba |  |  |  |  |  |  |  |  |  | ✓ | 1 | ✓ | ✓ |  |  |  |  |  |
+| DINO-WM[zhou2025dino] | ICML’25 | Dec/Seq/SLG | Transformer | ✓ |  |  |  |  |  |  |  |  | ✓ | 3 | ✓ | ✓ | ✓ |  |  |  |  |
+| EVA[chi2025empowering] | ICML’25 | Gen/Seq/TFS | RoG |  |  |  |  | ✓ |  |  | ✓ |  | ✓ | <u>4</u> | ✓ | ✓ |  |  | ✓ |  |  |
+| AdaWorld[gao2025adaworld] | ICML’25 | Gen/Seq/TFS | Video Diffusion |  |  |  | ✓ | ✓ |  |  |  | ✓ | ✓ | <u>6</u> | ✓ | ✓ |  |  |  |  |  |
+| MindJourney[yang2025mindjourney] | arXiv’25 | Gen/Seq/SLG | VLM |  |  |  |  |  |  |  |  |  | ✓ | <u>2</u> | ✓ | ✓ |  |  | ✓ |  |  |
+| GAF[chai2025gaf] | arXiv’25 | Dec/Seq/DRR | 4DGS |  |  | ✓ |  |  |  |  |  |  |  | 1 | ✓ | ✓ | ✓ |  |  | ✓ |  |
+| Yume[mao2025yume] | arXiv’25 | Gen/Seq/TFS | DiT |  |  |  |  |  |  |  |  |  | ✓ | 1 | ✓ | ✓ |  |  | ✓ |  |  |
+| villa-X[chen2025villa] | arXiv’25 | Dec/Glo/TFS | IDM |  |  |  | ✓ | ✓ |  |  | ✓ | ✓ | ✓ | <u>5</u> | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |
+| AETHER[team2025aether] | ICCV’25 | Gen/Glo/SLG | DiT |  |  |  |  |  |  |  |  |  | ✓ | <u>6</u> | ✓ | ✓ |  | ✓ |  | ✓ |  |
+| TesserAct[zhen2025tesseract] | ICCV’25 | Dec/Glo/SLG | IDM |  |  | ✓ | ✓ |  |  |  | ✓ |  | ✓ | 4 | ✓ |  |  | ✓ | ✓ | ✓ |  |
+| MineDreamer[zhou2025minedreamer] | IROS’25 | Dec/Seq/TFS | CoI |  |  |  |  |  |  |  |  |  | ✓ | <u>3</u> | ✓ | ✓ |  |  | ✓ |  |  |
+| ManiGaussian++[yu2025manigaussian++] | IROS’25 | Dec/Seq/DRR | 3DGS |  |  | ✓ |  |  |  |  |  |  | ✓ | 2 | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
+| LeWorldModel[maes2026leworldmodel] | arXiv’26 | Dec/Seq/GLV | JEPA | ✓ |  |  |  |  |  |  |  |  | ✓ | 4 | ✓ | ✓ |  |  |  |  |  |
+| DreamZero[ye2026world] | arXiv’26 | Dec/Seq/TFS | Video Diffusion |  |  |  |  |  |  | ✓ |  |  | ✓ | <u>4</u> | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |
+| PointWorld[huang2026pointworld] | CVPR’26 | Dec/Seq/SLG | Transformer |  |  |  |  |  |  | ✓ |  |  | ✓ | <u>2</u> | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| Cosmos Policy[kim2026cosmos] | arXiv’26 | Dec/Glo/TFS | Video Diffusion |  |  |  |  |  |  | ✓ |  | ✓ | ✓ | <u>3+</u> | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ |
+| V-JEPA 2.1[mur2026v] | arXiv’26 | Gen/Glo/TFS | JEPA |  |  |  | ✓ |  |  | ✓ |  |  | ✓ | <u>15+</u> | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Cosmos 3[agarwal2026cosmos] | arXiv’26 | Gen/Glo/TFS | Transformer |  |  |  |  |  |  | ✓ | ✓ | ✓ | ✓ | <u>12+</u> | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+## 表 II：自动驾驶领域代表性世界模型汇总
+
+> 表注：分类缩写同表 I（Dec=决策耦合，Gen=通用，Seq=序列，Glo=全局，GLV=全局隐向量，TFS=词元特征序列，SLG=空间隐网格，DRR=分解式渲染表示）。数据集平台共 7 列（CARLA、nuScenes、nuPlan、Waymo、Occ3D、OpenDV、其他），✓ 表示使用；「总数」为使用的数据平台数量，<u>下划线</u>表示新提出或汇总的数据集。输入模态共 8 列（RGB、运动、地图、LiDAR、边界框、语言、占用、其他）。注：原文 DriveDreamer4D 一行的「其他/总数」两列存在排版错位（总数误排为 ✓），已按总数=3 校正，其模态列按相邻单元格平移对齐。
+
+| 方法 | 发表 | 分类 | 特征 | CARLA | nuScenes | nuPlan | Waymo | Occ3D | OpenDV | 其他 | 总数 | RGB | 运动 | 地图 | LiDAR | 边界框 | 语言 | 占用 | 其他 |
+|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|
+| MILE[hu2022model] | NeurIPS’22 | Dec/Seq/GLV | RSSM | ✓ |  |  |  |  |  |  | 1 | ✓ | ✓ | ✓ |  |  |  |  |  |
+| Copilot4D[zhang2024copilot4d] | ICLR’24 | Gen/Seq/SLG | Video Diffusion |  | ✓ |  |  |  |  | ✓ | 3 |  | ✓ |  | ✓ |  |  |  |  |
+| SEM2[gao2024enhance] | TITS’24 | Dec/Seq/GLV | RSSM | ✓ |  |  |  |  |  |  | 1 | ✓ | ✓ | ✓ | ✓ |  |  |  |  |
+| MagicDrive3D[gao2024magicdrive3d] | arXiv’24 | Gen/Glo/DRR | 3DGS |  | ✓ |  |  |  |  |  | 1 | ✓ | ✓ | ✓ |  | ✓ | ✓ |  | ✓ |
+| OccSora[wang2024occsora] | arXiv’24 | Gen/Glo/SLG | Diffusion |  | ✓ |  |  | ✓ |  |  | 2 |  | ✓ |  |  |  |  | ✓ |  |
+| Delphi[ma2024unleashing] | arXiv’24 | Gen/Seq/SLG | Video Diffusion |  | ✓ |  |  |  |  |  | 1 | ✓ |  | ✓ |  | ✓ | ✓ |  |  |
+| DriveWorld[min2024driveworld] | CVPR’24 | Dec/Seq/SLG | RSSM |  | ✓ |  |  |  |  | ✓ | 2 | ✓ | ✓ |  |  |  | ✓ | ✓ |  |
+| Drive-WM[wang2024driving] | CVPR’24 | Dec/Glo/SLG | Video Diffusion |  | ✓ |  |  |  |  |  | 1 | ✓ | ✓ | ✓ |  | ✓ | ✓ |  | ✓ |
+| ViDAR[Yang2024visual] | CVPR’24 | Gen/Seq/SLG | Transformer |  | ✓ |  |  |  |  |  | 1 | ✓ | ✓ |  | ✓ |  |  |  |  |
+| GenAD[yang2024generalized] | CVPR’24 | Gen/Seq/TFS | Video Diffusion |  | ✓ | ✓ | ✓ |  | ✓ | ✓ | <u>4</u> | ✓ | ✓ |  |  |  | ✓ |  |  |
+| OccLLaMA[wei2024occllama] | arXiv’24 | Dec/Seq/SLG | Transformer |  | ✓ |  |  | ✓ |  | ✓ | <u>3</u> | ✓ | ✓ |  |  |  | ✓ | ✓ |  |
+| DriveDreamer[wang2024drivedreamer] | ECCV’24 | Dec/Seq/SLG | GRU |  | ✓ |  |  |  |  |  | 1 | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
+| GenAD[zheng2024genad] | ECCV’24 | Dec/Seq/SLG | GRU |  | ✓ |  |  |  |  |  | 1 | ✓ |  |  |  |  |  |  |  |
+| OccWorld[zheng2024occworld] | ECCV’24 | Dec/Seq/SLG | Transformer |  | ✓ |  |  | ✓ |  |  | 2 | ✓ | ✓ |  | ✓ |  |  | ✓ |  |
+| DOME[gu2024dome] | arXiv’24 | Gen/Seq/SLG | DiT |  | ✓ |  |  | ✓ |  |  | 2 | ✓ | ✓ |  |  |  |  | ✓ |  |
+| TOKEN[tian2025tokenize] | CoRL’24 | Dec/Glo/TFS | Transformer |  | ✓ |  |  |  |  | ✓ | 2 | ✓ | ✓ | ✓ |  |  | ✓ |  |  |
+| Vista[gao2024vista] | NeurIPS’24 | Gen/Seq/SLG | Video Diffusion |  | ✓ |  | ✓ |  | ✓ | ✓ | 4 | ✓ | ✓ |  |  |  | ✓ |  |  |
+| DriveDreamer-2[zhao2025drivedreamer] | AAAI’25 | Gen/Glo/SLG | Video Diffusion |  | ✓ |  |  |  |  |  | 1 | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
+| DTT[xu2025delta] | arXiv’25 | Dec/Seq/DRR | Transformer |  | ✓ |  |  | ✓ |  |  | 2 | ✓ | ✓ |  |  |  | ✓ | ✓ |  |
+| DynamicCity[bian2025dynamiccity] | ICLR’25 | Gen/Glo/SLG | DiT | ✓ | ✓ |  | ✓ | ✓ |  |  | 4 | ✓ | ✓ |  |  |  | ✓ | ✓ |  |
+| LidarDM[zyrianov2025lidardm] | ICRA’25 | Gen/Seq/SLG | Diffusion |  |  |  | ✓ |  |  | ✓ | 3 |  | ✓ | ✓ |  |  |  |  |  |
+| FutureSightDrive[zeng2025futuresightdrive] | arXiv’25 | Dec/Seq/TFS | CoT(VLM) |  | ✓ |  |  |  |  | ✓ | 3 | ✓ | ✓ |  |  |  | ✓ |  |  |
+| GEM[hassan2025gem] | CVPR’25 | Gen/Seq/SLG | Video Diffusion |  | ✓ |  |  |  | ✓ |  | <u>1</u> | ✓ | ✓ |  |  |  |  |  | ✓ |
+| GaussianWorld[zuo2025gaussianworld] | CVPR’25 | Gen/Seq/DRR | Transformer |  | ✓ |  |  |  |  | ✓ | 2 | ✓ | ✓ |  |  |  |  |  |  |
+| MaskGWM[ni2025maskgwm] | CVPR’25 | Gen/Glo/TFS | DiT |  | ✓ |  | ✓ |  | ✓ |  | 3 | ✓ | ✓ |  |  |  | ✓ |  |  |
+| DriveDreamer4D[zhao2025drivedreamer4d] | CVPR’25 | Gen/Glo/DRR | 4DGS |  | ✓ | ✓ |  |  | ✓ |  | 3 | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| ReconDreamer[ni2025recondreamer] | CVPR’25 | Gen/Glo/DRR | 3DGS |  | ✓ |  | ✓ |  |  | ✓ | 3 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  |  |
+| WoTE[li2025end] | ICCV’25 | Dec/Seq/SLG | Transformer | ✓ |  | ✓ |  |  |  |  | 2 | ✓ | ✓ |  | ✓ |  |  |  |  |
+| HERMES[zhou2025hermes] | ICCV’25 | Gen/Glo/SLG | LLM |  | ✓ |  |  |  |  | ✓ | 4 | ✓ | ✓ |  |  |  | ✓ |  |  |
+| InfiniCube[lu2025infinicube] | ICCV’25 | Gen/Seq/DRR | 3DGS |  |  |  | ✓ |  |  |  | 1 | ✓ | ✓ | ✓ |  | ✓ | ✓ |  | ✓ |
+| DriVerse[li2025driverse] | ACMMM’25 | Gen/Seq/TFS | DiT |  | ✓ |  | ✓ |  |  |  | 2 | ✓ | ✓ |  |  |  | ✓ |  | ✓ |
+| DINO-Foresight[karypidis2026dino] | NeurIPS’25 | Gen/Glo/TFS | Transformer |  | ✓ |  |  |  |  | ✓ | 2 | ✓ |  |  |  |  |  |  | ✓ |
 
 ### III-A 决策耦合世界模型
 
@@ -256,7 +354,36 @@ Ha 与 Schmidhuber [ha2018recurrent] 提出了一个早期世界模型，将观�
 
 为满足具身 AI 的多样化需求，我们将数据资源划分为四类：仿真平台（Simulation Platforms）、交互基准（Interactive Benchmarks）、离线数据集（Offline Datasets）与真机机器人平台（Real-world Robot Platforms），详见以下各小节。表 III 对上述资源作了全面梳理。
 
-> 表 III：具身世界模型训练与评测数据资源总览（仿真平台 / 交互基准 / 离线数据集 / 真机平台四类，逐行数据见原文 Table III，此处从略。）
+## 表 III：具身世界模型训练与评估数据资源总览
+
+> 表注：类别分为仿真平台、交互基准、离线数据集、真实机器人平台四类。域：仿真/真实。「协议」列：对交互基准，✓ 表示提供可用评估协议；对数据集，✓ 后的内容表示官方训练/验证/测试划分；Proprio.=本体感觉，Seg=分割。
+
+| 类别 | 名称 | 年份 | 任务 | 输入 | 域 | 规模 | 协议 |
+|------|------|------|------|------|------|------|------|
+| 仿真平台 | MuJoCo[todorov2012mujoco] | 2012 | 连续控制 | Proprio. | 仿真 | - | - |
+| 仿真平台 | CARLA[dosovitskiy2017carla] | 2017 | 驾驶仿真 | RGB-D/Seg/LiDAR/Radar/GPS/IMU | 仿真 | - | ✓ |
+| 仿真平台 | Habitat[savva2019habitat] | 2019 | 具身导航 | RGB-D/Seg/GPS/Compass | 仿真 | - | ✓ |
+| 仿真平台 | Isaac Gym[makoviychuk2021isaac] | 2021 | 连续控制 | Proprio. | 仿真 | - | - |
+| 仿真平台 | Isaac Lab[mittal2023orbit] | 2023 | 机器人学习套件 | RGB-D/Seg/LiDAR/Proprio. | 仿真 | - | - |
+| 交互基准 | Atari[bellemare2013arcade] | 2013 | 离散动作游戏 | RGB/State | 仿真 | 55+ 款游戏 | ✓ |
+| 交互基准 | DMC[tassa2018deepmind] | 2018 | 连续控制 | RGB/Proprio. | 仿真 | 30+ 个任务 | ✓ |
+| 交互基准 | Meta-World[yu2020meta] | 2019 | 多任务操作 | RGB/Proprio. | 仿真 | 50 个任务 | ✓ |
+| 交互基准 | RLBench[james2020rlbench] | 2020 | 机器人操作 | RGB-D/Seg/Proprio. | 仿真 | 100 个任务 | ✓ |
+| 交互基准 | nuPlan[caesar2021nuplan] | 2021 | 驾驶规划 | RGB/LiDAR/Map/Proprio. | 真实 | 1.5k 小时 | ✓ |
+| 交互基准 | LIBERO[liu2023libero] | 2023 | 终身操作学习 | RGB/Text/Proprio. | 仿真 | 130 个任务 | ✓ |
+| 离线数据集 | SSv2[goyal2017something] | 2018 | 视频-动作理解 | RGB/Text | 真实 | 220k 段视频 | 169k/24k/27k |
+| 离线数据集 | nuScenes[caesar2020nuscenes] | 2020 | 驾驶感知 | RGB/LiDAR/Radar/GPS/IMU | 真实 | 1k 个场景 | 700/150/150 |
+| 离线数据集 | Waymo[sun2020scalability] | 2020 | 驾驶感知 | RGB/LiDAR | 真实 | 1.15k 个场景 | 798/202/150 |
+| 离线数据集 | HM3D[ramakrishnan2021habitatmatterport] | 2021 | 室内导航 | RGB-D | 真实 | 1k 个场景 | 800/100/100 |
+| 离线数据集 | RT-1[brohan2022rt] | 2022 | 真实机器人操作 | RGB/Text | 真实 | 130k+ 条轨迹 | - |
+| 离线数据集 | Occ3D[tian2023occ3d] | 2023 | 3D 占用 | RGB/LiDAR | 真实 | 1.9k 个场景 | 600/150/150; 798/202/- |
+| 离线数据集 | OXE[o2024open] | 2024 | 跨本体预训练 | RGB-D/LiDAR/Text | 真实 | 1M+ 条轨迹 | - |
+| 离线数据集 | OpenDV[yang2024generalized] | 2024 | 驾驶视频预训练 | RGB/Text | 真实 | 2k+ 小时 | - |
+| 离线数据集 | VideoMix22M[assran2025v] | 2025 | 视频预训练 | RGB | 真实 | 22M+ 样本 | - |
+| 离线数据集 | VisionMix163M[mur2026v] | 2026 | 图像-视频预训练 | RGB | 真实 | 163M+ 样本 | - |
+| 真实机器人平台 | Franka Emika[haddadin2022franka] | 2022 | 操作 | Proprio. | 真实 | - | - |
+| 真实机器人平台 | Unitree Go1[unitree_go1_web] | 2021 | 四足运动 | RGB-D/LiDAR/Proprio. | 真实 | - | - |
+| 真实机器人平台 | Unitree G1[unitree_g1_web] | 2024 | 人形机器人操作 | RGB-D/LiDAR/Proprio./Audio | 真实 | - | - |
 
 #### IV-A1 仿真平台 (Simulation Platforms)
 
@@ -399,27 +526,132 @@ CD(S₁, S₂) = Σ_{x∈S₁} min_{y∈S₂} ‖x − y‖₂² + Σ_{y∈S₂}
 
 **nuScenes 上的生成（Generation on nuScenes）。** 驾驶视频生成被视为一项世界建模任务，即在固定长度的片段中合成合理的场景动态。典型协议生成短序列，并用 FID 评估外观保真度、用 FVD 评估时间一致性。在 nuScenes 验证集上进行公平比较时，近期方法已取得显著进展，如表 IV 所示。DrivePhysica 提供最佳的视觉保真度，而 MiLA 实现最强的时间连贯性，二者共同确立了新的最先进性能。
 
-> 表 IV：nuScenes 视频生成性能对比（逐行数据见原文 Table IV，此处从略）。DrivePhysica FID 4.0 最低，MiLA FVD 14.9 最低（其 FID 为 4.1）；Vista 的 FID 为 6.9、FVD 为 89.4。
+## 表 IV：nuScenes 视频生成性能对比
+
+> 表注：FID 衡量生成图像的真实性与多样性，FVD 衡量视频时序一致性，二者均为越低越好（↓）。**加粗**为该列最优：FID 最优为 DrivePhysica（4.0），FVD 最优为 MiLA（14.9）。
+
+| 方法 | 发表 | 分辨率 | FID↓ | FVD↓ |
+|------|------|------|------|------|
+| MagicDrive3D[gao2024magicdrive3d] | arXiv’24 | 224×400 | 20.7 | 164.7 |
+| Delphi[ma2024unleashing] | arXiv’24 | 512×512 | 15.1 | 113.5 |
+| Drive-WM[wang2024driving] | CVPR’24 | 192×384 | 15.8 | 122.7 |
+| GenAD[yang2024generalized] | CVPR’24 | 256×448 | 15.4 | 184.0 |
+| DriveDreamer[wang2024drivedreamer] | ECCV’24 | 128×192 | 52.6 | 452.0 |
+| Vista[gao2024vista] | NeurIPS’24 | 576×1024 | 6.9 | 89.4 |
+| DrivePhysica[yang2024physical] | arXiv’24 | 256×448 | **4.0** | 38.1 |
+| DrivingWorld[hu2024drivingworld] | arXiv’24 | 512×1024 | 7.4 | 90.9 |
+| DriveDreamer-2[zhao2025drivedreamer] | AAAI’25 | 256×448 | 11.2 | 55.7 |
+| UniFuture[liang2025seeing] | arXiv’25 | 320×576 | 11.8 | 99.9 |
+| MiLA[wang2025mila] | arXiv’25 | 360×640 | 4.1 | **14.9** |
+| GeoDrive[chen2025geodrive] | arXiv’25 | 480×720 | 4.1 | 61.6 |
+| LongDWM[wang2025longdwm] | arXiv’25 | 480×720 | 12.3 | 102.9 |
+| MaskGWM[ni2025maskgwm] | CVPR’25 | 288×512 | 8.9 | 65.4 |
+| GEM[hassan2025gem] | CVPR’25 | 576×1024 | 10.5 | 158.5 |
+| Epona[zhang2025epona] | ICCV’25 | 512×1024 | 7.5 | 82.8 |
+| STAGE[wang2025stage] | IROS’25 | 512×768 | 11.0 | 242.8 |
+| DriVerse[li2025driverse] | ACMMM’25 | 480×832 | 18.2 | 95.2 |
 
 ### V-B 场景理解
 
 **Occ3D-nuScenes 上的 4D 占用预测（4D Occupancy Forecasting）。** 4D 占用预测被视为一项代表性的世界建模任务。给定 2 s 的过去 3D 占用（occupancy），模型预测随后 3 s 的场景动态。评估遵循 Occ3D-nuScenes 协议，报告 mIoU（平均交并比）与各预测时域的 IoU。如表 V 所总结，我们按输入模态、辅助监督（auxiliary supervision）以及自车轨迹（ego trajectory）的使用来比较方法，以揭示时空预测中的设计选择。使用占用输入的方法优于仅使用相机的变体，而加入辅助监督与 GT 自车轨迹进一步缓解了 2–3 s 处的性能衰减。在所有方法中，COME（使用 GT 自车轨迹）取得最佳的平均 mIoU 与各时域 IoU。
 
-> 表 V：Occ3D-nuScenes 基准上的 4D 占用预测性能对比（逐行数据见原文 Table V，此处从略）。COME-O（GT 自车轨迹）平均 mIoU 34.23%、平均 IoU 44.13%，均为最佳；DOME-O 平均 mIoU 27.10%、平均 IoU 36.36%。
+## 表 V：Occ3D-nuScenes 基准 4D 占用预测性能对比
+
+> 表注：给定过去 2 s 的 3D 占用，预测后续 3 s 场景演化。Input=输入模态（Occ=占用真值，Camera=相机）；Aux. Sup.=辅助监督；Ego traj.=自车轨迹（GT=真实值，Pred.=预测）；Recon.=重构。方法变体后缀：O=使用占用真值输入；相机输入变体含 D（TPVFormer）、F（FB-OCC）、T（TPVFormer+语义 LiDAR）、S（自监督 TPVFormer）。Copy & Paste 为朴素基线（将最后一帧输入重复作为全部未来预测）。
+
+| 方法 | 输入 | 辅助监督 | 自车轨迹 | mIoU(%) Recon. | mIoU(%) 1s | mIoU(%) 2s | mIoU(%) 3s | mIoU(%) 均值 | IoU(%) Recon. | IoU(%) 1s | IoU(%) 2s | IoU(%) 3s | IoU(%) 均值 |
+|------|------|------|------|------|------|------|------|------|------|------|------|------|------|
+| Copy & Paste | Occ | None | Pred. | 66.38 | 14.91 | 10.54 | 8.52 | 11.33 | 62.29 | 24.47 | 19.77 | 17.31 | 20.52 |
+| OccWorld-O[zheng2024occworld] | Occ | None | Pred. | 66.38 | 25.78 | 15.14 | 10.51 | 17.14 | 62.29 | 34.63 | 25.07 | 20.18 | 26.63 |
+| OccLLaMA-O[wei2024occllama] | Occ | None | Pred. | 75.20 | 25.05 | 19.49 | 15.26 | 19.93 | 63.76 | 34.56 | 28.53 | 24.41 | 29.17 |
+| RenderWorld-O[yan2025renderworld] | Occ | None | Pred. | - | 28.69 | 18.89 | 14.83 | 20.80 | - | 37.74 | 28.41 | 24.08 | 30.08 |
+| DTT-O[xu2025delta] | Occ | None | Pred. | 85.50 | 37.69 | 29.77 | 25.10 | 30.85 | 92.07 | 76.60 | 74.44 | 72.71 | 74.58 |
+| DFIT-OccWorld-O[zhang2024efficient] | Occ | None | Pred. | - | 31.68 | 21.29 | 15.18 | 22.71 | - | 40.28 | 31.24 | 25.29 | 32.27 |
+| COME-O[shi2025come] | Occ | None | Pred. | - | 30.57 | 19.91 | 13.38 | 21.29 | - | 36.96 | 28.26 | 21.86 | 29.03 |
+| DOME-O[gu2024dome] | Occ | None | GT | 83.08 | 35.11 | 25.89 | 20.29 | 27.10 | 77.25 | 43.99 | 35.36 | 29.74 | 36.36 |
+| COME-O[shi2025come] | Occ | None | GT | - | 42.75 | 32.97 | 26.98 | 34.23 | - | 50.57 | 43.47 | 38.36 | 44.13 |
+| OccWorld-T[zheng2024occworld] | Camera | Semantic LiDAR | Pred. | 7.21 | 4.68 | 3.36 | 2.63 | 3.56 | 10.66 | 9.32 | 8.23 | 7.47 | 8.34 |
+| OccWorld-S[zheng2024occworld] | Camera | None | Pred. | 0.27 | 0.28 | 0.26 | 0.24 | 0.26 | 4.32 | 5.05 | 5.01 | 4.95 | 5.00 |
+| RenderWorld-S[yan2025renderworld] | Camera | None | Pred. | - | 2.83 | 2.55 | 2.37 | 2.58 | - | 14.61 | 13.61 | 12.98 | 13.73 |
+| COME-S[shi2025come] | Camera | None | Pred. | - | 25.57 | 18.35 | 13.41 | 19.11 | - | 45.36 | 37.06 | 30.46 | 37.63 |
+| OccWorld-D[zheng2024occworld] | Camera | Occ | Pred. | 18.63 | 11.55 | 8.10 | 6.22 | 8.62 | 22.88 | 18.90 | 16.26 | 14.43 | 16.53 |
+| OccWorld-F[zheng2024occworld] | Camera | Occ | Pred. | 20.09 | 8.03 | 6.91 | 3.54 | 6.16 | 35.61 | 23.62 | 18.13 | 15.22 | 18.99 |
+| OccLLaMA-F[wei2024occllama] | Camera | Occ | Pred. | 37.38 | 10.34 | 8.66 | 6.98 | 8.66 | 38.92 | 25.81 | 23.19 | 19.97 | 22.99 |
+| DFIT-OccWorld-F[zhang2024efficient] | Camera | Occ | Pred. | - | 13.38 | 10.16 | 7.96 | 10.50 | - | 19.18 | 16.85 | 15.02 | 17.02 |
+| DTT-F[xu2025delta] | Camera | Occ | Pred. | 43.52 | 24.87 | 18.30 | 15.63 | 19.60 | 54.31 | 38.98 | 37.45 | 31.89 | 36.11 |
+| DOME-F[gu2024dome] | Camera | Occ | GT | 75.00 | 24.12 | 17.41 | 13.24 | 18.25 | 74.31 | 35.18 | 27.90 | 23.44 | 28.84 |
+| COME-F[shi2025come] | Camera | Occ | GT | - | 26.56 | 21.73 | 18.49 | 22.26 | - | 48.08 | 43.84 | 40.28 | 44.07 |
 
 ### V-C 控制任务
 
 **DMC 上的评估（Evaluation on DMC）。** 多数研究探查世界模型学习控制相关动态的能力，通常采用以 64×64×3 观测为输入的像素级设置。主要指标是回合回报（Episode Return），定义为 1 000 步内的累积奖励，在 r_t ∈ [0,1] 下理论最大值为 1 000。为便于比较，表 VI 报告了步数预算，并按任务得分与任务数量汇总性能。结果表明数据效率有所提升，近期模型在远少得多的训练步数下即达到强性能。然而，不一致的评估协议与任务子集阻碍了对泛化性的公平评估，构建跨任务、模态与数据集的广泛可迁移模型仍是开放挑战。
 
-> 表 VI：DMC 基准性能对比（逐行数据见原文 Table VI，此处从略）。Dreamer 平均 823（共 20 项任务），PlaNet 为 333/20；HRSSM 仅用 500k 步即达平均 938（3 项任务），DisWM 用 1M 步达 879/5。
+## 表 VI：DMC 基准性能对比（回合回报↑）
+
+> 表注：采用 64×64×3 像素观测，指标为 1000 步累积回合回报（理论上限 1000）。「均值/任务数」中均值为跨任务平均分（因任务难度不一，仅作粗略参考），任务数为评估的任务数量。<u>下划线</u>表示该分数由各论文的奖励曲线近似读出。
+
+| 方法 | 步数 | Reacher Easy | Cheetah Run | Finger Spin | Walker Walk | 均值/任务数 |
+|------|------|------|------|------|------|------|
+| PlaNet[hafner2019learning] | 5M | 469 | 496 | 495 | 945 | 333/20 |
+| Dreamer[hafner2020dream] | 5M | 935 | 895 | 499 | 962 | 823/20 |
+| Dreaming[okada2021dreaming] | 500k | 905 | 566 | 762 | 469 | 610/12 |
+| TransDreamer[chen2022transdreamer] | 2M | - | <u>865</u> | - | <u>933</u> | <u>893/4</u> |
+| DreamerPro[deng2022dreamerpro] | 1M | 873 | 897 | 811 | - | 857/6 |
+| MWM[seo2023masked] | 1M | - | <u>670</u> |  | - | <u>690/7</u> |
+| HRSSM[sun2024learning] | 500k | <u>910</u> | - | <u>960</u> | - | <u>938/3</u> |
+| DisWM[wang2025disentangled] | 1M | <u>960</u> | <u>820</u> | - | <u>920</u> | <u>879/5</u> |
 
 **RLBench 上的评估。** RLBench 使用 7 自由度（7-DoF）仿真 Franka 机械臂评估操作任务，常被用来检验世界模型是否捕获任务相关动态并支持条件动作生成。主要指标是成功率（Success Rate），即在步数上限内达到目标的回合比例。如表 VII 所总结，各实现在回合预算、分辨率与模态上各不相同，使同类比较变得复杂。尽管存在这种异质性，仍可看出若干趋势。近期方法越来越多地利用多模态输入，并采用更强的骨干网络，如 3DGS 与 DiT。VidMan 在最广的任务集上取得较高的平均成功率，显示 IDM 是一个颇有前景的架构方向。
 
-> 表 VII：RLBench 操作任务性能对比（逐行数据见原文 Table VII，此处从略）。VidMan 平均成功率 67%（共 18 项任务）为最高，TesserAct 为 63/10，ManiGaussian 为 45/10。
+## 表 VII：RLBench 操作任务性能对比
+
+> 表注：RLBench 使用 7 自由度仿真 Franka 机械臂，指标为成功率（%，在步数限制内达成目标的回合比例）。原表为转置布局（方法为列），此处保持原布局。「均值/任务数」中均值仅作粗略参考（各方法评估任务子集不同）；IDM=逆动力学建模，GS=高斯泼溅，DiT=扩散 Transformer，Bimanual=双臂。
+
+| 指标 | VidMan [wen2024vidman] | ManiGaussian [lu2024manigaussian] | ManiGaussian++ [yu2025manigaussian++] | DreMa [barcellona2025dream] | TesserAct [zhen2025tesseract] |
+|------|------|------|------|------|------|
+| 设置·回合数 | 125 | 25 | 25 | 250 | 100 |
+| 设置·像素分辨率 | 224 | 128 | 256 | 128 | 512 |
+| 设置·深度 |  | ✓ | ✓ | ✓ | ✓ |
+| 设置·语言 | ✓ | ✓ | ✓ |  | ✓ |
+| 设置·本体感觉 | ✓ | ✓ | ✓ |  |  |
+| 设置·特征 | IDM | GS | Bimanual | GS | DiT |
+| 成功率·Stack Blocks（堆叠方块） | 48 | 12 | - | 12 | - |
+| 成功率·Close Jar（合罐） | 88 | 28 | - | 51 | 44 |
+| 成功率·Open Drawer（开抽屉） | 94 | 76 | - | - | 80 |
+| 成功率·Sweep to Dustpan（扫入簸箕） | 93 | 64 | 92 | - | 56 |
+| 成功率·Slide Block（推移方块） | 98 | 24 | - | 62 | - |
+| 成功率·均值/任务数 | 67/18 | 45/10 | 35/10 | 25/9 | 63/10 |
 
 **nuScenes 上的规划（Planning on nuScenes）。** 开放环规划被视为 nuScenes 验证集上的一项世界建模任务，模型从有限历史预测自车运动。方法观测 2 s 的过去轨迹，并将未来 3 s 预测为 2D BEV 路点。评估报告多个时域的 L2 误差与碰撞率，表 VIII 按输入模态、辅助监督与指标设置汇总结果。在该共享协议下，出现了一个明显的权衡：UniAD+DriveWorld 借助大量辅助监督取得最低的 L2；而 SSR 在无额外监督的情况下，以有竞争力的 L2 取得最佳的碰撞率。基于相机的方法如今已超过使用特权占用（privileged occupancy）的模型，反映出端到端（E2E）规划日益成熟。
 
-> 表 VIII：nuScenes 验证集开放环规划性能对比（逐行数据见原文 Table VIII，此处从略）。UniAD+DriveWorld 平均 L2 0.69 m 为最低；SSR 平均碰撞率 0.15% 为最低（其平均 L2 为 0.75 m）。
+## 表 VIII：nuScenes 验证集开放环规划性能对比
+
+> 表注：模型观测过去 2 s 轨迹，预测未来 3 s 的 2D BEV 路径点。L2 为位移误差（m，↓），碰撞率单位为 %（↓）。Aux. Sup.=辅助监督（Map=地图，Box=边界框，Motion=运动，Tracklets=轨迹片段，Occ=占用，QA=问答，Semantic LiDAR=语义 LiDAR）。方法后缀同表 V（T/S/D/F/O 等变体）。
+
+| 方法 | 输入 | 辅助监督 | L2(m) 1s | L2(m) 2s | L2(m) 3s | L2(m) 均值 | 碰撞率(%) 1s | 碰撞率(%) 2s | 碰撞率(%) 3s | 碰撞率(%) 均值 |
+|------|------|------|------|------|------|------|------|------|------|------|
+| UniAD[hu2023planning] | Camera | Map & Box & Motion & Tracklets & Occ | 0.48 | 0.96 | 1.65 | 1.03 | 0.05 | 0.17 | 0.71 | 0.31 |
+| UniAD+DriveWorld[min2024driveworld] | Camera | Map & Box & Motion & Tracklets & Occ | 0.34 | 0.67 | 1.07 | 0.69 | 0.04 | 0.12 | 0.41 | 0.19 |
+| GenAD[zheng2024genad] | Camera | Map & Box & Motion | 0.36 | 0.83 | 1.55 | 0.91 | 0.06 | 0.23 | 1.00 | 0.43 |
+| FSDrive[zeng2025futuresightdrive] | Camera | Map & Box & QA | 0.40 | 0.89 | 1.60 | 0.96 | 0.07 | 0.12 | 1.02 | 0.40 |
+| OccWorld-T[zheng2024occworld] | Camera | Semantic LiDAR | 0.54 | 1.36 | 2.66 | 1.52 | 0.12 | 0.40 | 1.59 | 0.70 |
+| Doe-1[zheng2024doe] | Camera | QA | 0.50 | 1.18 | 2.11 | 1.26 | 0.04 | 0.37 | 1.19 | 0.53 |
+| SSR[li2025navigation] | Camera | None | 0.24 | 0.65 | 1.36 | 0.75 | 0.00 | 0.10 | 0.36 | 0.15 |
+| OccWorld-S[zheng2024occworld] | Camera | None | 0.67 | 1.69 | 3.13 | 1.83 | 0.19 | 1.28 | 4.59 | 2.02 |
+| Epona[zhang2025epona] | Camera | None | 0.61 | 1.17 | 1.98 | 1.25 | 0.01 | 0.22 | 0.85 | 0.36 |
+| RenderWorld[yan2025renderworld] | Camera | None | 0.48 | 1.30 | 2.67 | 1.48 | 0.14 | 0.55 | 2.23 | 0.97 |
+| Drive-OccWorld[yang2025driving] | Camera | None | 0.32 | 0.75 | 1.49 | 0.85 | 0.05 | 0.17 | 0.64 | 0.29 |
+| OccWorld-D[zheng2024occworld] | Camera | Occ | 0.52 | 1.27 | 2.41 | 1.40 | 0.12 | 0.40 | 2.08 | 0.87 |
+| OccWorld-F[zheng2024occworld] | Camera | Occ | 0.45 | 1.33 | 2.25 | 1.34 | 0.08 | 0.42 | 1.71 | 0.73 |
+| OccLLaMA-F[wei2024occllama] | Camera | Occ | 0.38 | 1.07 | 2.15 | 1.20 | 0.06 | 0.39 | 1.65 | 0.70 |
+| DTT-F[xu2025delta] | Camera | Occ | 0.35 | 1.01 | 1.89 | 1.08 | 0.08 | 0.33 | 0.91 | 0.44 |
+| DFIT-OccWorld-V[zhang2024efficient] | Camera | Occ | 0.42 | 1.14 | 2.19 | 1.25 | 0.09 | 0.19 | 1.37 | 0.55 |
+| NeMo[huang2024neural] | Camera | Occ | 0.39 | 0.74 | 1.39 | 0.84 | 0.00 | 0.09 | 0.82 | 0.30 |
+| OccWorld-O[zheng2024occworld] | Occ | None | 0.43 | 1.08 | 1.99 | 1.17 | 0.07 | 0.38 | 1.35 | 0.60 |
+| OccLLaMA-O[wei2024occllama] | Occ | None | 0.37 | 1.02 | 2.03 | 1.14 | 0.04 | 0.24 | 1.20 | 0.49 |
+| RenderWorld-O[yan2025renderworld] | Occ | None | 0.35 | 0.91 | 1.84 | 1.03 | 0.05 | 0.40 | 1.39 | 0.61 |
+| DTT-O[xu2025delta] | Occ | None | 0.32 | 0.91 | 1.76 | 1.00 | 0.08 | 0.32 | 0.51 | 0.30 |
+| DFIT-OccWorld-O[zhang2024efficient] | Occ | None | 0.38 | 0.96 | 1.73 | 1.02 | 0.07 | 0.39 | 0.90 | 0.45 |
 
 ## 🚧 VI 挑战与趋势 (Challenges and Trends)
 
