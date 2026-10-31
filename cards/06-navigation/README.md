@@ -6,7 +6,7 @@
 
 | 论文 | 会议/年份 | 原文 | 深度阅读 | 翻译 | 代码 |
 |------|----------|------|---------|------|------|
-| _待补充_ | - | - | - | - | - |
+| [ScaleNav](./scale-nav/README.md) | arXiv 2026 | [论文原文](https://arxiv.org/abs/2610.25690) | [阅读笔记](./scale-nav/reading-notes.md) | [中文翻译](./scale-nav/translation.md) | [代码](https://github.com/MachEmbodied/ScaleNav) |
 | _待补充_ | - | - | - | - | - |
 | _待补充_ | - | - | - | - | - |
 
