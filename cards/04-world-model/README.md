@@ -6,7 +6,7 @@
 
 | 论文 | 会议/年份 | 原文 | 深度阅读 | 翻译 | 代码 |
 |------|----------|------|---------|------|------|
-| _待补充_ | - | - | - | - | - |
+| [A Comprehensive Survey on World Models for Embodied AI](a-comprehensive-survey-on-world-models-for-embodied-ai/) | arXiv 2025 | [📄 原文](https://arxiv.org/abs/2510.16732) | [📝 深度阅读](a-comprehensive-survey-on-world-models-for-embodied-ai/reading-notes.md) | [🌐 翻译](a-comprehensive-survey-on-world-models-for-embodied-ai/translation.md) | [💻 代码](https://github.com/Li-Zn-H/AwesomeWorldModels) |
 | _待补充_ | - | - | - | - | - |
 | _待补充_ | - | - | - | - | - |
 
