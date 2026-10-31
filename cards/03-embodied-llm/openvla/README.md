@@ -14,9 +14,8 @@
 |------|------|
 | 论文原文 | [arXiv](https://arxiv.org/abs/2406.09246)（底本 **v3**，2024-09-05） |
 | 代码 | [GitHub](https://github.com/openvla/openvla) |
-| 成员实现代码 | _待补充_ |
 | 项目主页 | [openvla.github.io](https://openvla.github.io/)（arXiv 摘要页 Comments 行标注） |
-| 解读视频 | _待补充_ |
+| 解读视频 | [B 站 · 具身智能领域的里程碑：OpenVLA讲解](https://www.bilibili.com/video/BV1HAkZYLEZb)（UP：NobleAI，2024-12-25，42:46） |
 
 ---
 
