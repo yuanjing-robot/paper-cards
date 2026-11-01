@@ -41,7 +41,7 @@
 | 论文 | 会议/年份 | 原文 | 深度阅读 | 翻译 | 代码 |
 |------|----------|------|---------|------|------|
 | [cosmos-reason1](cards/01-perception/cosmos-reason1) | NeurIPS 2025 | [📄原文](https://arxiv.org/abs/2503.15558) | [📝深度阅读 ](cosmos-reason1/reading-notes.md) | [🌐翻译 ](cosmos-reason1/translation.md) | [💻代码](https://github.com/nvidia-cosmos/cosmos-reason1) |
-| _待补充_ | - | - | - | - | - |
+| [MEIA](cards/01-perception/meia-multimodal-embodied-perception-and-interaction-in-unknown-environments/README.md) | arXiv 2024 | [📄 原文](https://arxiv.org/abs/2402.00290) | [📝 深度阅读](cards/01-perception/meia-multimodal-embodied-perception-and-interaction-in-unknown-environments/reading-notes.md) | [🌐 翻译](cards/01-perception/meia-multimodal-embodied-perception-and-interaction-in-unknown-environments/translation.md) | - |
 | _待补充_ | - | - | - | - | - |
 
 ---
