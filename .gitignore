@@ -45,3 +45,6 @@ temp/
 # 日志
 *.log
 logs/
+
+# 本地 Claude 人设（仅本地使用，不提交）
+CLAUDE.md
