@@ -196,7 +196,7 @@
 
 | 论文 | 会议/年份 | 原文 | 深度阅读 | 翻译 | 代码 |
 |------|----------|------|---------|------|------|
-| _待补充_ | - | - | - | - | - |
+| [RoboStriker](cards/14-rl-adaptive-control/robostriker/) | arXiv 2026 | [📄 原文](https://arxiv.org/abs/2608.16195) | [📝 深度阅读](cards/14-rl-adaptive-control/robostriker/reading-notes.md) | [🌐 翻译](cards/14-rl-adaptive-control/robostriker/translation.md) | - |
 | _待补充_ | - | - | - | - | - |
 | _待补充_ | - | - | - | - | - |
 
