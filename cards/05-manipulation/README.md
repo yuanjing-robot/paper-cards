@@ -6,7 +6,7 @@
 
 | 论文 | 会议/年份 | 原文 | 深度阅读 | 翻译 | 代码 |
 |------|----------|------|---------|------|------|
-| _待补充_ | - | - | - | - | - |
+| [Learning to Grasp the Ungraspable with Emergent Extrinsic Dexterity](learning-to-grasp-the-ungraspable/) | CoRL 2022 | [📄 原文](https://arxiv.org/abs/2211.01500) | [📝 深度阅读](learning-to-grasp-the-ungraspable/reading-notes.md) | [🌐 翻译](learning-to-grasp-the-ungraspable/translation.md) | [💻 代码](https://github.com/rail-berkeley/rlkit) |
 | _待补充_ | - | - | - | - | - |
 | _待补充_ | - | - | - | - | - |
 
